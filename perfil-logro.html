@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>STAMINER</title>
+	
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		
+		<!-- POPUP logro viewer -->
+		<div class="modal fade mod-logro-viewer" id="logro-viewer" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+					<img src="images/logo-staminer-blanco-01.svg" alt="" class="hidden-xs">
+					<h4>Estás viendo: http://www.athlinks.com/results2018</h4>
+				</div>
+				<div class="foto-viewer-content">
+					<div class="viewer-layer">
+						<div class="container-fluid">
+							<div class="row vertical-align">
+								<div class="hidden-xs col-sm-6 vertical-align">
+									<img src="images/perfil-foto.jpg" class="img-circle" alt="">
+									<div>
+										Luis Antonio Mendoza<br><small>Campeón nacional de Pro Drift Toyota 2014</small>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 text-right">
+									<a class="lnklike" href="#like"><span class="ico-like"></span> 12</a>
+									<a class="lnkshare" href="#share"><span class="ico-share"></span> 9</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<iframe class="logro-website"></iframe>
+				</div>
+			</div>
+		</div>
+		
+		<!-- compartir perfil -->
+		<div class="modal fade compartir-publicacion" id="mod-compartir-perfil" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="report-p1">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+							<h4 class="modal-title">Compartir perfil</h4>
+						</div>
+						<form class="form-modal">
+							<div class="modal-body">
+								<textarea name="mensaje" rows="2" placeholder="Haz un comentario..."></textarea>	
+								<div class="publicacion-attach">
+									<div class="perfil-presentacion">
+										
+										<div class="foto-div">
+											<img src="images/perfil-foto.jpg" alt="" class="img-responsive">
+										</div>
+										<div>
+											<div class="datos-div">
+												<h2>Luis Antonio Mendoza</h2>
+												<div class="profesion">
+													Piloto Profesional de Pro Drift<br>
+													<small>Deportista</small>
+												</div>
+												<div class="nro-seguidores">
+													34.858 SEGUIDORES
+												</div>
+											</div>
+											<div class="ultimo-logro">
+												<div>
+													Campeón Nacional Pro Drift<br>Perú - 2014
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="tipo-publicar container-fluid">
+								<div class="row vertical-align">
+									<div class="col-xs-12 col-sm-6">
+										<ul>
+											<li role="presentation" class="compartir-con dropdown">
+												<a class="dropdown-toggle" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false"><span class="ico-world"></span> Público</a>
+												<div class="dropdown-menu dropdown-compartir">
+													<div class="drop-label">
+														Compartir con:
+													</div>
+													<ul>
+														<li>
+															<label>
+																Público<br><small>A todo el público en general.</small>
+																<input type="radio" name="compartirCon" value="Público">
+																<span class="checkmark"></span>
+															</label>
+														   </li>
+														<li>
+															<label>
+																Mi Red<br><small>Solo para mi Red de Staminer.</small>
+																<input type="radio" name="compartirCon" value="Mi Red">
+																<span class="checkmark"></span>
+															</label>
+														</li>
+														<li>
+															<label>
+																Solo Yo<br><small>Solo para mí.</small>
+																<input type="radio" name="compartirCon" value="Solo Yo">
+																<span class="checkmark"></span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li role="presentation" class="compartir-en dropdown non-close">
+												<a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico-redes"></span></a>
+												<div class="dropdown-menu dropdown-compartir">
+													<div class="drop-label">
+														Compartir también en:
+													</div>
+													<ul>
+														<li>
+															<label>
+																<img src="images/facebook-01.svg" alt=""> Facebook
+																<input type="checkbox" name="compartirEn" value="Facebook">
+																<span class="slider round"></span>
+															</label>
+														   </li>
+														<li>
+															<label>
+																<img src="images/twitter-01.svg" alt=""> Twitter
+																<input type="checkbox" name="compartirEn" value="Twitter">
+																<span class="slider round"></span>
+															</label>
+														</li>
+														<li>
+															<label>
+																<img src="images/tumbrl-01.svg" alt=""> Tumbrl
+																<input type="checkbox" name="compartirEn" value="Tumbrl">
+																<span class="slider round"></span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-6 text-right">
+										<button type="button" class="btn-cancelar" data-dismiss="modal">Cancelar</button>
+										<button type="button" class="btn-enviar" data-dismiss="modal">Compartir</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- POPUP REPORTAR paso 1 -->
+		<div class="modal fade mod-report" id="mod-report" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="report-p1">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+							<h4 class="modal-title">¿Qué sucedió?</h4>
+						</div>
+						<div class="modal-body">
+							<p>Cuéntanos cuál es tu preocupación acerca de este contenido o usuario para revisarlo y determinar si se violaron los Términos y Condiciones.</p>
+							<ul class="list-options">
+								<li><a href="#" data-toggle="modal" data-target="#mod-report-2">Reportar algún contenido <span class="next-step"></span></a></li>
+								<li><a href="#" data-toggle="modal" data-target="#mod-report-2">Reportar usuario <span class="next-step"></span></a></li>
+								<li><a href="#" data-toggle="modal" data-target="#mod-report-2">Bloquear usuario <span class="next-step"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- POPUP REPORTAR paso 2 -->
+		<div class="modal fade mod-report" id="mod-report-2" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="report-p1">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+							<a href="#"><span class="prev-step"></span></a><h4 class="modal-title">¿Qué sucedió?</h4>
+						</div>
+						<form class="form-modal">
+						<div class="modal-body">
+								<label><input type="radio" name="report-opciones-b" value="Inapropiado o incita a la violencia">
+								<span class="checkmark"></span> Inapropiado o incita a la violencia</label>
+								<hr>
+								<label><input type="radio" name="report-opciones-b" value="Contenido engañoso o spam">
+								<span class="checkmark"></span> Contenido engañoso o spam</label>
+								<hr>
+								<label><input type="radio" name="report-opciones-b" value="Infracción de mi derechos">
+								<span class="checkmark"></span> Infracción de mi derechos</label>
+								<hr>
+								<label><input type="radio" name="report-opciones-b" value="No respeta las normas de la comunidad">
+								<span class="checkmark"></span> No respeta las normas de la comunidad</label>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn-cancelar" data-dismiss="modal">Cancelar</button>
+							<button type="button" class="btn-enviar" data-toggle="modal" data-target="#mod-report-3">Guardar</button>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- POPUP REPORTAR paso 3 -->
+		<div class="modal fade mod-report" id="mod-report-3" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="report-p1">
+						<div class="modal-header ico-check">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+							<h4 class="modal-title">Gracias por tu ayuda</h4>
+						</div>
+						<div class="modal-body">
+							<p>Nuestro personal revisará y determinará si el contenido infringe las normas de nuestra comunidad. En caso de ser así, se aplicarán penalizaciones a las cuentas correspondientes.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn-enviar" data-dismiss="modal">Aceptar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- POPUP logro edit -->
+		<div class="modal fade editar-logro" id="mod-editar-logro" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+						<h4 class="modal-title">Editar publicación</h4>
+					</div>
+					<div class="modal-body">
+						<div class="logros">
+							<form>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="foto-col col-xs-12 col-sm-6">
+										<div class="banner-perfil-edit">
+											<img src="images/foto-logro.jpg" alt="Foto logro">
+											<a class="foto-formato" title="Cambiar formato"></a>
+											<a class="eliminar-foto" title="Eliminar foto"></a>
+										</div>
+									</div>
+									<div class="info-col col-xs-12 col-sm-6">
+										<div class="logro-info-edit">
+											<div class="custom-select dia">
+												<label for="dia-edit" hidden>Día:</label>
+												<select name="dia-edit" id="dia-edit">
+													<option>Día</option>
+													<option value="01">01</option>
+													<option value="02">02</option>
+													<option value="03" selected="selected">03</option>
+													<option value="04">04</option>
+													<option value="05">05</option>
+													<option value="06">06</option>
+													<option value="07">07</option>
+													<option value="08">08</option>
+													<option value="09">09</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="28">27</option>
+													<option value="27">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+												</select>
+											</div>
+											<div class="custom-select mes">
+												<label for="mes-edit" hidden>Mes:</label>
+												<select name="mes-edit" id="mes-edit">
+													<option>Mes</option>
+													<option value="Enero">Ene</option>
+													<option value="Febrero" selected="selected">Feb</option>
+													<option value="Marzo">Mar</option>
+													<option value="Abril">Abr</option>
+													<option value="Mayo">May</option>
+													<option value="Junio">Jun</option>
+													<option value="Julio">Jul</option>
+													<option value="Agosto">Ago</option>
+													<option value="Septiembre">Set</option>
+													<option value="Octubre">Oct</option>
+													<option value="Noviembre">Nov</option>
+													<option value="Diciembre">Dic</option>
+												</select>
+											</div>
+											<div class="custom-select anio">
+												<label for="anio-edit" hidden>Año:</label>
+												<select name="anio-edit" id="anio-edit">
+													  <option>Año</option>
+													  <option value="2018" selected="selected">2018</option>
+													  <option value="2000">2000</option>
+													  <option value="1999">1999</option>
+													  <option value="1998">1998</option>
+												</select>
+											</div>
+											<label for="logro-obtenido" hidden>Logro obtenido:</label>
+                                            <input type="text" name="logro-obtenido" placeholder="Logro obtenido" value="Campeón Nacional Pro Drift Toyota">
+											<label for="logro-obtenido" hidden>Deporte/Disciplina:</label>
+                                            <input type="text" name="deporte-disciplina" placeholder="Deporte/Disciplina" value="Pro Drift">
+											<label for="logro-obtenido" hidden>Evento:</label>
+                                            <input type="text" name="evento" placeholder="Evento" value="Lorem Ipsum dolor sit perspiciatis 2018">
+											<label for="logro-obtenido" hidden>País del evento:</label>
+                                            <input type="text" name="pais-ciudad" placeholder="País/Ciudad del evento" value="Lima, Perú">
+											<input type="submit" value="">
+                                            <div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid tipo-publicar">
+								<div class="row">
+									<div class="col-xs-12">
+										<label for="url-edit">URL</label><input type="text" name="url-edit" id="url-edit" placeholder="Certificar logro...">
+									</div>
+								</div>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<header>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-xs-5 col-sm-4 col-md-3">
+						<div class="buscador">
+							<form>
+								<input type="text" id="buscar" placeholder="Buscar..."><input type="submit" id="submit" value="">
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-4 col-md-6">
+						<div class="logo">
+							<a href="feed.html"><img src="images/logo-staminer-01.svg" alt="Staminer logo" class="img-responsive hidden-xs">
+							<img src="images/staminer-iso-01.svg" alt="Staminer logo" class="visible-xs"></a>
+						</div>
+					</div>
+					<div class="col-xs-5 col-sm-4 col-md-3">
+						<nav class="perfil-menu" role="navigation">
+							<ul>
+								<li role="presentation" class="dropdown non-close">
+									<a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico mensajes-ico"></span><span class="badge"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-mensajes">
+										<div class="dropdown-counter">
+											Mensajes &#40;0&#41;
+										</div>
+										<ul>
+											<li class="history-back">
+												<div class="vertical-align">
+													<div class="notificacion">Usted no tiene mensajes.</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li role="presentation" class="dropdown non-close">
+									<a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico alertas-ico"></span><span class="badge"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-mensajes">
+										<div class="dropdown-counter">
+											Notificaciones &#40;0&#41;
+										</div>
+										<ul>
+											<li class="history-back">
+												<div class="vertical-align">
+													<div class="notificacion">Usted no tiene notificaciones.</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li role="presentation" class="dropdown non-close">
+									<a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico config-ico"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-perfil">
+										<div class="drop-header">
+											<a href="perfil-bitacora.html">
+												<img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-responsive img-circle">
+												<h3>Luis Antonio Mendoza</h3>
+												<span class="profesion">Piloto Profesional de Pro Drift Perú</span>
+											</a>
+										</div>
+										<ul>
+											<li><a href="#" class="lnk-modal" data-toggle="modal" data-target="#mod-invitar-amigos">Invitar amigos</a></li>
+											<li class="submenu"><a onclick="submenuOn()" >Idioma</a>
+												<ul id="submenu">
+													<li><a onclick="submenuOff()">Seleccionar idioma</a></li>
+													<li class="active"><a href="#">Español</a></li>
+													<li><a href="#">English</a></li>
+													<li><a href="#">Português</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Configuración</a></li>
+											<li><a href="#">Cerrar sesión</a></li>
+										</ul>
+										<div class="sidebar-footer visible-xs">
+											<h3>Staminer &copy; <script>document.write(new Date().getFullYear())</script></h3>
+											<ul>
+												<li><a href="manifiesto-contacto.html">Manifiesto</a></li>
+												<li><a href="manifiesto-contacto.html">Contactar</a></li>
+												<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
+												<li><a href="politica-privacidad.html">Políticas de Staminer</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="hidden-xs">
+									<a href="perfil-bitacora.html"><span class="ico foto-perfil-ico"><img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-circle"></span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section id="perfil-banner">
+			<div class="foto-portada hidden-xs">
+				<img src="images/foto-banner-perfil.jpg" alt="Portada Perfil" class="img-responsive">
+			</div>
+			<div class="perfil-banner-content">
+				<a href="#" class="btn-edit hidden-xs" data-toggle="modal" data-target="#mod-foto-perfil"><span class="ico-edit"></span>&nbsp;</a>
+				
+				<div class="foto-perfil">
+					<a href="#" data-toggle="modal" data-target="#mod-foto-perfil" class="btn-edit hidden-xs"><span class="ico-edit"></span></a>
+					<img src="images/perfil-foto.jpg" class="img-circle img-responsive" alt="Foto Perfil">
+				</div>
+				<div class="datos-perfil">
+					<h2>Luis Antonio Mendoza</h2>
+					<div class="profesion">
+						Piloto Profesional de Pro Drift Perú<br>
+						<small>Deportista</small>
+					</div>
+				</div>
+				
+				<div class="seguidores">
+					<span class="cifra">34.858 SEGUIDORES</span>
+					<div role="presentation" class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seguir <span><span class="caret"></span></span></a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-seguidores">
+							<ul>
+								<li class="visible-xs"><a href="#">Seguir</a></li>
+								<li><a href="#">Conectar</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#mod-compartir-perfil">Compartir perfil</a></li>
+								<li><a href="#">Descargar PDF</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#mod-report">Reportar/Bloquear</a></li>
+								<li><a href="#">Eliminar contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<span class="logro">Campeón Nacional Pro Drift<br>Perú - 2014</span>
+			</div>
+		</section>
+		
+		<section class="timeline-contenedor">
+			<div class="perfil-wrap">
+				<div class="grid">
+					
+					<div class="menu-options visible-xs">
+						<ul>
+							<li class="btn-ficha-tecnica gotoLnk">
+								<a href="#ficha-tecnica">
+									<span class="ico-ficha-tecnica"></span>
+								</a>
+							</li>
+							<li>
+								<a href="fotos-cv-confotos.html">
+									<span class="ico-fotos"></span>
+								</a>
+							</li>
+							<li>
+								<a href="sponsors.html">
+									<span class="ico-sponsors"></span>
+								</a>
+							</li>
+							<li>
+								<a href="red.html">
+									<span class="ico-mi-red"></span>
+								</a>
+							</li>
+							<li class="btn-otras-redes gotoLnk">
+								<a href="#otras-redes">
+									<span class="ico-otras-redes"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-grid-1">
+						<div id="ficha-tecnica" class="col-ficha">
+							<div class="ficha-tecnica widget">
+								<div class="subtitulo">
+									<h3>Ficha Técnica</h3>
+									<span class="sexo-masculino"></span>
+								</div>
+								<div class="div-content">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12">
+												<span class="ico-ubicacion"></span> <span class="hidden-xs hidden-lg">Miraflores, Lima Metro...</span><span class="hidden-sm hidden-md">Miraflores, Lima Metropolitana</span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Edad
+											</div>
+											<div class="col-xs-7 parametro">
+												<span title="Fecha de Nacimiento: 24 / 06 / 87">30 años</span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Altura
+											</div>
+											<div class="col-xs-7 parametro">
+												1,70 m (5 ft 7 in)
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Ancho
+											</div>
+											<div class="col-xs-7 parametro">
+												202 cm
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Peso
+											</div>
+											<div class="col-xs-7 parametro">
+												72 kg (158 lb)
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Nacionalidad
+											</div>
+											<div class="col-xs-7 parametro">
+												Peruano <img src="images/banderas/peru-01.svg" alt="Peruano">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Lateridad
+											</div>
+											<div class="col-xs-7 parametro">
+												Diestro
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="asociacion widget">
+								<div class="subtitulo">
+									<h3>Asociación</h3>
+								</div>
+								<div class="div-content">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12">
+												Federación Peruana de Pro Drfit
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Equipo/Club
+											</div>
+											<div class="col-xs-7 parametro">
+												Piloto Toyota
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-5">
+												Posición
+											</div>
+											<div class="col-xs-7 parametro">
+												Lorem Ipsum
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12 eventos-deportivos">
+												<div role="presentation" class="eventos non-close">
+													<a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Eventos Deportivos Internacionales <span class="caret"></span></a>
+													<div class="dropdown-menu drop-checklist">
+														<form>
+														  <div class="eventos-opciones">
+															  <label>
+																<input type="checkbox" name="eventos-deportivos" value="Mundial" id="eventos-deportivos_0">
+																  <span class="checkmark"></span>
+																Mundial</label>
+															  <label>
+																<input type="checkbox" name="eventos-deportivos" value="Olimpiadas" id="eventos-deportivos_1">
+																  <span class="checkmark"></span>
+																Olimpiadas</label>
+															  <label>
+																<input type="checkbox" name="eventos-deportivos" value="Panamericanos" id="eventos-deportivos_2">
+																  <span class="checkmark"></span>
+																Panamericanos</label>
+															  <label>
+																<input type="checkbox" name="eventos-deportivos" value="Suramericanos" id="eventos-deportivos_3">
+																  <span class="checkmark"></span>
+																Suramericanos</label>
+															  <label>
+																<input type="checkbox" name="eventos-deportivos" value="evento4" id="eventos-deportivos_4">
+																  <span class="checkmark"></span>
+																evento 4</label>
+															  <label>
+																<input type="checkbox" name="eventos-deportivos" value="evento5" id="eventos-deportivos_5">
+																  <span class="checkmark"></span>
+																evento 5</label>
+														  </div>
+														  <input type="submit" name="submit2"  value="">
+														  <input type="text" name="buscar-evento" id="buscar-evento" placeholder="Buscar...">
+													  </form>
+													</div>
+												</div>
+										  </div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												Profesión (Campo a llenar)
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												Colegio (Campo a llenar)
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												Universidad (Campo a llenar)
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												Grado (Campo a llenar)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ficha-medica widget">
+								<div class="subtitulo">
+									<h3>Ficha Médica</h3>
+									<span class="tipo-sangre">AB+</span>
+								</div>
+								<div class="div-content">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12">
+												<h5>Alergias:</h5>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												<h5>Comentario:</h5>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- FIN COLUMNA 1 -->
+					<!-- Columna 3-->
+					<div class="grid-col-3">
+						<div class="fotos-widget widget hidden-xs">
+							<div class="subtitulo">
+								<h3><a href="fotos-cv-confotos.html">Galería CV</a></h3>
+							</div>
+							<div class="div-content">
+								<ul>
+									<li><a href="#"><img src="images/foto-thumb-1.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="images/foto-thumb-4.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="images/foto-thumb-3.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="images/foto-thumb-2.jpg" alt="" class="img-responsive"></a></li>								
+								</ul>
+							</div>
+						</div>
+						<div class="xponxors-widget widget hidden-xs">
+							<div class="subtitulo">
+								<h3><a href="sponsors.html">Sponsors</a></h3>
+							</div>
+							<div class="div-content">
+								<ul class="sponsors-logos">
+									<li><img src="images/toyota.png" alt="toyota" class="img-responsive"></li>
+									<li><img src="images/monster.png" alt="monster" class="img-responsive"></li>
+									<li><img src="images/sonax.png" alt="sonax" class="img-responsive"></li>
+									<li><img src="images/y.png" alt="y" class="img-responsive"></li>
+								</ul>
+								<ul class="sponsors-videos">
+									<li><a href="#" class="video"><img src="images/foto-thumb-5.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="images/foto-thumb-6.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="images/foto-thumb-7.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="images/foto-thumb-8.jpg" alt="" class="img-responsive"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mi-red-widget widget hidden-xs">
+							<div class="subtitulo">
+								<h3><a href="red.html">Mi red</a></h3>
+							</div>
+							<div class="div-content">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xs-12">
+											<img src="images/red-1.jpg" alt="" class="img-circle img-responsive">
+											<h4>Valentina Shevchenko</h4>
+											<span class="profesion">Luchadora Profesional de Artes Marciales Mixtas</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<img src="images/red-2.jpg" alt="" class="img-circle img-responsive">
+											<h4>Luis Alayza Freundt</h4>
+											<span class="profesion">Piloto Profesional de Rally</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<img src="images/red-3.jpg" alt="" class="img-circle img-responsive">
+											<h4>Bianca Botto</h4>
+											<span class="profesion">Tenista Profesional Perú </span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<img src="images/red-4.jpg" alt="" class="img-circle img-responsive">
+											<h4>Gabriel Villarán Magnet</h4>
+											<span class="profesion">Surfista Profesional</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="otras-redes" class="otras-redes-widget widget">
+							<div class="subtitulo">
+								<h3>Otras redes</h3>
+							</div>
+							<div class="div-content">
+								<div class="container-fluid">
+									<div class="row vertical-align">
+										<div class="col-xs-2">
+											<img src="images/facebook-01.svg" alt="Facebook" class="img-responsive">
+										</div>
+										<div class="col-xs-4">
+											Seguidores
+											<strong>30.858</strong>
+										</div>
+										<div class="col-xs-6">
+											Alcanse por Post
+											<strong>20.200</strong>
+										</div>
+									</div>
+									<div class="row vertical-align">
+										<div class="col-xs-2">
+											<img src="images/instagram-01.svg" alt="Instagram" class="img-responsive">
+										</div>
+										<div class="col-xs-4">
+											Seguidores
+											<strong>28.700</strong>
+										</div>
+										<div class="col-xs-6">
+											Alcanse por Post
+											<strong>24.240</strong>
+										</div>
+									</div>
+									<div class="row vertical-align">
+										<div class="col-xs-2">
+											<img src="images/twitter-01.svg" alt="Twitter" class="img-responsive">
+										</div>
+										<div class="col-xs-4">
+											Seguidores
+											<strong>9.010</strong>
+										</div>
+										<div class="col-xs-6">
+											Alcanse por Post
+											<strong>2.821</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-footer hidden-xs">
+							<h3>Staminer &copy; <script>document.write(new Date().getFullYear())</script></h3>
+							<ul>
+								<li><a href="manifiesto-contacto.html">Manifiesto</a></li>
+								<li><a href="manifiesto-contacto.html#contactar">Contactar</a></li>
+								<li><a href="#">Idioma</a></li>
+								<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
+								<li><a href="politica-privacidad.html">Políticas de Staminer</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- fin columna 3 -->
+					<div class="grid-col-2">
+						<div class="timeline">
+							
+							<div class="publicar">
+								<ul class="publicar-header">
+									<li id="bitacora"><a href="perfil-bitacora.html">Bitácora</a></li>
+									<li id="biometrica" class="hidden"><a href="perfil-biometrica.html">Biométrica</a></li>
+									<li id="logros" class="active"><a href="perfil-logro.html">Logros</a></li>
+								</ul>
+								<div class="logros">
+									<form>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="foto-col col-xs-12 col-sm-6">
+												<div class="banner-perfil-edit">
+													<a class="foto-formato"></a>
+												</div>
+											</div>
+											<div class="info-col col-xs-12 col-sm-6">
+												<div class="logro-info-edit">
+													<div class="custom-select dia">
+														<label for="dia" hidden>Día:</label>
+														<select name="dia" id="select">
+															<option>Día</option>
+															<option value="01">01</option>
+															<option value="02">02</option>
+															<option value="03">03</option>
+															<option value="04">04</option>
+															<option value="05">05</option>
+															<option value="06">06</option>
+															<option value="07">07</option>
+															<option value="08">08</option>
+															<option value="09">09</option>
+															<option value="10">10</option>
+															<option value="11">11</option>
+															<option value="12">12</option>
+															<option value="13">13</option>
+															<option value="14">14</option>
+															<option value="15">15</option>
+															<option value="16">16</option>
+															<option value="17">17</option>
+															  <option value="18">18</option>
+															  <option value="19">19</option>
+															  <option value="20">20</option>
+															  <option value="21">21</option>
+															  <option value="22">22</option>
+															  <option value="23">23</option>
+															  <option value="24">24</option>
+															  <option value="25">25</option>
+															  <option value="26">26</option>
+															  <option value="28">27</option>
+															  <option value="27">28</option>
+															  <option value="29">29</option>
+															  <option value="30">30</option>
+															  <option value="31">31</option>
+														</select>
+													</div>
+													<div class="custom-select mes">
+														<label for="mes" hidden>Mes:</label>
+														<select name="mes" id="mes">
+															<option selected="selected">Mes</option>
+															<option value="Enero">Ene</option>
+															<option value="Febrero">Feb</option>
+															<option value="Marzo">Mar</option>
+															<option value="Abril">Abr</option>
+															<option value="Mayo">May</option>
+															<option value="Junio">Jun</option>
+															<option value="Julio">Jul</option>
+															<option value="Agosto">Ago</option>
+															<option value="Septiembre">Set</option>
+															<option value="Octubre">Oct</option>
+															<option value="Noviembre">Nov</option>
+															<option value="Diciembre">Dic</option>
+														</select>
+													</div>
+													<div class="custom-select anio">
+														<label for="anio" hidden>Año:</label>
+														<select name="anio" id="anio">
+															  <option selected="selected">Año</option>
+															  <option value="2000">2000</option>
+															  <option value="1999">1999</option>
+															  <option value="1998">1998</option>
+														</select>
+													</div>
+													<label for="logro-obtenido" hidden>Logro obtenido:</label>
+                                                        <input type="text" name="logro-obtenido" placeholder="Logro obtenido">
+													  <label for="logro-obtenido" hidden>Deporte/Disciplina:</label>
+                                                        <input type="text" name="deporte-disciplina" placeholder="Deporte/Disciplina">
+													  <label for="logro-obtenido" hidden>Evento:</label>
+                                                        <input type="text" name="evento" placeholder="Evento">
+													  <label for="logro-obtenido" hidden>País del evento:</label>
+                                                        <input type="text" name="pais-ciudad" placeholder="País/Ciudad del evento">
+													  <input type="submit" value="">
+                                                    <div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid tipo-publicar">
+										<div class="row">
+											<div class="col-xs-12">
+												<label for="url">URL</label><input type="text" name="url" id="url" placeholder="Certificar logro...">
+											</div>
+										</div>
+									</div>
+									</form>
+								</div>
+							</div>
+							
+							<div class="publicacion publicacion-logro">
+								<div class="publicacion-header container-fluid">
+									<div class="row">
+										<div class="col-xs-9">
+											<img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-responsive img-circle">
+											<h4>Luis Antonio Mendoza</h4>
+											<span class="profesion">Piloto Profesional de Pro Drift Perú</span>
+										</div>
+										<div class="col-xs-3 publicacion-options">
+											<div role="presentation" class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<ul>
+														<li><a href="#" data-toggle="modal" data-target="#mod-editar-logro">Editar Logro</a></li>
+														<li><a href="#" data-toggle="modal" data-target="#mod-report">Reportar</a></li>
+														<li><a href="#">Compartir perfil</a></li>
+														<li><a href="#">Eliminar contacto</a></li>
+													</ul>
+												</div>
+											</div>
+											<span class="publicacion-time">Hace 30 min</span>
+										</div>
+									</div>
+								</div>
+								<div class="publicacion-content foto-vertical non-boot">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12 col-sm-6">
+												<div class="logro-foto">
+													<img src="images/foto-logro.jpg" alt="Foto logro">
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="logro-info">
+													<div class="logro-fecha">
+														<a class="openViewer" href="#logro-viewer" data-toggle="modal" data-theUrl="https://www.athlinks.com/">3 de febrero de 2018</a>
+													</div>
+													<div class="logro-nombre">
+														<a class="openViewer" href="#logro-viewer" data-toggle="modal" data-theUrl="https://www.athlinks.com/"><span>1° Puesto</span>
+														<h2>CAMPEÓN NACIONALPRO DRIFT TOYOTA</h2></a>
+													</div>
+													<ul class="logro-detalles">
+														<li>
+															Disciplina:<br>
+															<strong>Pro Drift</strong>
+														</li>
+														<li>
+															Evento:<br>
+															<strong>Lorem Ipsum dolor sit perspiciatis 2018</strong>
+														</li>
+														<li>
+															País:<br>
+															<strong>Lima, Perú</strong>
+														</li>														
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="publicacion-actions">
+									<ul>
+										<li><a href="#">Me gusta <span class="ico-megusta"></span></a></li>
+										<li><a href="#">Compartir <span class="ico-compartir"></span></a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="publicacion publicacion-logro">
+								<div class="publicacion-header container-fluid">
+									<div class="row">
+										<div class="col-xs-9">
+											<img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-responsive img-circle">
+											<h4>Luis Antonio Mendoza</h4>
+											<span class="profesion">Piloto Profesional de Pro Drift Perú</span>
+										</div>
+										<div class="col-xs-3 publicacion-options">
+											<div role="presentation" class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<ul>
+														<li><a href="#" data-toggle="modal" data-target="#mod-report">Reportar</a></li>
+														<li><a href="#">Compartir perfil</a></li>
+														<li><a href="#">Eliminar contacto</a></li>
+													</ul>
+												</div>
+											</div>
+											<span class="publicacion-time">Hace 30 min</span>
+										</div>
+									</div>
+								</div>
+								<div class="publicacion-content foto-horizontal non-boot">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="logro-info">
+													<div class="logro-fecha">
+														3 de febrero de 2018
+													</div>
+													<div class="logro-nombre">
+														<span>1° Puesto</span>
+														<h2>CAMPEÓN NACIONALPRO DRIFT TOYOTA</h2>
+													</div>
+													<ul class="logro-detalles">
+														<li>
+															Disciplina:<br>
+															<strong>Pro Drift</strong>
+														</li>
+														<li>
+															Evento:<br>
+															<strong>Lorem Ipsum dolor sit perspiciatis 2018</strong>
+														</li>
+														<li>
+															País:<br>
+															<strong>Lima, Perú</strong>
+														</li>														
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="publicacion-actions">
+									<ul>
+										<li><a href="#">Me gusta <span class="ico-megusta"></span></a></li>
+										<li><a href="#">Compartir <span class="ico-compartir"></span></a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="publicacion publicacion-logro">
+								<div class="publicacion-header container-fluid">
+									<div class="row">
+										<div class="col-xs-9">
+											<img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-responsive img-circle">
+											<h4>Luis Antonio Mendoza</h4>
+											<span class="profesion">Piloto Profesional de Pro Drift Perú</span>
+										</div>
+										<div class="col-xs-3 publicacion-options">
+											<div role="presentation" class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<ul>
+														<li><a href="#" data-toggle="modal" data-target="#mod-report">Reportar</a></li>
+														<li><a href="#">Compartir perfil</a></li>
+														<li><a href="#">Eliminar contacto</a></li>
+													</ul>
+												</div>
+											</div>
+											<span class="publicacion-time">Hace 30 min</span>
+										</div>
+									</div>
+								</div>
+								<div class="publicacion-content foto-horizontal non-boot">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="logro-foto">
+													<img src="images/foto-logro-hz.jpg" alt="Foto logro">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="logro-info">
+													<div class="logro-fecha">
+														3 de febrero de 2018
+													</div>
+													<div class="logro-nombre">
+														<span>1° Puesto</span>
+														<h2>CAMPEÓN NACIONAL PRO DRIFT TOYOTA</h2>
+													</div>
+													<ul class="logro-detalles">
+														<li>
+															Disciplina:<br>
+															<strong>Pro Drift</strong>
+														</li>
+														<li>
+															Evento:<br>
+															<strong>Lorem Ipsum dolor sit perspiciatis 2018</strong>
+														</li>
+														<li>
+															País:<br>
+															<strong>Lima, Perú</strong>
+														</li>														
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="publicacion-actions">
+									<ul>
+										<li><a href="#">Me gusta <span class="ico-megusta"></span></a></li>
+										<li><a href="#">Compartir <span class="ico-compartir"></span></a></li>
+									</ul>
+								</div>
+							</div>
+													
+						</div>
+					</div><!-- FIN COLUMNA 2 -->
+				</div>
+			</div>
+		</section>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+		
+	</body>
+</html>

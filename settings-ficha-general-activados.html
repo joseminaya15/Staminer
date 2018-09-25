@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>STAMINER</title>
+	
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		
+		<header>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-xs-5 col-sm-4 col-md-3">
+						<div class="buscador">
+							<form>
+								<input type="text" id="buscar" placeholder="Buscar..."><input type="submit" id="submit" value="">
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-4 col-md-6">
+						<div class="logo">
+							<a href="feed.html"><img src="images/logo-staminer-01.svg" alt="Staminer logo" class="img-responsive hidden-xs">
+							<img src="images/staminer-iso-01.svg" alt="Staminer logo" class="visible-xs"></a>
+						</div>
+					</div>
+					<div class="col-xs-5 col-sm-4 col-md-3">
+						<nav class="perfil-menu" role="navigation">
+							<ul>
+								<li role="presentation" class="dropdown non-close">
+									<a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico mensajes-ico"></span><span class="badge"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-mensajes">
+										<div class="dropdown-counter">
+											Mensajes &#40;0&#41;
+										</div>
+										<ul>
+											<li class="history-back">
+												<div class="vertical-align">
+													<div class="notificacion">Usted no tiene mensajes.</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li role="presentation" class="dropdown non-close">
+									<a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico alertas-ico"></span><span class="badge"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-mensajes">
+										<div class="dropdown-counter">
+											Notificaciones &#40;2&#41;
+										</div>
+										<ul>
+											<li class="history-back">
+												<div class="vertical-align">
+													<div class="notificacion">Usted no tiene notificaciones.</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li role="presentation" class="dropdown non-close">
+									<a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="ico config-ico"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-perfil">
+										<div class="drop-header">
+											<a href="perfil-bitacora.html">
+												<img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-responsive img-circle">
+												<h3>Luis Antonio Mendoza</h3>
+												<span class="profesion">Piloto Profesional de Pro Drift Perú</span>
+											</a>
+										</div>
+										<ul>
+											<li><a href="#" class="lnk-modal" data-toggle="modal" data-target="#mod-invitar-amigos">Invitar amigos</a></li>
+											<li class="submenu"><a onclick="submenuOn()" >Idioma</a>
+												<ul id="submenu">
+													<li><a onclick="submenuOff()">Seleccionar idioma</a></li>
+													<li class="active"><a href="#">Español</a></li>
+													<li><a href="#">English</a></li>
+													<li><a href="#">Português</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Configuración</a></li>
+											<li><a href="#">Cerrar sesión</a></li>
+										</ul>
+										<div class="sidebar-footer visible-xs">
+											<h3>Staminer &copy; <script>document.write(new Date().getFullYear())</script></h3>
+											<ul>
+												<li><a href="manifiesto-contacto.html">Manifiesto</a></li>
+												<li><a href="manifiesto-contacto.html">Contactar</a></li>
+												<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
+												<li><a href="politica-privacidad.html">Políticas de Staminer</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="hidden-xs">
+									<a href="perfil-bitacora.html"><span class="ico foto-perfil-ico"><img src="images/perfil-foto.jpg" alt="Foto perfil" class="img-circle"></span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section class="configuracion">
+			<div class="page perfil-wrap">
+				<div class="grid">
+					<div class="grid-col-1">
+						
+						<div class="perfil-presentacion">
+							<div class="foto-div">
+								
+							</div>
+							<div class="configuracion-menu">
+								<div class="menu-title">
+									Configuración de cuenta
+								</div>
+								<ul>
+									<li class="active"><a href="settings-ficha-general.html">Ficha general</a></li>
+									<li><a href="settings-ficha-tecnica.html">Ficha técnica</a></li>
+									<li><a href="settings-ficha-medica.html">Ficha médica</a></li>
+									<li><a href="settings-otras-redes.html">Otras redes</a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div><!-- FIN COLUMNA 1 -->
+					<div class="grid-col-2">
+						<div class="configuracion-wrap">
+							<form class="form-modal">
+							<div class="configuracion-header">
+								<h4 class="modal-title">Perfil General</h4>
+							</div>
+							<div class="hidden configuracion-subtitulo">
+								Información básica
+							</div>
+							<div class="configuracion-content">
+								<div class="editar-fotos">
+									<div class="clearfix">
+										<div class="editar-foto-perfil">
+											Foto de perfil:
+										</div>
+										<div class="editar-foto-portada">
+											Foto de portada:
+										</div>
+									</div>
+									<div class="flex-height">
+										<div class="editar-foto-perfil">
+											<a href="#"><img src="images/non-profile.gif" alt="" class="img-responsive"></a>
+										</div>
+										<div class="editar-foto-portada">
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="clearfix">
+										<div class="editar-foto-perfil">
+											<small>Tamaño maximo 800x800, 10MB</small>
+										</div>
+										<div class="editar-foto-portada">
+											<small>Tamaño recomendado 1400x400, 10MB</small>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="nombre">Nombre:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+										<input type="text" name="apellido" id="apellido" placeholder="Apellido">
+										<button type="button" class="btn-guardar"></button>
+										<button type="button" class="btn-cerrar"></button>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="correo">Correo:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<input type="text" name="correo" id="correo" value="luisantonio@prorallysac.com">
+										<button type="button" class="btn-guardar"></button>
+										<button type="button" class="btn-cerrar"></button>
+										<a class="hidden color-azul" href="#">Cambiar</a>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="contrasena">Contraseña:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<input type="password" name="contrasena" id="contrasena" value="klhfwqñlkfhwq">
+										<button type="button" class="btn-guardar"></button>
+										<button type="button" class="btn-cerrar"></button>
+										<a class="color-azul hidden" href="#">Cambiar contraseña</a>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="deporte">Deporte/Disciplina:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<input type="text" name="deporte" id="deporte" value="Fútbol">
+										<button type="button" class="btn-guardar"></button>
+										<button type="button" class="btn-cerrar"></button>
+										<a class="color-azul hidden" href="#">Cambiar</a>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="clacificacion">Clacificación:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<div class="custom-select clacificacion">
+											<label for="clacificacion" hidden>Clacificación:</label>
+											<select name="clacificacion" id="clacificacion">
+												<option>Clacificación</option>
+												<option value="01">Deportista</option>
+												<option value="02">Paradeportista</option>
+												<option value="03">Clacificación 03</option>
+												<option value="04">Clacificación 04</option>
+											</select>
+										</div>
+										<button type="button" class="btn-guardar"></button>
+										<button type="button" class="btn-cerrar"></button>
+										<a class="hidden color-azul" href="#">Cambiar</a>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="logro">Último logro:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<input type="text" name="logro" id="logro" value="Campeón Nacional Pro Drift, Perú - 2014">
+										<button type="button" class="btn-guardar"></button>
+										<button type="button" class="btn-cerrar"></button>
+										<a class="color-azul hidden" href="#">Cambiar</a>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-3">
+										<label for="url-personalizada">URL personalizada:</label>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-9">
+										<div class="url-personalizada">
+											<span class="url-base">https://staminer.com/</span><input type="text" name="url-personalizada" id="url-personalizada" value="luis-antonio-mendoza">
+											<button type="button" class="btn-guardar"></button>
+											<button type="button" class="btn-cerrar"></button>
+											<a class="color-azul hidden" href="#">Cambiar</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="configuracion-footer">
+								<a href="#">Eliminar cuenta</a>
+							</div>
+							</form>
+						</div>
+					</div><!-- FIN COLUMNA 2 -->
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-4">
+						<div class="logo">
+							<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo" class="img-responsive">
+							<span>&copy; <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</span>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9 col-md-8">
+						<nav>
+							<ul>
+								<li><a href="manifiesto.html">Manifiesto</a></li>
+								<li><a href="contactar.html">Contactar</a></li>
+								<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
+								<li><a href="politicas-staminer.html">Políticas de Staminer</a></li>
+							</ul>
+						</nav>
+						<div role="presentation" class="dropdown text-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<ul>
+									<li><a href="#">Español</a></li>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Portugês</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>

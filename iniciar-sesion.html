@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<title>STAMINER</title>
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		
+		<!-- POPUP SOLICITUD -->
+		<div class="modal fade" id="mod-solicitud" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-solicitud" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+					<div class="row">
+						<div class="col-xs-12 col-sm-5">
+							<div class="div-image solicitud"></div>
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<div class="div-content">
+								<h3 class="section-title">¿Eres deportista y aún no has recibido una invitación?</h3>
+								<p>¡Regístrate aquí para solicitarla!</p>
+								<form class="form-staminer">
+								  <label for="nombre-completo" hidden>Nombre completo:</label>
+								  <input type="text" name="nombre-completo" placeholder="Nombre completo">
+									<label for="correo-electronico" hidden>Correo electrónico:</label>
+                                	<input type="text" name="correo-electronico" placeholder="Correo electrónico">
+								  <label for="deporte" hidden>Deporte:</label>
+								  <input type="text" name="deporte" placeholder="Deporte">
+									<textarea name="mensaje" rows="3" placeholder="Escríbenos un mensaje"></textarea>
+									<input data-toggle="modal" data-target="#mod-solicitud-2" type="button" name="submit" class="btn-enviar" value="Enviar solicitud">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- POPUP SOLICITUD paso2 -->
+		<div class="modal fade" id="mod-solicitud-2" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-solicitud" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ico-close"></span></button>
+					<div class="row">
+						<div class="col-xs-12 col-sm-5">
+							<div class="div-image solicitud"></div>
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<div class="div-content mensaje-gracias">
+								<p><strong>Gracias.</strong><br>
+								Validaremos tu información <br>y te responderemos lo antes posible.</p>
+								<p>Resiste. La eternidad es humilde <br>para quien lucha.</p>
+								<a href="#" class="btn-enviar">Ir página principal</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<a href="iniciar-sesion.html" class="btn-sesion">Iniciar sesión</a>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-6">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo-staminer-01.svg" alt="Staminer logo" class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<nav class="home-menu" role="navigation">
+							<ul>
+								<li><a href="contactar.html">Contacto</a></li>
+								<li role="presentation" class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
+									<div class="dropdown-menu dropdown-menu-right">
+										<ul>
+											<li><a href="#">Español</a></li>
+											<li><a href="#">English</a></li>
+											<li><a href="#">Portugês</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section id="iniciar-sesion" class="non-boot">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-7">
+						<div class="div-image login"></div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-5">
+						<div class="div-content">
+							<h3 class="section-title">Iniciar sesión,<br>STAMINER</h3>
+							<p>¡Bienvenido de vuelta!</p>
+							<form class="form-staminer">
+							  <label for="correo-electronico" hidden>Correo electrónico:</label>
+                                <input type="text" name="correo-electronico" placeholder="Correo electrónico">
+                              <label for="password" hidden>Password:</label>
+                                <input type="password" name="password" placeholder="Contraseña" class="incompleto">
+						      <input type="checkbox" name="checkbox" id="checkbox">
+								<span class="checkmark"></span>
+                                <label for="checkbox">Recordar mis datos</label> <a href="#" class="lnk-olvidar">¿Olvidaste tu contraseña?</a>
+							  <input class="btn-enviar" type="submit" name="submit" value="Iniciar sesión">
+								<p class="text-center"><a href="#" data-toggle="modal" data-target="#mod-solicitud">¿No tienes una cuenta?</a></p>
+                            </form>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-4">
+						<div class="logo">
+							<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo" class="img-responsive">
+							<span>&copy; <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</span>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9 col-md-8">
+						<nav>
+							<ul>
+								<li><a href="manifiesto.html">Manifiesto</a></li>
+								<li><a href="contactar.html">Contactar</a></li>
+								<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
+								<li><a href="politicas-staminer.html">Políticas de Staminer</a></li>
+							</ul>
+						</nav>
+						<div role="presentation" class="dropdown text-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<ul>
+									<li><a href="#">Español</a></li>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Portugês</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>

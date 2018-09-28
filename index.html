@@ -2,24 +2,41 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+	    <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	    <meta name="description"            content="STAMINER">
+	    <meta name="keywords"               content="STAMINER, deportes">
+	    <meta name="robots"                 content="Index,Follow">
+	    <meta name="date"                   content="July 23, 2018"/>
+	    <meta name="language"               content="es">
+	    <meta name="theme-color"            content="#0064dc">
 		<title>STAMINER</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href="css/responsive.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css" >
-		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/mdl/material.min.css">
+		<link rel="stylesheet" href="fonts/material-icons.css">
+		<link rel="stylesheet" href="fonts/roboto.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
-	
 	<body>
-		
-		<header>
-			<div class="container">
-				<div class="row">
+		<header class="jm-header">
+			<div class="jm-container">
+				<div class="jm-staminer">
+					<a href=""><img src="images/logo/logo-staminer-01.svg" alt="Staminer logo"></a>
+				</div>
+				<div class="jm-search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+						<span class="input-group-addon" id="basic-addon2">@example.com</span>
+					</div>
+				</div>
+				<div class="jm-login">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Iniciar Sesi&oacute;n</button>
+				</div>
+				<!-- <div class="row">
 					<div class="hidden-xs col-sm-4 col-md-3">
 						<a href="iniciar-sesion.html" class="btn-sesion">Iniciar sesión</a>
 					</div>
@@ -45,7 +62,7 @@
 							</ul>
 						</nav>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</header>
 		
@@ -58,9 +75,7 @@
 					<li data-target="#staminer-home-slider" data-slide-to="3"></li>
 					<li data-target="#staminer-home-slider" data-slide-to="4"></li>
 				</ol>
-
 				<div class="carousel-inner" role="listbox">
-					
 					<div class="item active staminer-slide-1">
 						<div class="carousel-caption text-center">
 							<h1>STAMINER</h1>
@@ -68,7 +83,6 @@
 							<a class="btn-registro" href="registro.html">Regístrate aquí</a>
 						</div>
 					</div>
-					
 					<div class="item staminer-slide-2">
 						<div class="carousel-caption">
 							<h1>Crea tu CV deportivo</h1>
@@ -76,7 +90,6 @@
 							<a class="btn-registro" href="registro.html">Regístrate aquí</a>
 						</div>
 					</div>
-					
 					<div class="item staminer-slide-3">
 						<div class="carousel-caption">
 							<h1>Comparte la gloria</h1>
@@ -84,7 +97,6 @@
 							<a class="btn-registro" href="registro.html">Regístrate aquí</a>
 						</div>
 					</div>
-					
 					<div class="item staminer-slide-4">
 						<div class="carousel-caption">
 							<h1>Registra cada paso</h1>
@@ -92,7 +104,6 @@
 							<a class="btn-registro" href="registro.html">Regístrate aquí</a>
 						</div>
 					</div>
-					
 					<div class="item staminer-slide-5">
 						<div class="carousel-caption text-center">
 							<h1>Mantente fuerte.</h1>
@@ -100,9 +111,7 @@
 							<a class="btn-registro" href="registro.html">Regístrate aquí</a>
 						</div>
 					</div>
-					
 				</div>
-
 			</div>
 		</section>
 		
@@ -142,9 +151,10 @@
 				</div>
 			</div>
 		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
+		<script src="public/js/jquery-3.2.1.min.js"></script>
+    	<script src="public/js/jquery-1.11.2.min.js"></script>
+	    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="public/plugins/mdl/material.min.js"></script>
 	</body>
 </html>

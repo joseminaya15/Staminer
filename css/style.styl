@@ -1,0 +1,57 @@
+$color   = #0064dc;
+$light   = 'RobotoLight'
+$regular = 'RobotoRegular'
+$medium  = 'RobotoMedium'
+$bold    = 'RobotoBold'
+transition(css-name)
+	-webkit-transition css-name .3s linear
+	-moz-transition css-name .3s linear
+	-ms-transition css-name .3s linear
+	-o-transition css-name .3s linear
+	transition css-name .3s linear
+flexCenter()
+	display flex
+	display -webkit-flex
+	align-items center
+flexStart()
+	display flex
+	display -webkit-flex
+	align-items start
+flexEnd()
+	display flex
+	display -webkit-flex
+	align-items flex-end
+.jm-section
+	position relative
+	padding 20px
+.jm-container
+	width 100%
+	max-width 1150px
+	margin auto
+	transition(max-width)
+body
+	overflow hidden
+	overflow-y scroll
+	font-family $regular
+.jm-header
+	height 46px
+	flexCenter()
+	.jm-container
+		flexCenter()
+		.jm-login
+		.jm-staminer
+			width 100%
+			max-width 200px
+			text-align center
+		.jm-search
+			width 100%
+/*SCROLL*/
+::-webkit-scrollbar
+	width 8px
+	height 5px
+::-webkit-scrollbar-track
+	background-color transparent
+	border-radius 10px
+::-webkit-scrollbar-thumb
+	background-color #AAAAAA
+	border-radius 10px

@@ -1656,11 +1656,11 @@ h3.section-title{
 	background-repeat: no-repeat;
 }
 
-.staminer-slide-1{ background-image: url(images/home-slider-1.jpg); }
-.staminer-slide-2{ background-image: url(images/home-slider-2.jpg); }
-.staminer-slide-3{ background-image: url(images/home-slider-3.jpg); }
-.staminer-slide-4{ background-image: url(images/home-slider-4.jpg); }
-.staminer-slide-5{ background-image: url(images/home-slider-5.jpg); }
+.staminer-slide-1{ background-image: url(images/fondo/fondo1.jpg); }
+.staminer-slide-2{ background-image: url(images/fondo/fondo2.jpg); }
+.staminer-slide-3{ background-image: url(images/fondo/fondo3.jpg); }
+.staminer-slide-4{ background-image: url(images/fondo/fondo4.jpg); }
+.staminer-slide-5{ background-image: url(images/fondo/fondo5.jpg); }
 
 /* ----------------------------------- */
 /* ----------- PAGE PERFIL ----------- */

@@ -2,65 +2,55 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+	    <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	    <meta name="description"            content="STAMINER">
+	    <meta name="keywords"               content="STAMINER, deportes">
+	    <meta name="robots"                 content="Index,Follow">
+	    <meta name="date"                   content="July 23, 2018"/>
+	    <meta name="language"               content="es">
+	    <meta name="theme-color"            content="#0064dc">
 		<title>STAMINER</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href="css/responsive.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/bootstrap-select/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="plugins/mdl/material.min.css">
+		<link rel="stylesheet" href="fonts/material-icons.css">
+		<link rel="stylesheet" href="fonts/roboto.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
-	
-	<body>
-				
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="hidden-xs col-sm-4 col-md-3">
-						<a href="iniciar-sesion.html" class="btn-sesion">Iniciar sesión</a>
+	<body>	
+		<header class="jm-header">
+			<div class="jm-container">
+				<div class="jm-staminer">
+					<a href=""><img src="images/logo/logo-staminer-01.svg" alt="Staminer logo"></a>
+				</div>
+				<div class="jm-search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2">
+						<i class="mdi mdi-search"></i>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-6">
-						<div class="logo">
-							<a href="index.html"><img src="images/logo-staminer-01.svg" alt="Staminer logo" class="img-responsive"></a>
-						</div>
-					</div>
-					<div class="hidden-xs col-sm-4 col-md-3">
-						<nav class="home-menu" role="navigation">
-							<ul>
-								<li><a href="contactar.html">Contacto</a></li>
-								<li role="presentation">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<ul>
-											<li><a href="#">Español</a></li>
-											<li><a href="#">English</a></li>
-											<li><a href="#">Portugês</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</div>
+				</div>
+				<div class="jm-login">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Iniciar Sesi&oacute;n</button>
 				</div>
 			</div>
 		</header>
-		
 		<section id="iniciar-sesion" class="non-boot">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-7">
+					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="div-image registro"></div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-5">
+					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="div-content">
-							<h3 class="section-title">Comienza a escribir tu historia.</h3>
-							<p>¡Regístrate aquí!</p>
+							<h3 class="section-title">Comienza a escribir tu historia</h3>
+							<p>¡Reg&iacute;strate aqu&iacute;!</p>
 							<form class="form-staminer">
-								
-							  <label for="nombre" hidden>Nombre:</label>
+						  		<label for="nombre" hidden>Nombre:</label>
                                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
 								<label for="apellido" hidden>Apellido:</label>
                                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
@@ -82,68 +72,66 @@
 							  
 							<div class="custom-select dia">
 								<label for="dia" hidden>Día:</label>
-                              <select name="dia" id="dia">
-                                <option>Día</option>
-                                <option value="01">01</option>
-                                <option value="02">02</option>
-                                <option value="03">03</option>
-                                <option value="04">04</option>
-                                <option value="05">05</option>
-                                <option value="06">06</option>
-                                <option value="07">07</option>
-								  <option value="08">08</option>
-								  <option value="09">09</option>
-								  <option value="10">10</option>
-								  <option value="11">11</option>
-								  <option value="12">12</option>
-								  <option value="13">13</option>
-								  <option value="14">14</option>
-								  <option value="15">15</option>
-								  <option value="16">16</option>
-								  <option value="17">17</option>
-								  <option value="18">18</option>
-								  <option value="19">19</option>
-								  <option value="20">20</option>
-								  <option value="21">21</option>
-								  <option value="22">22</option>
-								  <option value="23">23</option>
-								  <option value="24">24</option>
-								  <option value="25">25</option>
-								  <option value="26">26</option>
-								  <option value="28">27</option>
-								  <option value="27">28</option>
-								  <option value="29">29</option>
-								  <option value="30">30</option>
-								  <option value="31">31</option>
+                              	<select name="dia" id="dia">
+									<option>Día</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="28">27</option>
+									<option value="27">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
                                 </select>
 							</div>
-								
 							<div class="custom-select mes">
 								<label for="mes" hidden>Mes:</label>
-                              <select name="mes" id="mes">
-                                <option selected="selected">Mes</option>
-                                <option value="Enero">Enero</option>
-                                <option value="Febrero">Febrero</option>
-                                <option value="Marzo">Marzo</option>
-                                <option value="Abril">Abril</option>
-                                <option value="Mayo">Mayo</option>
-                                <option value="Junio">Junio</option>
-                                <option value="Julio">Julio</option>
-                                <option value="Agosto">Agosto</option>
-                                <option value="Septiembre">Septiembre</option>
-                                <option value="Octubre">Octubre</option>
-                                <option value="Noviembre">Noviembre</option>
-                                <option value="Diciembre">Diciembre</option>
+                              	<select name="mes" id="mes">
+	                                <option selected="selected">Mes</option>
+	                                <option value="Enero">Enero</option>
+	                                <option value="Febrero">Febrero</option>
+	                                <option value="Marzo">Marzo</option>
+	                                <option value="Abril">Abril</option>
+	                                <option value="Mayo">Mayo</option>
+	                                <option value="Junio">Junio</option>
+	                                <option value="Julio">Julio</option>
+	                                <option value="Agosto">Agosto</option>
+	                                <option value="Septiembre">Septiembre</option>
+	                                <option value="Octubre">Octubre</option>
+	                                <option value="Noviembre">Noviembre</option>
+	                                <option value="Diciembre">Diciembre</option>
                                 </select>
 							</div>
-								
 							<div class="custom-select anio">
                                 <label for="anio" hidden>Año:</label>
                                 <select name="anio" id="anio">
-                                  <option selected="selected">Año</option>
-                                  <option value="2000">2000</option>
-                                  <option value="1999">1999</option>
-                                  <option value="1998">1998</option>
+									<option selected="selected">Año</option>
+									<option value="2000">2000</option>
+									<option value="1999">1999</option>
+									<option value="1998">1998</option>
                                 </select>
 							</div>
 								<label class="sexo"><input type="radio" name="Sexo" value="Hombre" id="Sexo_0">
@@ -163,45 +151,39 @@
 				</div>
 			</div>
 		</section>
-		
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-3 col-md-4">
-						<div class="logo">
-							<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo" class="img-responsive">
-							<span>&copy; <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</span>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-8">
-						<nav>
-							<ul>
-								<li><a href="manifiesto.html">Manifiesto</a></li>
-								<li><a href="contactar.html">Contactar</a></li>
-								<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
-								<li><a href="politicas-staminer.html">Políticas de Staminer</a></li>
-							</ul>
-						</nav>
-						<div role="presentation" class="dropdown text-right">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<ul>
-									<li><a href="#">Español</a></li>
-									<li><a href="#">English</a></li>
-									<li><a href="#">Portugês</a></li>
-								</ul>
-							</div>
-						</div>
+		<footer class="jm-footer">
+			<div class="jm-container">
+				<div class="jm-footer__left">
+					<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo">
+					<span>Copyright &copy; 2017. Todos los derechos reservados.</span>
+				</div>
+				<div class="jm-footer__right">
+					<a href="manifiesto-contacto.html">Manifiesto</a>
+					<a href="manifiesto-contacto.html#contactanos">Cont&aacute;ctanos</a>
+					<a href="terminos-condiciones.html">Términos y Condiciones</a>
+					<a href="politica-privacidad.html">Pol&iacute;ticas de Staminer</a>
+					<a href="politica-privacidad.html">Centro de ayuda</a>
+					<div class="jm-select">
+						<select class="selectpicker">
+							<option>Mustard</option>
+							<option>Ketchup</option>
+							<option>Relish</option>
+						</select>
 					</div>
 				</div>
 			</div>
 		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery-1.11.2.min.js"></script>
+		<!-- <script src="js/functions.js"></script> -->
+	    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+	    <script src="plugins/mdl/material.min.js"></script>
+    	<script src="js/index.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script>
-			
 			function showPass() {
 				var x = document.getElementById("password");
 				var x2 = document.getElementById("confirmar-password");
@@ -216,7 +198,6 @@
 					ico.className = "ver-password";
 				}
 			}
-			
 		</script>
 	</body>
 </html>

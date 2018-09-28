@@ -3465,11 +3465,11 @@ transform: rotate(45deg);
 }
 
 .div-image.login{
-	background-image: url(images/iniciar-sesion.jpg);
+	background-image: url(images/fondo/fondo_login.jpg);
 }
 
 .div-image.registro{
-	background-image: url(images/registro.jpg);
+	background-image: url(images/fondo/fondo_registro.jpg);
 }
 
 .div-image.solicitud{

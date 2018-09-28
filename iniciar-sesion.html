@@ -2,20 +2,152 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+	    <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	    <meta name="description"            content="STAMINER">
+	    <meta name="keywords"               content="STAMINER, deportes">
+	    <meta name="robots"                 content="Index,Follow">
+	    <meta name="date"                   content="July 23, 2018"/>
+	    <meta name="language"               content="es">
+	    <meta name="theme-color"            content="#0064dc">
 		<title>STAMINER</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet" type="text/css">
 		<link href="css/responsive.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/bootstrap-select/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="plugins/mdl/material.min.css">
+		<link rel="stylesheet" href="fonts/material-icons.css">
+		<link rel="stylesheet" href="fonts/roboto.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
-	
 	<body>
-		
+		<header class="jm-header">
+			<div class="jm-container">
+				<div class="jm-staminer">
+					<a href=""><img src="images/logo/logo-staminer-01.svg" alt="Staminer logo"></a>
+				</div>
+				<div class="jm-search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2">
+						<i class="mdi mdi-search"></i>
+					</div>
+				</div>
+				<div class="jm-login">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Iniciar Sesi&oacute;n</button>
+				</div>
+			</div>
+		</header>
+		<section class="jm-height">
+			<div class="jm-separate">
+				<div class="jm-separate__left">
+					<div class="jm-fondo--session login"></div>
+				</div>
+				<div class="jm-separate__right">
+					<div class="jm-card__login">
+						<div class="jm-card__login--title">
+							<h2>Iniciar Sesi&oacute;n</h2>
+						</div>
+						<div class="jm-card__login--contenido">
+							<div class="input-group jm-input">
+								<input type="text" class="form-control" placeholder="Correo electrónico">
+							</div>
+							<div class="input-group jm-input">
+								<input type="password" class="form-control" placeholder="Contraseña">
+							</div>
+							<div class="jm-card__login--forget">
+								<div class="jm-forget__left">
+									<label class="jm-remember">
+										<input type="checkbox" name="terminos" id="terminos">
+										<span class="checkmark"></span>Recordar mis datos
+									</label>
+								</div>
+								<div class="jm-forget__right">
+									<a href="">¿Olvidaste tu contrase&ntilde;a?</a>
+								</div>
+							</div>
+						</div>
+						<div class="jm-card__login--actions">
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Ingresar</button>
+						</div>
+						<div class="jm-card__login--link">
+							<a href="" data-toggle="modal" data-target="#ModalSolicitud">¡No tienes una cuenta?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="jm-footer">
+			<div class="jm-container">
+				<div class="jm-footer__left">
+					<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo">
+					<span>Copyright &copy; 2017. Todos los derechos reservados.</span>
+				</div>
+				<div class="jm-footer__right">
+					<a href="manifiesto-contacto.html">Manifiesto</a>
+					<a href="manifiesto-contacto.html#contactanos">Cont&aacute;ctanos</a>
+					<a href="terminos-condiciones.html">Términos y Condiciones</a>
+					<a href="politica-privacidad.html">Pol&iacute;ticas de Staminer</a>
+					<a href="politica-privacidad.html">Centro de ayuda</a>
+					<div class="jm-select">
+						<select class="selectpicker">
+							<option>Mustard</option>
+							<option>Ketchup</option>
+							<option>Relish</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Modals -->
+
+		<div class="modal fade" id="ModalSolicitud" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-md jm-modal" role="document">
+                <div class="modal-content">
+                    <div class="mdl-card">
+                    	<div id="solicitud1" class="jm-padding">
+                    		<div class="mdl-card__title">
+	                    		<h2>¿Eres deportista y a&uacute;n no recibes una invitaci&oacute;n?</h2>
+	                    		<p>Completa el formulario y solic&iacute;tala</p>
+	                    	</div>
+	                        <div class="mdl-card__supporting-text">
+								<div class="input-group jm-input">
+									<input type="text" class="form-control" placeholder="Nombre completo">
+								</div>
+								<div class="input-group jm-input">
+									<input type="text" class="form-control" placeholder="Correo electrónico">
+								</div>
+								<div class="input-group jm-input">
+									<input type="text" class="form-control" placeholder="Deporte">
+								</div>
+								<div class="input-group jm-textarea">
+									<textarea type="text" class="form-control" rows="3" placeholder="¿Cúal es tu principal objetivo como deportista?"></textarea>
+								</div>
+	                        </div>
+	                        <div class="mdl-card__actions">
+	                        	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button max-width" onclick="goToSolicitud()">Solicitar invitaci&oacute;n</button>
+	                        </div>
+	                        <div class="mdl-card__menu">
+	                            <button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+	                                <i class="mdi mdi-close"></i>
+	                            </button>
+	                        </div>
+                    	</div>
+                    	<div id="solicitud2" class="jm-opacity jm-padding">
+                    		<div class="mdl-card__title">
+	                    		<h2>¡Solicitud enviada!</h2>
+	                    		<p>Te responderemos en menos de 24 horas.Agradecemos tu inter&eacute;s en sumarte a la red profesional del deporte.</p>
+	                    	</div>
+	                        <div class="mdl-card__actions">
+	                        	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">P&aacute;gina principal</button>
+	                        </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 		<!-- POPUP SOLICITUD -->
 		<div class="modal fade" id="mod-solicitud" tabindex="-1" role="dialog">
 			<div class="modal-dialog modal-solicitud" role="document">
@@ -45,7 +177,6 @@
 				</div>
 			</div>
 		</div>
-		
 		<!-- POPUP SOLICITUD paso2 -->
 		<div class="modal fade" id="mod-solicitud-2" tabindex="-1" role="dialog">
 			<div class="modal-dialog modal-solicitud" role="document">
@@ -67,101 +198,14 @@
 				</div>
 			</div>
 		</div>
-		
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="hidden-xs col-sm-4 col-md-3">
-						<a href="iniciar-sesion.html" class="btn-sesion">Iniciar sesión</a>
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-6">
-						<div class="logo">
-							<a href="index.html"><img src="images/logo-staminer-01.svg" alt="Staminer logo" class="img-responsive"></a>
-						</div>
-					</div>
-					<div class="hidden-xs col-sm-4 col-md-3">
-						<nav class="home-menu" role="navigation">
-							<ul>
-								<li><a href="contactar.html">Contacto</a></li>
-								<li role="presentation" class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<ul>
-											<li><a href="#">Español</a></li>
-											<li><a href="#">English</a></li>
-											<li><a href="#">Portugês</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</header>
-		
-		<section id="iniciar-sesion" class="non-boot">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-7">
-						<div class="div-image login"></div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-5">
-						<div class="div-content">
-							<h3 class="section-title">Iniciar sesión,<br>STAMINER</h3>
-							<p>¡Bienvenido de vuelta!</p>
-							<form class="form-staminer">
-							  <label for="correo-electronico" hidden>Correo electrónico:</label>
-                                <input type="text" name="correo-electronico" placeholder="Correo electrónico">
-                              <label for="password" hidden>Password:</label>
-                                <input type="password" name="password" placeholder="Contraseña" class="incompleto">
-						      <input type="checkbox" name="checkbox" id="checkbox">
-								<span class="checkmark"></span>
-                                <label for="checkbox">Recordar mis datos</label> <a href="#" class="lnk-olvidar">¿Olvidaste tu contraseña?</a>
-							  <input class="btn-enviar" type="submit" name="submit" value="Iniciar sesión">
-								<p class="text-center"><a href="#" data-toggle="modal" data-target="#mod-solicitud">¿No tienes una cuenta?</a></p>
-                            </form>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-3 col-md-4">
-						<div class="logo">
-							<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo" class="img-responsive">
-							<span>&copy; <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</span>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-8">
-						<nav>
-							<ul>
-								<li><a href="manifiesto.html">Manifiesto</a></li>
-								<li><a href="contactar.html">Contactar</a></li>
-								<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
-								<li><a href="politicas-staminer.html">Políticas de Staminer</a></li>
-							</ul>
-						</nav>
-						<div role="presentation" class="dropdown text-right">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<ul>
-									<li><a href="#">Español</a></li>
-									<li><a href="#">English</a></li>
-									<li><a href="#">Portugês</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/functions.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery-1.11.2.min.js"></script>
+		<!-- <script src="js/functions.js"></script> -->
+	    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+	    <script src="plugins/mdl/material.min.js"></script>
+	    <script src="plugins/owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
+    	<script src="js/index.js"></script>
 	</body>
 </html>

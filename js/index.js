@@ -15,3 +15,8 @@ $('#principal .owl-carousel').owlCarousel({
 	mouseDrag: false,
 	autoplayTimeout : 5000
 });
+
+function goToSolicitud(){
+	$('#solicitud1').addClass('jm-opacity-block');
+	$('#solicitud2').removeClass('jm-opacity');
+}

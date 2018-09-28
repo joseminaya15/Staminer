@@ -15,7 +15,10 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link href="css/responsive.css" rel="stylesheet">
 		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
 		<link rel="stylesheet" href="plugins/mdl/material.min.css">
+		<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
+    	<link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
 		<link rel="stylesheet" href="fonts/material-icons.css">
 		<link rel="stylesheet" href="fonts/roboto.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -66,8 +69,25 @@
 			</div>
 		</header>
 		
-		<section class="home-slider">
-			<div id="staminer-home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+		<section id="principal">
+			<div class="owl-carousel owl-theme">
+	            <div class="item">
+	                <div class="js-fondo fondo1"></div>
+	            </div>
+	            <div class="item">
+	                <div class="js-fondo fondo2"></div>
+	            </div>
+	            <div class="item">
+	                <div class="js-fondo fondo3"></div>
+	            </div>
+	            <div class="item">
+	                <div class="js-fondo fondo4"></div>
+	            </div>
+	            <div class="item">
+	                <div class="js-fondo fondo5"></div>
+	            </div>
+	        </div>
+			<!-- <div id="staminer-home-slider" class="carousel slide carousel-fade" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#staminer-home-slider" data-slide-to="0" class="active"></li>
 					<li data-target="#staminer-home-slider" data-slide-to="1"></li>
@@ -111,44 +131,37 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-3 col-md-4">
-						<div class="logo">
-							<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo" class="img-responsive">
-							<span>&copy; 2017. Todos los derechos reservados.</span>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-8">
-						<nav>
-							<ul>
-								<li><a href="manifiesto-contacto.html">Manifiesto</a></li>
-								<li><a href="manifiesto-contacto.html#contactanos">Contacto</a></li>
-								<li><a href="terminos-condiciones.html">Términos &amp; Condiciones</a></li>
-								<li><a href="politica-privacidad.html">Políticas de Staminer</a></li>
-							</ul>
-						</nav>
-						<div role="presentation" class="dropdown text-right">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español <span class="caret"></span></a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<ul>
-									<li><a href="#">Español</a></li>
-									<li><a href="#">English</a></li>
-									<li><a href="#">Portugês</a></li>
-								</ul>
-							</div>
-						</div>
+		<footer class="jm-footer">
+			<div class="jm-container">
+				<div class="jm-footer__left">
+					<img src="images/logo-staminer-gris-01.svg" alt="Staminer Logo" class="img-responsive">
+					<span>&copy; 2017. Todos los derechos reservados.</span>
+				</div>
+				<div class="jm-footer__right">
+					<a href="manifiesto-contacto.html">Manifiesto</a>
+					<a href="manifiesto-contacto.html#contactanos">Contacto</a>
+					<a href="terminos-condiciones.html">Términos &amp; Condiciones</a>
+					<a href="politica-privacidad.html">Políticas de Staminer</a>
+					<div class="jm-select">
+						<select class="selectpicker">
+							<option>Mustard</option>
+							<option>Ketchup</option>
+							<option>Relish</option>
+						</select>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<script src="js/functions.js"></script>
-		<script src="public/js/jquery-3.2.1.min.js"></script>
-    	<script src="public/js/jquery-1.11.2.min.js"></script>
-	    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
-	    <script src="public/plugins/mdl/material.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery-1.11.2.min.js"></script>
+		<!-- <script src="js/functions.js"></script> -->
+	    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="plugins/bootstrap-select/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
+        <script src="plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
+	    <script src="plugins/mdl/material.min.js"></script>
+	    <script src="plugins/owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
+    	<script src="js/index.js"></script>
 	</body>
 </html>

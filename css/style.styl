@@ -21,6 +21,18 @@ flexEnd()
 	display flex
 	display -webkit-flex
 	align-items flex-end
+absolute()
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+relative()
+	position relative
+	top 0
+	left 0
+	right 0
+	bottom 0
 .jm-section
 	position relative
 	padding 20px
@@ -33,9 +45,18 @@ body
 	overflow hidden
 	overflow-y scroll
 	font-family $regular
+img
+	width 100%
+p
+	margin 0
+a
+	text-decoration none !important
 .jm-header
 	height 46px
 	background-color #F5F5F5
+	position fixed
+	z-index 10
+	width 100%
 	flexCenter()
 	.jm-container
 		flexCenter()
@@ -43,18 +64,89 @@ body
 		.jm-staminer
 			width 100%
 			max-width 200px
-			text-align center
+			text-align right
+			img
+				max-width 120px
+		.jm-staminer
+			text-align left
 		.jm-search
 			width 100%
 			.input-group
 				max-width 490px
 				margin auto
+				width 100%
+				i
+					position absolute
+					right 5px
+					top 3px
+					z-index 2
 .jm-button
 	background-color $color
 	color #FFFFFF
 	text-transform none
 	box-shadow none
 	border-radius 5px
+.jm-footer
+	.jm-container
+		flexCenter()
+		.jm-footer__left
+			flexCenter()
+			width 100%
+			max-width 350px
+			justify-content flex-start
+			img
+				max-width 120px
+		.jm-footer__right
+			flexCenter()
+			width 100%
+			justify-content flex-end
+			a
+				margin 0 10px
+.js-fondo
+	absolute()
+	background-size cover !important
+	width 100%
+	height 100vh
+	z-index -1
+	&:BEFORE
+		relative()
+		content ''
+		background-color #000000
+		z-index 0
+		height 100vh
+		opacity .2
+	&.fondo1
+		background url(../images/fondo/fondo1.jpg) no-repeat center center
+	&.fondo2
+		background url(../images/fondo/fondo2.jpg) no-repeat center center
+	&.fondo3
+		background url(../images/fondo/fondo3.jpg) no-repeat center center
+	&.fondo4
+		background url(../images/fondo/fondo4.jpg) no-repeat center center
+	&.fondo5
+		background url(../images/fondo/fondo5.jpg) no-repeat center center
+#principal
+	position relative
+	height calc(100vh - 46px)
+	.owl-stage-outer
+	.owl-stage
+		height calc(100vh - 46px)
+	.owl-carousel
+		absolute()
+		width 100%
+		z-index 1
+		max-width 100%
+		.owl-item
+			height calc(100vh - 46px)
+			.item
+				height calc(100vh - 46px)
+.jm-footer
+	background-color #F5F5F5
+	color #818181
+	font-size: 11px
+	font-family $light
+	height 46px
+	flexCenter()
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 8px

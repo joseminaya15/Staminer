@@ -1213,7 +1213,7 @@ form.form-staminer p{
 /* ----------- HEADER ----------- */
 /* ------------------------------ */
 
-header{
+/*header{
 	font-size: 13px;
 	position: fixed;
 	width: 100%;
@@ -1221,7 +1221,7 @@ header{
 	z-index: 1001;
 	-webkit-box-shadow: 0 0.5px 0 0 #C9CDD1;
 	box-shadow: 0 0.5px 0 0 #C9CDD1;
-}
+}*/
 
 .btn-sesion{
 	text-align: center;
@@ -1649,11 +1649,6 @@ h3.section-title{
 	background-color: #e83643;
 	text-align: center;
 }
-
-.home-slider{
-	padding-top: 50px;
-}
-
 .home-slider .item{
 	height: calc(100vh - 160px);
 	background-size: cover;

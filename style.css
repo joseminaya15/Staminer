@@ -1,29 +1,29 @@
-body, input, textarea, select{
+/*body, input, textarea, select{
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	color: #383a3f;
 	font-weight: 400;
-}
+}*/
 
-html, body{
+/*html, body{
 	position: relative;
 	min-height: 100vh;
-}
+}*/
 
-a{
+/*a{
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-}
+}*/
 
-::placeholder{
+/*::placeholder{
 	color:#818181;
-}
+}*/
 
-a:focus,
+/*a:focus,
 button:focus{
 	outline: none;
-}
+}*/
 
 .vertical-align{
     display: -webkit-box;
@@ -1498,17 +1498,6 @@ header nav.home-menu > ul > li > a{
 }
 
 /* --------------- HOME ----------------- */
-
-.non-boot > div,
-.non-boot > div > div > div{
-	padding-left: 0;
-	padding-right: 0;	
-}
-
-.non-boot > div > div{
-	margin-left: 0;
-	margin-right: 0;
-}
 
 h3.section-title{
 	margin-top: 0;

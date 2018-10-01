@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="plugins/mdl/material.min.css">
 		<link rel="stylesheet" href="fonts/material-icons.css">
 		<link rel="stylesheet" href="fonts/roboto.css">
+		<link rel="stylesheet" href="css/m-p.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="style.css">
 	</head>
@@ -39,114 +40,137 @@
 				</div>
 			</div>
 		</header>
-		<section id="iniciar-sesion" class="non-boot">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						<div class="div-image registro"></div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						<div class="div-content">
-							<h3 class="section-title">Comienza a escribir tu historia</h3>
-							<p>¡Reg&iacute;strate aqu&iacute;!</p>
-							<form class="form-staminer">
-						  		<label for="nombre" hidden>Nombre:</label>
-                                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-								<label for="apellido" hidden>Apellido:</label>
-                                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-								
-								<label for="deporte-disciplina" hidden>Deporte/Disciplina:</label>
-                                <input type="text" name="deporte-disciplina" id="deporte-disciplina" placeholder="Deporte/Disciplina">
-								
-								<label for="correo" hidden>Correo electrónico:</label>
-                              <input type="text" name="correo" id="correo" placeholder="Correo electrónico" class="incompleto">
-                              <label for="password" hidden>Contraseña:</label>
-								<div class="relative password">
-                                	<input type="password" name="password" id="password" placeholder="Contraseña">
+		<section class="jm-height">
+			<div class="jm-separate">
+				<div class="jm-separate__left">
+					<div class="jm-fondo--session registro"></div>
+				</div>
+				<div class="jm-separate__right">
+					<div class="jm-card__login">
+						<div class="jm-card__login--title">
+							<h2>Comienza a escribir tu historia</h2>
+							<p>Reg&iacute;strate aqu&iacute;</p>
+						</div>
+						<div class="jm-card__login--contenido">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="input-group jm-input">
+										<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+									</div>
 								</div>
-								<label for="confirmar-password" hidden>Contraseña:</label>
-								<div class="relative password2">
-                                	<input type="password" name="confirmar-password" id="confirmar-password" placeholder="Confirmar">
-									<span id="switch-pass" class="ver-password" onclick="showPass()"></span>
+								<div class="col-sm-6">
+									<div class="input-group jm-input">
+										<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+									</div>
 								</div>
-							  
-							<div class="custom-select dia">
-								<label for="dia" hidden>Día:</label>
-                              	<select name="dia" id="dia">
-									<option>Día</option>
-									<option value="01">01</option>
-									<option value="02">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-									<option value="06">06</option>
-									<option value="07">07</option>
-									<option value="08">08</option>
-									<option value="09">09</option>
-									<option value="10">10</option>
-									<option value="11">11</option>
-									<option value="12">12</option>
-									<option value="13">13</option>
-									<option value="14">14</option>
-									<option value="15">15</option>
-									<option value="16">16</option>
-									<option value="17">17</option>
-									<option value="18">18</option>
-									<option value="19">19</option>
-									<option value="20">20</option>
-									<option value="21">21</option>
-									<option value="22">22</option>
-									<option value="23">23</option>
-									<option value="24">24</option>
-									<option value="25">25</option>
-									<option value="26">26</option>
-									<option value="28">27</option>
-									<option value="27">28</option>
-									<option value="29">29</option>
-									<option value="30">30</option>
-									<option value="31">31</option>
-                                </select>
+								<div class="col-sm-12">
+									<div class="input-group jm-input">
+										<input type="text" class="form-control" id="deporte" placeholder="Deporte">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="input-group jm-input">
+										<input type="text" class="form-control" id="correo" placeholder="Correo electrónico">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="input-group jm-input">
+										<input type="password" class="form-control" id="password" placeholder="Contraseña">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="input-group jm-input">
+										<input type="password" class="form-control" id="correo" placeholder="Confirmar">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="jm-select jm-default">
+										<select class="selectpicker" name="dia" id="dia" title="Día">
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="28">27</option>
+											<option value="27">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="jm-select jm-default">
+										<select class="selectpicker" name="mes" id="mes" title="Mes">
+			                                <option value="Enero">Enero</option>
+			                                <option value="Febrero">Febrero</option>
+			                                <option value="Marzo">Marzo</option>
+			                                <option value="Abril">Abril</option>
+			                                <option value="Mayo">Mayo</option>
+			                                <option value="Junio">Junio</option>
+			                                <option value="Julio">Julio</option>
+			                                <option value="Agosto">Agosto</option>
+			                                <option value="Septiembre">Septiembre</option>
+			                                <option value="Octubre">Octubre</option>
+			                                <option value="Noviembre">Noviembre</option>
+			                                <option value="Diciembre">Diciembre</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="jm-select jm-default">
+										<select class="selectpicker" name="anio" id="anio" title="Año">
+			                                <option value="2000">2000</option>
+											<option value="1999">1999</option>
+											<option value="1998">1998</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<label class="jm-check">
+										<input type="radio" name="sexo" value="Hombre" id="sexo1">
+										<span class="checkmark"></span>Hombre
+									</label>
+								</div>
+								<div class="col-sm-3">
+									<label class="jm-check">
+										<input type="radio" name="sexo" value="Mujer" id="sexo2">
+										<span class="checkmark"></span>Mujer
+									</label>
+								</div>
+								<div class="col-sm-12">
+									<label class="jm-check">
+										<input type="checkbox" name="terminos" id="terminos">
+										<span class="checkmark"></span>
+										He leído y acepto los <a href="terminos-condiciones.html">Términos Condiciones</a> y las <a href="politica-privacidad.html">Política de Protección de Datos Personales de Staminer.</a>
+									</label>
+								</div>
+								<div class="col-sm-12 m-t-15">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button max-width">Registrar</button>
+								</div>
 							</div>
-							<div class="custom-select mes">
-								<label for="mes" hidden>Mes:</label>
-                              	<select name="mes" id="mes">
-	                                <option selected="selected">Mes</option>
-	                                <option value="Enero">Enero</option>
-	                                <option value="Febrero">Febrero</option>
-	                                <option value="Marzo">Marzo</option>
-	                                <option value="Abril">Abril</option>
-	                                <option value="Mayo">Mayo</option>
-	                                <option value="Junio">Junio</option>
-	                                <option value="Julio">Julio</option>
-	                                <option value="Agosto">Agosto</option>
-	                                <option value="Septiembre">Septiembre</option>
-	                                <option value="Octubre">Octubre</option>
-	                                <option value="Noviembre">Noviembre</option>
-	                                <option value="Diciembre">Diciembre</option>
-                                </select>
-							</div>
-							<div class="custom-select anio">
-                                <label for="anio" hidden>Año:</label>
-                                <select name="anio" id="anio">
-									<option selected="selected">Año</option>
-									<option value="2000">2000</option>
-									<option value="1999">1999</option>
-									<option value="1998">1998</option>
-                                </select>
-							</div>
-								<label class="sexo"><input type="radio" name="Sexo" value="Hombre" id="Sexo_0">
-									<span class="checkmark"></span>
-							      	Hombre</label>
-							    <label class="sexo"><input type="radio" name="Sexo" value="Mujer" id="Sexo_1">
-									<span class="checkmark"></span>
-							        Mujer</label>
-							    <br>
-								<label class="terminos"><input type="checkbox" name="terminos" id="terminos">
-									<span class="checkmark"></span>
-									He leído y acepto los <a href="terminos-condiciones.html">Términos Condiciones</a> y las <a href="politica-privacidad.html">Política de Protección de Datos Personales de Staminer.</a></label>
-                              <input class="btn-enviar" type="submit" name="submit" id="submit" value="Comenzar">
-                            </form>
-					  </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -165,9 +189,8 @@
 					<a href="politica-privacidad.html">Centro de ayuda</a>
 					<div class="jm-select">
 						<select class="selectpicker">
-							<option>Mustard</option>
-							<option>Ketchup</option>
-							<option>Relish</option>
+							<option>Español</option>
+							<option>Ingl&eacute;s</option>
 						</select>
 					</div>
 				</div>
@@ -180,24 +203,27 @@
 	    <script src="plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
         <script src="plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
 	    <script src="plugins/mdl/material.min.js"></script>
-    	<script src="js/index.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/functions.js"></script>
-		<script>
-			function showPass() {
-				var x = document.getElementById("password");
-				var x2 = document.getElementById("confirmar-password");
-				var ico = document.getElementById("switch-pass");
-				if (x.type === "password" || x2.type === "password"){
-					x.type = "text";
-					x2.type = "text"
-					ico.className = "ocultar-password";
-				} else {
-					x.type = "password";
-					x2.type = "password";
-					ico.className = "ver-password";
-				}
+    	<!-- <script src="js/index.js"></script> -->
+		<script type="text/javascript">
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+				$('select').selectpicker('mobile');
+			} else {
+			    $('select').selectpicker();
 			}
+			// function showPass() {
+			// 	var x = document.getElementById("password");
+			// 	var x2 = document.getElementById("confirmar-password");
+			// 	var ico = document.getElementById("switch-pass");
+			// 	if (x.type === "password" || x2.type === "password"){
+			// 		x.type = "text";
+			// 		x2.type = "text"
+			// 		ico.className = "ocultar-password";
+			// 	} else {
+			// 		x.type = "password";
+			// 		x2.type = "password";
+			// 		ico.className = "ver-password";
+			// 	}
+			// }
 		</script>
 	</body>
 </html>

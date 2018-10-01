@@ -8,12 +8,14 @@ $('#principal .owl-carousel').owlCarousel({
 		}
 	},
 	navigation : false,
-	nav : false,
+	nav : true,
 	dots: false,
 	loop : true,
 	autoplay : true,
 	mouseDrag: false,
-	autoplayTimeout : 5000
+	autoplayTimeout : 5000,
+	navText: ['<i class="mdi mdi-arrow_back"></i>','<i class="mdi mdi-arrow_forward"></i>'],
+  	navElement: 'span',
 });
 
 function goToSolicitud(){

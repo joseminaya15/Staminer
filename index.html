@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
     	<link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
 		<link rel="stylesheet" href="fonts/material-icons.css">
+		<link rel="stylesheet" href="fonts/font-awesome.min.css">
 		<link rel="stylesheet" href="fonts/roboto.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -106,9 +107,8 @@
 					<a href="politica-privacidad.html">Centro de ayuda</a>
 					<div class="jm-select">
 						<select class="selectpicker">
-							<option>Mustard</option>
-							<option>Ketchup</option>
-							<option>Relish</option>
+							<option>Español</option>
+							<option>Ingl&eacute;s</option>
 						</select>
 					</div>
 				</div>
@@ -121,7 +121,14 @@
 	    <script src="plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
         <script src="plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
 	    <script src="plugins/mdl/material.min.js"></script>
-	    <script src="plugins/owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
+	    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
     	<script src="js/index.js"></script>
+    	<script type="text/javascript">
+    		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+				$('select').selectpicker('mobile');
+			} else {
+			    $('select').selectpicker();
+			}
+    	</script>
 	</body>
 </html>

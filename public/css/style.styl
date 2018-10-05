@@ -38,6 +38,8 @@ relative()
 	padding 20px
 .jm-height
 	height 100vh
+	&.jm-height--form
+		height calc(100vh - 46px)
 .jm-container
 	width 100%
 	max-width 1150px
@@ -85,6 +87,9 @@ label
 					border-radius 4px
 					font-family $light
 					font-size 11px
+					border none
+					box-shadow none
+					outline none
 				i
 					position absolute
 					right 6px
@@ -95,7 +100,7 @@ label
 			.jm-button
 				height 28px
 				font-size 11px
-				line-height 12px
+				line-height 28px
 .jm-principal
 	height 100vh
 	flexCenter()
@@ -121,7 +126,7 @@ label
 				max-width 180px
 .jm-button
 	background-color $color !important
-	color #FFFFFF
+	color #FFFFFF !important
 	text-transform none
 	box-shadow none
 	border-radius 3px

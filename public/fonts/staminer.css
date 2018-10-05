@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Staminer';
+  src:  url('Staminer-Icons/staminer.eot?hx7nge');
+  src:  url('Staminer-Icons/staminer.eot?hx7nge#iefix') format('embedded-opentype'),
+    url('Staminer-Icons/staminer.ttf?hx7nge') format('truetype'),
+    url('Staminer-Icons/staminer.woff?hx7nge') format('woff'),
+    url('Staminer-Icons/staminer.svg?hx7nge#staminer') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="st-"], [class*=" st-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Staminer' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.st-adjuntar:before {
+  content: "\e900";
+}
+.st-buscar:before {
+  content: "\e901";
+}
+.st-compartir:before {
+  content: "\e902";
+}
+.st-configurar:before {
+  content: "\e903";
+}
+.st-editar:before {
+  content: "\e904";
+}
+.st-enviar:before {
+  content: "\e905";
+}
+.st-grupo:before {
+  content: "\e906";
+}
+.st-lenguaje:before {
+  content: "\e907";
+}
+.st-mensaje:before {
+  content: "\e908";
+}
+.st-notificacion:before {
+  content: "\e909";
+}
+.st-persona:before {
+  content: "\e90a";
+}

@@ -1,8 +1,9 @@
-$color   = #0064dc;
-$light   = 'RobotoLight'
-$regular = 'RobotoRegular'
-$medium  = 'RobotoMedium'
-$bold    = 'RobotoBold'
+$color       = #0064dc;
+$light       = 'RobotoLight'
+$lightItalic = 'RobotoLightItalic'
+$regular     = 'RobotoRegular'
+$medium      = 'RobotoMedium'
+$bold        = 'RobotoBold'
 transition(css-name)
 	-webkit-transition css-name .25s linear
 	-moz-transition css-name .25s linear
@@ -42,7 +43,7 @@ relative()
 		height calc(100vh - 46px)
 .jm-container
 	width 100%
-	max-width 1150px
+	max-width 1100px
 	margin auto
 	transition(max-width)
 body
@@ -56,6 +57,8 @@ p
 	margin 0
 a
 	text-decoration none !important
+i
+	vertical-align middle
 label
 	font-weight 100
 .jm-header
@@ -244,7 +247,7 @@ label
 					background-color transparent
 					margin 0
 					color #818181
-					padding 5px 25px
+					padding 5px 15px
 					&:hover
 						color $color
 						background-color #EBF3FF
@@ -294,6 +297,13 @@ label
 						font-size 12px
 						font-family $light
 						color $color
+.jm-input__group
+	flexCenter()
+	.jm-icon
+		width 100%
+		max-width 30px
+	.jm-input
+		width 100%
 .jm-textarea
 .jm-input
 	width 100%
@@ -306,9 +316,14 @@ label
 		box-shadow none !important
 		font-size 12px
 		margin 8px 0
+	&.jm-input--small
+		.form-control
+			height 28px
+			background-color #FFFFFF
 .jm-textarea
 	.form-control
 		height 100%
+		resize none
 .jm-check
 	font-size 12px
 	font-family $light
@@ -323,6 +338,240 @@ label
 .jm-opacity-block
 	opacity 0
 	transform translateX(-300px);
+.jm-tabs
+	border 2px solid $color
+	&>li
+		margin 0
+		width 50%
+		text-align center
+		&>a
+			border none !important
+			color $color
+			font-size 13px
+	&>li.active
+		&>a
+			background-color $color
+			color #FFFFFF
+			border-radius 0
+			margin 0
+			&:focus
+			&:hover
+				background-color $color
+				color #FFFFFF
+.jm-perfil--banner
+	height 350px
+	background-color #818181
+.jm-perfil--contenido
+	margin-top 15px
+	display grid
+	grid-template-columns 260px 1fr 260px
+	grid-column-gap 20px
+	.jm-informacion
+		.jm-informacion--perfil
+			background-color #F5F5F5
+			.jm-informacion--perfil__title
+				padding 5px 20px
+				border-bottom 1px solid #E8E9EB
+				position relative
+				a
+					font-size 14px
+					color #000000
+					i
+						margin-right 10px
+				.jm-edit
+					transition(opacity)
+					opacity 0
+					position absolute
+					top 5px
+					right 10px
+					button
+						position absolute
+						right 0
+						transition(opacity)
+						&.jm-button--first
+							z-index 5
+						&.jm-button--second
+							opacity 0
+							z-index 0
+							border-color $color
+							i
+								color $color
+				&:hover
+					.jm-edit
+						opacity 1
+			.jm-informacion--perfil__contenido
+				padding 0 20px
+				.jm-input__group
+					border-bottom 1px solid #e8e9eb
+				.jm-informacion__input
+					flexCenter()
+					border-bottom 1px solid #e8e9eb
+					.jm-input__left
+						width 100%
+					.jm-input__right
+						width 100%
+					.jm-select
+						.bootstrap-select
+							.dropdown-toggle
+								background-color #FFFFFF !important
+								border-color #FFFFFF
+								margin 8px 0
+.jm-shared
+	.jm-shared--fist
+		flexCenter()
+		height 80px
+		background-color #FCFCFC
+		.jm-shared__foto
+			width 100%
+			max-width 60px
+			text-align center
+			img
+				width 40px
+				height 40px
+		.jm-shared__contenido
+			width 100%
+		.jm-shared__actions
+			width 100%
+			max-width 60px
+	.jm-shared--second
+		background-color #F5F5F5
+		height 40px
+.jm-publicaciones
+	background-color #F5F5F5
+	margin-top 20px
+	.jm-publication
+		.jm-publication__title
+			height 60px
+			border-bottom 1px solid #e8e9eb
+		.jm-publication__contenido
+			height 160px
+			.jm-empty__publicacion
+				flexCenter()
+				height 100%
+				justify-content center
+				flex-direction column
+				width 100%
+				max-width 250px
+				text-align center
+				margin auto
+				img
+					max-width 62px
+					margin-bottom 10px
+				p
+					font-family $light
+					font-size 14px
+					line-height 16px
+					color #818181
+					font-family $lightItalic
+				h2
+					font-size 16px
+					font-family $light
+					line-height 18px
+					margin 5px 0
+		.jm-publication__actions
+			height 50px
+			border-top 1px solid #e8e9eb
+.jm-galery
+	background-color #F5F5F5
+	margin-bottom 15px
+	.jm-galery__title
+		flexCenter()
+		height 40px
+		border-bottom 1px solid #e8e9eb
+		padding 0 15px
+		i
+			margin-right 10px
+		h2
+			font-size 14px
+			margin 5px 0
+			line-height 16px
+	.jm-galery__contenido
+		height 220px
+		&.scroll
+			overflow-y scroll
+		&::-webkit-scrollbar
+			width 5px
+		.jm-empty__image
+			flexCenter()
+			height 100%
+			justify-content center
+			flex-direction column
+			width 100%
+			max-width 150px
+			text-align center
+			margin auto
+			img
+				max-width 46px
+				margin-bottom 20px
+			p
+				font-size 11px
+				font-family $light
+				line-height 13px
+				color #818181
+	.jm-red
+		flexCenter()
+		border-bottom 1px solid #E8E9EB
+		padding 0 15px
+		height 55px
+		&:last-child
+			border none
+		.jm-red__left
+			width 100%
+			max-width 45px
+			text-align center
+			img
+				max-width 40px
+		.jm-red__right
+			width 100%
+			max-width 175px
+			padding-left 10px
+			h2
+				font-size 14px
+				line-height 16px
+				margin 3px 0
+			p
+				font-family $light
+				font-size 12px
+				line-height 14px
+				color #818181
+				width 100%
+				max-width 175px
+				text-overflow ellipsis
+				white-space nowrap
+				overflow hidden
+				
+.jm-footer__galeria
+	.jm-footer__galeria--links
+		flexCenter()
+		flex-wrap wrap
+		border-bottom 1px solid #E8E9EB
+		padding 10px
+		a
+			color #818181
+			font-size 11px
+			line-height 13px
+			width 100%
+			max-width 80px
+			margin 5px 0
+		.jm-select
+			width 100%
+			max-width 80px
+			.dropdown-toggle
+				font-size 11px
+				color #818181
+	strong
+		padding 10px
+		color #818181
+		font-size 13px
+		line-height 15px
+		display block
+		font-weight 100
+.jm-opacity--done
+	z-index 0 !important
+	opacity 0 !important
+.jm-opacity--none
+	z-index 5 !important
+	opacity 1 !important
 [class*=col-]
 	padding-left 5px
 	padding-right 5px

@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="public/fonts/material-icons.css">
 		<link rel="stylesheet" href="public/fonts/font-awesome.min.css">
 		<link rel="stylesheet" href="public/fonts/roboto.css">
+		<link rel="stylesheet" href="public/css/m-p.min.css">
 		<link rel="stylesheet" href="public/css/style.css">
 	</head>
 </head>
@@ -40,5 +41,272 @@
 			</div>
 		</div>
 	</header>
+	<section class="jm-container">
+		<div class="jm-perfil--banner">
+			
+		</div>
+	</section>
+	<section class="jm-container m-b-50">
+		<div class="jm-perfil--contenido">
+			<div class="jm-informacion">
+				<div class="jm-informacion--perfil">
+					<div class="jm-informacion--perfil__title">
+						<a><i class="mdi mdi-description"></i>Ficha t&eacute;cnica</a>
+						<div class="jm-edit">
+							<button class="mdl-button mdl-js-button mdl-button--icon jm-button--first" onclick="editInformation()">
+								<i class="mdi mdi-edit"></i>
+							</button>
+							<button class="mdl-button mdl-js-button mdl-button--icon jm-button--second" onclick="saveInformation()">
+								<i class="mdi mdi-done"></i>
+							</button>
+						</div>
+					</div>
+					<div class="jm-informacion--perfil__contenido">
+						<div class="jm-input__group">
+							<div class="jm-icon">
+								<i class="mdi mdi-location_on"></i>
+							</div>
+							<div class="jm-input jm-input--small">
+								<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Edad</p>
+							</div>
+							<div class="jm-input__right">
+								<a href=""></a>
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Sexo</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-select">
+									<select class="selectpicker" name="sexo" id="sexo" title="Seleccionar">
+										<option value="Maculino">Maculino</option>
+										<option value="Femenino">Femenino</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Estatura</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="estatura" placeholder="Centimetros">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Ancho</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="ancho" placeholder="Centimetros">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Peso</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="peso" placeholder="Kilogramos">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Nacionalidad</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-select">
+									<select class="selectpicker" name="nacionalidad" id="nacionalidad" title="Seleccionar">
+										<option value="Peruana">Peruana</option>
+										<option value="Chilena">Chilena</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Lateralidad</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-select">
+									<select class="selectpicker" name="lateralidad" id="lateralidad" title="Seleccionar">
+										<option value="Diestro">Diestro</option>
+										<option value="Zurdo">Zurdo</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jm-bitacora">
+				<ul class="nav nav-tabs jm-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#bitacora" aria-controls="bitacora" role="tab" data-toggle="tab">Bit&aacute;cora</a></li>
+				    <li role="presentation"><a href="#logros" aria-controls="logros" role="tab" data-toggle="tab">Logros</a></li>
+				</ul>
+				<div class="tab-content">
+				    <div role="tabpanel" class="tab-pane fade in active" id="bitacora">
+			    		<div class="jm-shared">
+			    			<div class="jm-shared--fist">
+			    				<div class="jm-shared__foto">
+				    				<img src="public/img/empty/empty-perfil.png" alt="L">
+				    			</div>
+				    			<div class="jm-shared__contenido">
+				    				<div class="jm-textarea">
+				    					<textarea class="form-control" id="compartir" placeholder="¿Qué quieres compartir?"></textarea>
+				    				</div>
+				    			</div>
+				    			<div class="jm-shared__actions">
+				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+										<i class="mdi mdi-send"></i>
+									</button>
+				    			</div>
+			    			</div>
+			    			<div class="jm-shared--second">
+			    				
+			    			</div>
+			    		</div>
+			    		<div class="jm-publicaciones">
+			    			<div class="jm-publication">
+			    				<div class="jm-publication__title">
+			    					
+			    				</div>
+			    				<div class="jm-publication__contenido">
+			    					<div class="jm-empty__publicacion">
+			    						<img src="public/img/empty/empty-publicacion.png">
+			    						<p>¡Bienvenido a Staminer!</p>
+			    						<h2>Se uni&oacute;el 04 de Octubre del 2018</h2>
+			    					</div>
+			    				</div>
+			    				<div class="jm-publication__actions">
+			    					
+			    				</div>
+			    			</div>
+			    		</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane fade" id="logros">
+				    	
+				    </div>
+				</div>
+			</div>
+			<div class="jm-galeria">
+				<div class="jm-galery">
+					<div class="jm-galery__title">
+						<i class="mdi mdi-image"></i>
+						<h2>Galer&iacute;a CV</h2>
+					</div>
+					<div class="jm-galery__contenido">
+						<div class="jm-empty__image">
+							<img src="public/img/empty/empty-imagen.png">
+							<p>Estas fotos y videos son parte de la imagen como deportista.</p>
+						</div>
+					</div>
+				</div>
+				<div class="jm-galery">
+					<div class="jm-galery__title">
+						<i class="mdi mdi-volume_up"></i>
+						<h2>Sponsors</h2>
+					</div>
+					<div class="jm-galery__contenido">
+						<div class="jm-empty__image">
+							<img src="public/img/empty/empty-imagen.png">
+							<p>Sube aqu&iacute; fotos y videos de las marcas que te patrocinan.</p>
+						</div>
+					</div>
+				</div>
+				<div class="jm-galery">
+					<div class="jm-galery__title">
+						<i class="mdi mdi-people"></i>
+						<h2>Red</h2>
+					</div>
+					<div class="jm-galery__contenido scroll">
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Luchadora de Artes Marciales Mixtas</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Titulo deportivo profesional</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Titulo deportivo profesional</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Titulo deportivo profesional</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Staminer</h2>
+								<p>Red deportiva profesional</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jm-footer__galeria">
+					<div class="jm-footer__galeria--links">
+						<a href="">Manifiesto</a>
+						<a href="">Cont&aacute;ctanos</a>
+						<a href="">Centro de ayuda</a>
+						<a href="">T&eacute;rminos y condiciones</a>
+						<a href="">Pol&iacute;ticas de Staminer</a>
+						<div class="jm-select">
+							<select class="selectpicker" name="idioma" id="idioma">
+								<option value="Español">Español</option>
+								<option value="Inglés">Inglés</option>
+							</select>
+						</div>
+					</div>
+					<strong>STAMINER &copy; 2017</strong>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="public/js/jquery-3.2.1.min.js"></script>
+	<script src="public/js/jquery-1.11.2.min.js"></script>
+    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+    <script src="public/plugins/mdl/material.min.js"></script>
+	<script src="public/js/index.js"></script>
+	<script src="public/js/jsperfil.js"></script>
 </body>
 </html>

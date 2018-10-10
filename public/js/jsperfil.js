@@ -19,3 +19,6 @@ $('.jm-line').keydown(function(){
 	// 	console.log("entra");
 	// }
 });
+function goToEditCabecera(){
+	$('#modalEncabezado').modal('show');
+}

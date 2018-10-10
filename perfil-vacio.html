@@ -67,7 +67,7 @@
 	<section class="jm-container">
 		<div class="jm-perfil--banner">
 			<div class="jm-perfil__editar">
-				<button class="mdl-button mdl-js-button mdl-button--icon">
+				<button class="mdl-button mdl-js-button mdl-button--icon" onclick="goToEditCabecera()">
 					<i class="mdi mdi-edit"></i>
 				</button>
 			</div>
@@ -80,15 +80,15 @@
 				<a><i class="mdi mdi-stars"></i>A&ntilde;adir logro destacado</a>
 			</div>
 			<div class="jm-perfil__seguidores">
-				<div class="jm-perfil--">
+				<div class="jm-seguidores">
 					<span>01</span>
 					<p>Contactos</p>
 				</div>
-				<div class="jm-perfil--">
+				<div class="jm-seguidores">
 					<span>00</span>
 					<p>Seguidores</p>
 				</div>
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Editar perfil</button>
+				<a href="configuracion-perfil.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Editar perfil</a>
 			</div>
 		</div>
 	</section>
@@ -502,6 +502,25 @@
 			</div>
 		</div>
 	</section>
+	<div class="modal fade" id="modalEditarEncabezado" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Editar encabezado</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="public/js/jquery-3.2.1.min.js"></script>
 	<script src="public/js/jquery-1.11.2.min.js"></script>
     <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>

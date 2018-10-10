@@ -329,6 +329,20 @@ label
 		.form-control
 			height 28px
 			background-color #FFFFFF
+	&.jm-input--medium
+		margin 10px 0
+		label
+			margin 0
+			font-size 12px
+			color #818181
+		.form-control
+			height 33px
+			background-color #FFFFFF
+			margin 0
+.jm-password
+	display grid
+	grid-template-columns 1fr 1fr 1fr
+	grid-column-gap 10px
 .jm-textarea
 	.form-control
 		height 100%
@@ -677,14 +691,17 @@ label
 	.jm-configuration__content
 		background-color #F5F5F5
 		border-bottom 1px solid #E8E9EB
+		padding 15px
 		.jm-configuracion--perfil
 			display grid
 			grid-template-columns 200px 1fr
 			grid-column-gap 20px
-			padding 15px
 			.jm-configuracion--foto
 				img 
 					max-width 185px
+		.jm-configuracion--contenido
+			width 100%
+			max-width 430px
 	.jm-configuration__actions
 		flexCenter()
 		background-color #F5F5F5

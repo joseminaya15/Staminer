@@ -65,6 +65,7 @@ label
 	height 46px
 	background-color #F5F5F5
 	position fixed
+	top 0
 	z-index 10
 	width 100%
 	flexCenter()
@@ -104,6 +105,11 @@ label
 				height 28px
 				font-size 11px
 				line-height 28px
+		.jm-header--menu
+			flexCenter()
+			position relative
+			.mdl-button--icon
+				margin 0 5px
 .jm-principal
 	height 100vh
 	flexCenter()
@@ -315,6 +321,7 @@ label
 		outline none !important
 		box-shadow none !important
 		font-size 12px
+		line-height 14px
 		margin 8px 0
 	&.jm-input--small
 		.form-control
@@ -361,6 +368,33 @@ label
 .jm-perfil--banner
 	height 350px
 	background-color #818181
+	margin-top 46px
+	position relative
+	.jm-perfil__editar
+		position absolute
+		top 5px
+		left 5px
+		button 
+			i
+				color #FFFFFF
+	.jm-perfil__shared
+		position absolute
+		top 5px
+		right 5px
+		button 
+			i
+				color #FFFFFF
+	.jm-perfil__logros
+		position absolute
+		bottom 5px
+		left 5px
+		a 
+			color #FFFFFF
+			font-size 14px
+			line-height 16px
+			i
+				color #FFFFFF
+				margin-right 5px
 .jm-perfil--contenido
 	margin-top 15px
 	display grid
@@ -417,10 +451,11 @@ label
 								border-color #FFFFFF
 								margin 8px 0
 .jm-shared
-	.jm-shared--fist
+	.jm-shared--first
 		flexCenter()
 		height 80px
 		background-color #FCFCFC
+		padding 0 10px
 		.jm-shared__foto
 			width 100%
 			max-width 60px
@@ -430,9 +465,18 @@ label
 				height 40px
 		.jm-shared__contenido
 			width 100%
+			.jm-line
+				background-color transparent
+				font-size 14px
 		.jm-shared__actions
 			width 100%
 			max-width 60px
+			text-align center
+			button
+				background-color transparent
+				box-shadow none
+				i 
+					color $color
 	.jm-shared--second
 		background-color #F5F5F5
 		height 40px
@@ -441,8 +485,33 @@ label
 	margin-top 20px
 	.jm-publication
 		.jm-publication__title
+			flexCenter()
 			height 60px
+			position relative
 			border-bottom 1px solid #e8e9eb
+			padding 0 10px
+			.jm-publication__foto
+				width 100%
+				max-width 60px
+				text-align center
+				padding 0 10px
+				img
+					max-width 40px
+			.jm-publication__name
+				padding 0 5px
+				width 100%
+				h2
+					font-size 14px
+					line-height 16px
+					margin 3px 0
+				p
+					font-size 12px
+					line-height 14px
+					color #818181
+			.jm-publication__time
+				width 100%
+				max-width 100px
+				text-align right
 		.jm-publication__contenido
 			height 160px
 			.jm-empty__publicacion
@@ -572,6 +641,8 @@ label
 .jm-opacity--none
 	z-index 5 !important
 	opacity 1 !important
+#informacion-oculta
+	display none
 [class*=col-]
 	padding-left 5px
 	padding-right 5px

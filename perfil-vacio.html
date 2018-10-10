@@ -14,14 +14,15 @@
 		<title>STAMINER</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
-		<link rel="stylesheet" href="public/plugins/mdl/material.min.css">
-		<link rel="stylesheet" href="public/fonts/material-icons.css">
-		<link rel="stylesheet" href="public/fonts/font-awesome.min.css">
-		<link rel="stylesheet" href="public/fonts/roboto.css">
-		<link rel="stylesheet" href="public/css/m-p.min.css">
-		<link rel="stylesheet" href="public/css/style.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/mdl/material.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/cropper/cropper.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/material-icons.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/roboto.css">
+		<link type="text/css" rel="stylesheet" href="public/css/m-p.min.css">
+		<link type="text/css" rel="stylesheet" href="public/css/style.css">
 	</head>
 </head>
 <body>
@@ -36,14 +37,59 @@
 					<i class="mdi mdi-search"></i>
 				</div>
 			</div>
-			<div class="jm-login">
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Iniciar Sesi&oacute;n</button>
+			<div class="jm-header--menu">
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-mail"></i>
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-notifications"></i>
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-settings"></i>
+				</button>
+				<div class="jm-perfil--configuracion">
+					<button id="configuracion-perfil" class="mdl-button mdl-js-button mdl-button--icon">
+						<img src="public/img/empty/empty-perfil.png" alt="L">
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="configuracion-perfil">
+						<li class="mdl-menu__item">Invitar deportista</li>
+						<li class="mdl-menu__item">Configuraci&oacute;n</li>
+						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Cerrar sesi&oacute;n</li>
+						<li class="mdl-menu__item">Cont&aacute;ctanos</li>
+						<li class="mdl-menu__item">Centro de Ayuda</li>
+						<li class="mdl-menu__item">Pol&iacute;ticas de Staminer</li>
+						<li class="mdl-menu__item">T&eacute;rminos y Condiciones</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
 	<section class="jm-container">
 		<div class="jm-perfil--banner">
-			
+			<div class="jm-perfil__editar">
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-edit"></i>
+				</button>
+			</div>
+			<div class="jm-perfil__shared">
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-backup"></i>
+				</button>
+			</div>
+			<div class="jm-perfil__logros">
+				<a><i class="mdi mdi-stars"></i>A&ntilde;adir logro destacado</a>
+			</div>
+			<div class="jm-perfil__seguidores">
+				<div class="jm-perfil--">
+					<span>01</span>
+					<p>Contactos</p>
+				</div>
+				<div class="jm-perfil--">
+					<span>00</span>
+					<p>Seguidores</p>
+				</div>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Editar perfil</button>
+			</div>
 		</div>
 	</section>
 	<section class="jm-container m-b-50">
@@ -151,6 +197,86 @@
 							</div>
 						</div>
 					</div>
+					<div id="informacion-oculta">
+						<div class="jm-informacion--perfil__title">
+							<a><i class="mdi mdi-description"></i>Asociaci&oacute;n</a>
+						</div>
+						<div class="jm-informacion--perfil__contenido">
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="federacion" placeholder="Escribir Federación">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__left">
+									<p>Equipo/Club</p>
+								</div>
+								<div class="jm-input__right">
+									<div class="jm-input jm-input--small">
+										<input type="text" class="form-control" id="club" placeholder="Escribir">
+									</div>
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__left">
+									<p>Equipo/Club</p>
+								</div>
+								<div class="jm-input__right">
+									<div class="jm-input jm-input--small">
+										<input type="text" class="form-control" id="club" placeholder="Escribir">
+									</div>
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__left">
+									<p>Posici&oacute;n</p>
+								</div>
+								<div class="jm-input__right">
+									<div class="jm-input jm-input--small">
+										<input type="text" class="form-control" id="posicion" placeholder="Escribir">
+									</div>
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__right">
+									<div class="jm-select">
+										<select class="selectpicker" name="participacion" id="participacion" title="Participaciones destacadas">
+											<option value="Diestro">Diestro</option>
+											<option value="Zurdo">Zurdo</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion--perfil__title">
+							<a><i class="mdi mdi-description"></i>Formaci&oacute;n Acad&eacute;mica</a>
+						</div>
+						<div class="jm-informacion--perfil__contenido">
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="profesion" placeholder="Escribir profesión">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="colegio" placeholder="Escribir colegio">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="universidad" placeholder="Escribir universidad">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="grado" placeholder="Escribir grado académico">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion--perfil__title">
+							<a><i class="mdi mdi-description"></i>Ficha M&eacute;dica</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="jm-bitacora">
@@ -161,29 +287,86 @@
 				<div class="tab-content">
 				    <div role="tabpanel" class="tab-pane fade in active" id="bitacora">
 			    		<div class="jm-shared">
-			    			<div class="jm-shared--fist">
+			    			<div class="jm-shared--first">
 			    				<div class="jm-shared__foto">
 				    				<img src="public/img/empty/empty-perfil.png" alt="L">
 				    			</div>
 				    			<div class="jm-shared__contenido">
 				    				<div class="jm-textarea">
-				    					<textarea class="form-control" id="compartir" placeholder="¿Qué quieres compartir?"></textarea>
+				    					<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="¿Qué quieres compartir?"></textarea>
 				    				</div>
 				    			</div>
 				    			<div class="jm-shared__actions">
-				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
 										<i class="mdi mdi-send"></i>
 									</button>
 				    			</div>
 			    			</div>
 			    			<div class="jm-shared--second">
-			    				
+			    				<div class="jm-shared__buttons">
+									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-language"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>P&uacute;blico</h2>
+													<p>P&uacute;blico en general</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>Red</h2>
+													<p>Solo mis contactos de Staminer</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>Solo yo</h2>
+													<p>&Uacute;nicamente para mi</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="jm-shared__buttons">
+									
+								</div>
 			    			</div>
 			    		</div>
 			    		<div class="jm-publicaciones">
 			    			<div class="jm-publication">
 			    				<div class="jm-publication__title">
-			    					
+			    					<div class="jm-publication__foto">
+			    						<img src="public/img/empty/empty-perfil.png">
+			    					</div>
+			    					<div class="jm-publication__name">
+			    						<h2>Luis Antonio Mendoza</h2>
+			    						<p>Deporte Profesional Profesional</p>
+			    					</div>
+			    					<div class="jm-publication__time">
+			    						<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+										</button>
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+											<li class="mdl-menu__item">Some Action</li>
+											<li class="mdl-menu__item">Another Action</li>
+										</ul>
+			    					</div>
 			    				</div>
 			    				<div class="jm-publication__contenido">
 			    					<div class="jm-empty__publicacion">
@@ -199,7 +382,26 @@
 			    		</div>
 				    </div>
 				    <div role="tabpanel" class="tab-pane fade" id="logros">
-				    	
+				    	<div class="jm-shared">
+			    			<div class="jm-shared--first">
+			    				<div class="jm-shared__foto">
+				    				<img src="public/img/empty/empty-perfil.png" alt="L">
+				    			</div>
+				    			<div class="jm-shared__contenido">
+				    				<div class="jm-textarea">
+				    					<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="¿Qué quieres compartir?"></textarea>
+				    				</div>
+				    			</div>
+				    			<div class="jm-shared__actions">
+				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+										<i class="mdi mdi-send"></i>
+									</button>
+				    			</div>
+			    			</div>
+			    			<div class="jm-shared--second">
+								
+			    			</div>
+			    		</div>
 				    </div>
 				</div>
 			</div>
@@ -306,7 +508,8 @@
     <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
     <script src="public/plugins/mdl/material.min.js"></script>
-	<script src="public/js/index.js"></script>
+    <script src="public/plugins/cropper/cropper.js"></script>
+	<!-- <script src="public/js/index.js"></script> -->
 	<script src="public/js/jsperfil.js"></script>
 </body>
 </html>

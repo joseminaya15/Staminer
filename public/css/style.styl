@@ -363,6 +363,8 @@ label
 	line-height 16px
 	a
 		color $color
+.jm-switch
+	width 100%
 .jm-opacity
 	opacity 0
 	transform translateX(300px);
@@ -710,6 +712,8 @@ label
 		.jm-configuracion--contenido
 			width 100%
 			max-width 430px
+			&.redes
+				max-width 360px
 	.jm-configuration__actions
 		flexCenter()
 		background-color #F5F5F5
@@ -719,6 +723,19 @@ label
 		.jm-actions__right
 			width 100%
 			text-align right
+.jm-redes
+	flexCenter()
+	.jm-redes__left
+		width 100%
+		p
+			font-size 14px
+			line-height 16px
+			font-family $light
+	.jm-redes__right
+		flexCenter()
+		justify-content flex-end
+		width 100%
+		max-width 60px
 .jm-title
 	background-color $color
 	color #FFFFFF

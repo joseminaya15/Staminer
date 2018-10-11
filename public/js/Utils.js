@@ -48,3 +48,33 @@ function initCropper(idImg) {
 	}).cropper(options);
 	return $image;
 }
+function recortarImagen($image, fotoOriginal) {
+    var $this = $('<button class="mdl-button mdl-js-button mdl-js-ripple-effect" data-method="getCroppedCanvas" id="botonRecortarPerfil" onclick="recortarImagen(this.id, \'fotoRecortar\')">recortar</button>');
+    var data = $this.data();
+    var $target;
+    var result;
+    //VERIFICAR SI EL BOTON ESTA DISABLED
+    if ($this.prop('disabled') || $this.hasClass('disabled')) {
+      return;
+    }
+    //VERIFICANDO QUE EXISTE
+    if (data.method) {
+      data = $.extend({}, data);
+      if (typeof data.target !== 'undefined') {
+        $target = $(data.target);
+        if (typeof data.option === 'undefined') {
+          try {
+            data.option = JSON.parse($target.val());
+          } catch (e) {
+          }
+        }
+      }
+      //alert('$(image).height(): '+$imageOrig.height()+'  $(image).width(): '+$imageOrig.width());
+      if ( (/iP(hone|od|ad)/).test(window.navigator.platform) && (fotoOriginal.height() > 1000 || fotoOriginal.width() > 1000)) {
+    	  alert('achicar!!');
+      }
+      //RECORTAR IMAGEN
+      result = $image.cropper('getCroppedCanvas', null, null);
+      return result.toDataURL("image/png"); 
+    }
+}

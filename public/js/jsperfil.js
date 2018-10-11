@@ -67,7 +67,7 @@ function cambiarFotoPerfil() {
 		msj('error', 'Seleccione un archivo de tipo .JPG o .JPEG o .PNG');
 		return;
 	}
-	if($("#elegirFotoPersona").height() > 5000 || $("#elegirFotoPersona").width() > 5000) {
+	if($("#elegirFotoPerfil").height() > 5000 || $("#elegirFotoPerfil").width() > 5000) {
 		msj('error', "Seleccione una imagen mas peque\u00f1a");
 		return;
 	}
@@ -90,6 +90,16 @@ function cambiarFotoPerfil() {
 		}
 	});
 }
-
 function subirImagenRecortada(){
+	imagenRecortada = recortarImagen($('#fotoRecortar'), $('#elegirFotoPerfil'));
+	var formData = new FormData();
+	formData.append('id', ses_persona);
+	formData.append('foto', imagenRecortada);
+	formData.append('ext', extImagen);
+	$(ses_foto_colaborador).attr("src", imagenRecortada);
+	$('#elegirFotoPerfil').replaceWith('<input type="file" id="elegirFotoPersona" name="elegirFotoPersona" style="display: none" accept="image/*">');
+	$("#elegirFotoPerfil").change(function(e){
+		cambiarFotoPerfil();
+	});
+	modal("modalRecortarFoto");
 }

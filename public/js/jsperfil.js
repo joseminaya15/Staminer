@@ -58,7 +58,6 @@ $("#elegirFotoPerfil").change(function(e){
 function cambiarFotoPerfil() {
 	var inputFileImage = document.getElementById("elegirFotoPerfil");
 	var file = inputFileImage.files[0];
-	
 	extImagen = $.trim(file.name.split('.').pop());
 	if(extImagen == 'jpg') {
 		extImagen = 'jpeg';
@@ -90,8 +89,7 @@ function cambiarFotoPerfil() {
 			modal("modalRecortarFoto");
 		}
 	});
-	modal("modalRecortarFoto");
 }
+
 function subirImagenRecortada(){
-	modal('modalRecortarFoto');
 }

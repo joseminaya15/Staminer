@@ -1,5 +1,8 @@
-var extImagen = null;
-var clickFoto = 0;
+var imagenRecortada 	 = null;
+var ses_foto_colaborador = null;
+var ses_persona 		 = null;
+var extImagen            = null;
+var clickFoto            = 0;
 function editInformation(){
 	$('.jm-button--first').addClass('jm-opacity--done');
 	$('.jm-button--second').addClass('jm-opacity--none');

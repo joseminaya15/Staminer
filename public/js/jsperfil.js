@@ -76,10 +76,10 @@ function cambiarFotoPerfil() {
 		return;
 	}
 	canvasResize(file, {
-		width: 300,
+		width: 600,
 		height: 0,
 		crop: false,
-		quality: 80,
+		quality: 0,
 		callback: function(data, width, height) {
 			$('.cropper-container.cropper-bg').remove();
 			$('#fotoRecortar').replaceWith('<img id="fotoRecortar" class="img-responsive">');

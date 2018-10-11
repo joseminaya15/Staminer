@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+	    <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	    <meta name="description"            content="STAMINER">
+	    <meta name="keywords"               content="STAMINER, deportes">
+	    <meta name="robots"                 content="Index,Follow">
+	    <meta name="date"                   content="July 23, 2018"/>
+	    <meta name="language"               content="es">
+	    <meta name="theme-color"            content="#0064dc">
+		<title>STAMINER</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/mdl/material.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/cropper/cropper.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/material-icons.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/roboto.css">
+		<link type="text/css" rel="stylesheet" href="public/css/m-p.min.css">
+		<link type="text/css" rel="stylesheet" href="public/css/style.css">
+	</head>
+</head>
+<body>
+	<header class="jm-header">
+		<div class="jm-container">
+			<div class="jm-staminer">
+				<a href=""><img src="public/img/logo/logo-staminer-01.svg" alt="Staminer logo"></a>
+			</div>
+			<div class="jm-search">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2">
+					<i class="mdi mdi-search"></i>
+				</div>
+			</div>
+			<div class="jm-header--menu">
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-mail"></i>
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-notifications"></i>
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-settings"></i>
+				</button>
+				<div class="jm-perfil--configuracion">
+					<button id="configuracion-perfil" class="mdl-button mdl-js-button mdl-button--icon">
+						<img src="public/img/empty/empty-perfil.png" alt="L">
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="configuracion-perfil">
+						<li class="mdl-menu__item">Invitar deportista</li>
+						<li class="mdl-menu__item">Configuraci&oacute;n</li>
+						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Cerrar sesi&oacute;n</li>
+						<li class="mdl-menu__item">Cont&aacute;ctanos</li>
+						<li class="mdl-menu__item">Centro de Ayuda</li>
+						<li class="mdl-menu__item">Pol&iacute;ticas de Staminer</li>
+						<li class="mdl-menu__item">T&eacute;rminos y Condiciones</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="jm-container m-b-50">
+		<div class="jm-configuracion">
+			<div class="jm-configuracion__tabs">
+				<h2>Configuraci&oacute;n de cuenta</h2>
+                <ul class="nav nav-tabs jm-tabs--configuration" role="tablist">
+                    <li role="presentation" class="active"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galer&iacute;a CV</a></li>
+					<li role="presentation"><a href="#sponsors" aria-controls="sponsors" role="tab" data-toggle="tab">Sponsors</a></li>
+					<li role="presentation"><a href="#red" aria-controls="red" role="tab" data-toggle="tab">Red</a></li>
+                </ul>
+			</div>
+			<div class="jm-configuracion__content">
+				<div class="tab-content">
+				    <div role="tabpanel" class="tab-pane fade in active" id="galeria">
+			    		<div class="jm-configuration--section">
+							<div class="jm-configuration__title">
+								<div class="jm-title">
+									<h2>Galer&iacute;a CV</h2>
+								</div>
+                            </div>
+                            <div class="jm-configuration__subtitle">
+                                <div class="jm-subtitle">
+                                    <div class="jm-subtitle__left">
+
+                                    </div>
+                                    <div class="jm-subtitle__right">
+
+                                    </div>
+                                </div>
+                            </div>
+							<div class="jm-configuration__content">
+								<div class="jm-configuracion--perfil">
+									<div class="jm-configuracion--foto">
+										<p>Foto de perfil</p>
+										<img src="public/img/empty/empty-perfil-circle.png" alt="L">
+										<span>Peso m&aacute;x. recomendado 12Mb</span>
+									</div>
+									<div class="jm-configuracion--fondo">
+										<p>Foto de cabecera</p>
+										<img src="public/img/empty/empty-fondo.png" alt="L">
+										<span>Tama&ntilde;o recomendado 1400x400px</span>
+									</div>
+								</div>
+								<div class="jm-configuracion--contenido">
+									<div class="jm-input jm-input--medium">
+										<label>Nombre</label>
+										<input type="text" class="form-control" id="nombre" placeholder="Luis Antonio Mendoza">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Titular</label>
+										<input type="text" class="form-control" id="titular" placeholder="Ej: Nadador profesional, piloto formula 1, etc">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Deporte</label>
+										<input type="text" class="form-control" id="deporte" placeholder="Nombre del deporte">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Correo electr&oacute;nico</label>
+										<input type="text" class="form-control" id="correo" placeholder="correo@gmail.com">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Contrase&ntilde;a</label>
+										<div class="jm-password">
+											<input type="text" class="form-control" id="contraseña" placeholder="Contraseña actual">
+											<input type="text" class="form-control" id="contraseña" placeholder="Nueva contraseña">
+											<input type="text" class="form-control" id="contraseña" placeholder="Confirmar contraseña">
+										</div>
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Logro destacado</label>
+										<input type="text" class="form-control" id="correo" placeholder="Campeón nacional deporte profesional 2018">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Verificaci&oacute;n</label>
+										<input type="text" class="form-control" id="correo" placeholder="Verificar cuenta oficial">
+									</div>
+								</div>
+							</div>
+							<div class="jm-configuration__actions">
+								<div class="jm-actions__left">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Cancelar</button>
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Guardar</button>
+								</div>
+								<div class="jm-actions__right">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane fade" id="sponsors">
+						<div class="jm-configuration--section">
+							<div class="jm-configuration__title">
+								<div class="jm-title">
+									<h2>Sponsors</h2>
+								</div>
+							</div>
+							<div class="jm-configuration__content">
+								<div class="jm-configuracion--contenido">
+									<div class="jm-select">
+										<label>Fecha de Nacimiento</label>
+										<div class="jm-nacimiento">
+											<select class="selectpicker" name="dia" id="dia" title="Día">
+												<option value="Maculino">Maculino</option>
+												<option value="Femenino">Femenino</option>
+											</select>
+											<select class="selectpicker" name="mes" id="mes" title="Mes">
+												<option value="Enero">Enero</option>
+												<option value="Febrero">Febrero</option>
+												<option value="Marzo">Marzo</option>
+												<option value="Abril">Abril</option>
+												<option value="Mayo">Mayo</option>
+												<option value="Junio">Junio</option>
+												<option value="Julio">Julio</option>
+												<option value="Agosto">Agosto</option>
+												<option value="Setiembre">Setiembre</option>
+												<option value="Octubre">Octubre</option>
+												<option value="Noviembre">Noviembre</option>
+												<option value="Diciembre">Diciembre</option>
+											</select>
+											<select class="selectpicker" name="año" id="año" title="Año">
+												<option value="Maculino">Maculino</option>
+												<option value="Femenino">Femenino</option>
+											</select>
+										</div>
+									</div>
+									<div class="jm-estatura">
+										<div class="jm-input jm-input--medium">
+											<label>Alto</label>
+											<input type="text" class="form-control" id="alto" placeholder="Centímetros">
+										</div>
+										<div class="jm-input jm-input--medium">
+											<label>Ancho</label>
+											<input type="text" class="form-control" id="ancho" placeholder="Centímetros">
+										</div>
+										<div class="jm-input jm-input--medium">
+											<label>Peso</label>
+											<input type="text" class="form-control" id="peso" placeholder="Kilogramos">
+										</div>
+									</div>
+									<div class="jm-select">
+										<label>Nacionalidad</label>
+										<select class="selectpicker" name="nacionalidad" id="nacionalidad" title="Seleccionar">
+											<option value="Maculino">Maculino</option>
+											<option value="Femenino">Femenino</option>
+										</select>
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Ubicaci&oacute;n</label>
+										<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación del deportista">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Federaci&oacute;n deportiva</label>
+										<input type="text" class="form-control" id="federacion" placeholder="Nombre de la Federación">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Federaci&oacute;n deportiva</label>
+										<input type="text" class="form-control" id="equipo" placeholder="Equipo/Club">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Posici&oacute;n</label>
+										<input type="text" class="form-control" id="equipo" placeholder="Posición del deportista">
+									</div>
+									<div class="jm-select">
+										<label>Participaciones destacadas</label>
+										<select class="selectpicker" name="participacion" id="participacion" title="Seleccionar">
+											<option value="Maculino">Maculino</option>
+											<option value="Femenino">Femenino</option>
+										</select>
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Profesi&oacute;n</label>
+										<input type="text" class="form-control" id="profesion" placeholder="Nombre de la profesión">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Colegio</label>
+										<input type="text" class="form-control" id="colegio" placeholder="Nombre del colegio">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Universidad</label>
+										<input type="text" class="form-control" id="universidad" placeholder="Nombre de la universidad">
+									</div>
+									<div class="jm-input jm-input--medium">
+										<label>Grado acade&eacute;mico</label>
+										<input type="text" class="form-control" id="titulo" placeholder="Título o grado alcanzado">
+									</div>
+								</div>
+							</div>
+							<div class="jm-configuration__actions">
+								<div class="jm-actions__left">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Cancelar</button>
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Guardar</button>
+								</div>
+								<div class="jm-actions__right">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="red">
+						<div class="jm-configuration--section">
+							<div class="jm-configuration__title">
+								<div class="jm-title">
+									<h2>Red</h2>
+								</div>
+							</div>
+							<div class="jm-configuration__content">
+								<div class="jm-configuracion--contenido">
+									<div class="jm-select">
+										<label>Grupo Sangu&iacute;neo</label>
+										<select class="selectpicker" name="sangre" id="sangre" title="Seleccionar tipo de sangre">
+											<option value="Maculino">Maculino</option>
+											<option value="Femenino">Femenino</option>
+										</select>
+									</div>
+									<div class="jm-textarea jm-textarea-default">
+										<label>Alergias</label>
+										<textarea rows="3" class="form-control" id="comentario" placeholder="Añadir comentario"></textarea>
+									</div>
+									<div class="jm-textarea jm-textarea-default">
+										<label>Comentario adicional</label>
+										<textarea rows="3" class="form-control" id="adicional" placeholder="Comentario adicional"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="jm-configuration__actions">
+								<div class="jm-actions__left">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Cancelar</button>
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Guardar</button>
+								</div>
+								<div class="jm-actions__right">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="redes">
+						<div class="jm-configuration--section">
+							<div class="jm-configuration__title">
+								<div class="jm-title">
+									<h2>Redes</h2>
+								</div>
+							</div>
+							<div class="jm-configuration__content">
+								<div class="jm-configuracion--contenido redes">
+									<div class="jm-redes">
+										<div class="jm-redes__left">
+											<p><i class="fa fa-facebook"></i>Facebook</p>
+										</div>
+										<div class="jm-redes__right">
+											<div class="jm-switch">
+												<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="sw-facebook">
+													<input type="checkbox" id="sw-facebook" class="mdl-switch__input">
+													<span class="mdl-switch__label"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="jm-redes">
+										<div class="jm-redes__left">
+											<p><i class="fa fa-twitter"></i>Twitter</p>
+										</div>
+										<div class="jm-redes__right">
+											<div class="jm-switch">
+												<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="sw-twitter">
+													<input type="checkbox" id="sw-twitter" class="mdl-switch__input">
+													<span class="mdl-switch__label"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="jm-redes">
+										<div class="jm-redes__left">
+											<p><i class="fa fa-instagram"></i>Instagram</p>
+										</div>
+										<div class="jm-redes__right">
+											<div class="jm-switch">
+												<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="sw-instagram">
+													<input type="checkbox" id="sw-instagram" class="mdl-switch__input">
+													<span class="mdl-switch__label"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jm-configuration__actions">
+								<div class="jm-actions__left">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Cancelar</button>
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Guardar</button>
+								</div>
+								<div class="jm-actions__right">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="jm-footer">
+		<div class="jm-container">
+			<div class="jm-footer__left">
+				<img src="public/img/logo/logo-staminer-gris-01.svg" alt="Staminer Logo">
+				<span>Copyright &copy; 2017. Todos los derechos reservados.</span>
+			</div>
+			<div class="jm-footer__right">
+				<a href="manifiesto-contacto.html">Manifiesto</a>
+				<a href="manifiesto-contacto.html#contactanos">Cont&aacute;ctanos</a>
+				<a href="terminos-condiciones.html">Términos y Condiciones</a>
+				<a href="politica-privacidad.html">Pol&iacute;ticas de Staminer</a>
+				<a href="politica-privacidad.html">Centro de ayuda</a>
+				<div class="jm-select">
+					<select class="selectpicker">
+						<option>Español</option>
+						<option>Ingl&eacute;s</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="public/js/jquery-3.2.1.min.js"></script>
+	<script src="public/js/jquery-1.11.2.min.js"></script>
+    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+    <script src="public/plugins/mdl/material.min.js"></script>
+    <script src="public/plugins/cropper/cropper.js"></script>
+	<script src="public/js/jsgaleria.js"></script>
+</body>
+</html>

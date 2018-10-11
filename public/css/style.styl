@@ -481,6 +481,38 @@ label
 								background-color #FFFFFF !important
 								border-color #FFFFFF
 								margin 8px 0
+.jm-configuration__subtitle
+	background-color #EDEDED
+	.jm-subtitle
+		flexCenter()
+		height 44px
+		padding 0 15px
+		.jm-subtitle__left
+			width 100%
+			a
+				color #808080
+				cursor pointer
+				i 
+					margin-right 10px
+		.jm-subtitle__right
+			width 100%
+			text-align right
+			a
+				color #808080
+				cursor pointer
+				margin 0 5px
+				i 
+					margin-right 10px
+.jm-galeria--fotos
+	display grid
+	grid-template-columns repeat(3,246px)
+	grid-template-rows repeat(4,246px)
+	grid-gap 20px
+	.jm-galeria__foto
+		background-color #EDEDED
+		&:first-child
+			grid-column span 2
+			grid-row span 2
 .jm-shared
 	.jm-shared--first
 		flexCenter()

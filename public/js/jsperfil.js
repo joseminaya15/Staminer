@@ -31,3 +31,6 @@ function goToSponsors(){
 function goToRed(){
 	window.location.href = "galeria-sponsors.html";
 }
+function DeletePublicacion(){
+	$('#modalDeletePublicacion').modal('show');
+}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+	    <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	    <meta name="description"            content="STAMINER">
+	    <meta name="keywords"               content="STAMINER, deportes">
+	    <meta name="robots"                 content="Index,Follow">
+	    <meta name="date"                   content="July 23, 2018"/>
+	    <meta name="language"               content="es">
+	    <meta name="theme-color"            content="#0064dc">
+		<title>STAMINER</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/mdl/material.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/cropper/cropper.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/material-icons.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/roboto.css">
+		<link type="text/css" rel="stylesheet" href="public/css/m-p.min.css">
+		<link type="text/css" rel="stylesheet" href="public/css/style.css">
+	</head>
+</head>
+<body>
+	<header class="jm-header">
+		<div class="jm-container">
+			<div class="jm-staminer">
+				<a href=""><img src="public/img/logo/logo-staminer-01.svg" alt="Staminer logo"></a>
+			</div>
+			<div class="jm-search">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2">
+					<i class="mdi mdi-search"></i>
+				</div>
+			</div>
+			<div class="jm-header--menu">
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-mail"></i>
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-notifications"></i>
+				</button>
+				<button class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="mdi mdi-settings"></i>
+				</button>
+				<div class="jm-perfil--configuracion">
+					<button id="configuracion-perfil" class="mdl-button mdl-js-button mdl-button--icon">
+						<img src="public/img/empty/empty-perfil.png" alt="L">
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="configuracion-perfil">
+						<li class="mdl-menu__item">Invitar deportista</li>
+						<li class="mdl-menu__item">Configuraci&oacute;n</li>
+						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Cerrar sesi&oacute;n</li>
+						<li class="mdl-menu__item">Cont&aacute;ctanos</li>
+						<li class="mdl-menu__item">Centro de Ayuda</li>
+						<li class="mdl-menu__item">Pol&iacute;ticas de Staminer</li>
+						<li class="mdl-menu__item">T&eacute;rminos y Condiciones</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="jm-container m-t-50 m-b-50">
+		<div class="jm-perfil--contenido">
+			<div class="jm-informacion">
+				<div class="jm-informacion--perfil">
+					<div class="jm-informacion--perfil__title">
+						<a><i class="mdi mdi-description"></i>Ficha t&eacute;cnica</a>
+						<div class="jm-edit">
+							<button class="mdl-button mdl-js-button mdl-button--icon jm-button--first" onclick="editInformation()">
+								<i class="mdi mdi-edit"></i>
+							</button>
+							<button class="mdl-button mdl-js-button mdl-button--icon jm-button--second" onclick="saveInformation()">
+								<i class="mdi mdi-done"></i>
+							</button>
+						</div>
+					</div>
+					<div class="jm-informacion--perfil__contenido">
+						<div class="jm-input__group">
+							<div class="jm-icon">
+								<i class="mdi mdi-location_on"></i>
+							</div>
+							<div class="jm-input jm-input--small">
+								<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Edad</p>
+							</div>
+							<div class="jm-input__right">
+								<a href=""></a>
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Sexo</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-select">
+									<select class="selectpicker" name="sexo" id="sexo" title="Seleccionar">
+										<option value="Maculino">Maculino</option>
+										<option value="Femenino">Femenino</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Estatura</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="estatura" placeholder="Centimetros">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Ancho</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="ancho" placeholder="Centimetros">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Peso</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="peso" placeholder="Kilogramos">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Nacionalidad</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-select">
+									<select class="selectpicker" name="nacionalidad" id="nacionalidad" title="Seleccionar">
+										<option value="Peruana">Peruana</option>
+										<option value="Chilena">Chilena</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion__input">
+							<div class="jm-input__left">
+								<p>Lateralidad</p>
+							</div>
+							<div class="jm-input__right">
+								<div class="jm-select">
+									<select class="selectpicker" name="lateralidad" id="lateralidad" title="Seleccionar">
+										<option value="Diestro">Diestro</option>
+										<option value="Zurdo">Zurdo</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="informacion-oculta">
+						<div class="jm-informacion--perfil__title">
+							<a><i class="mdi mdi-description"></i>Asociaci&oacute;n</a>
+						</div>
+						<div class="jm-informacion--perfil__contenido">
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="federacion" placeholder="Escribir Federación">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__left">
+									<p>Equipo/Club</p>
+								</div>
+								<div class="jm-input__right">
+									<div class="jm-input jm-input--small">
+										<input type="text" class="form-control" id="club" placeholder="Escribir">
+									</div>
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__left">
+									<p>Equipo/Club</p>
+								</div>
+								<div class="jm-input__right">
+									<div class="jm-input jm-input--small">
+										<input type="text" class="form-control" id="club" placeholder="Escribir">
+									</div>
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__left">
+									<p>Posici&oacute;n</p>
+								</div>
+								<div class="jm-input__right">
+									<div class="jm-input jm-input--small">
+										<input type="text" class="form-control" id="posicion" placeholder="Escribir">
+									</div>
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input__right">
+									<div class="jm-select">
+										<select class="selectpicker" name="participacion" id="participacion" title="Participaciones destacadas">
+											<option value="Diestro">Diestro</option>
+											<option value="Zurdo">Zurdo</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion--perfil__title">
+							<a><i class="mdi mdi-description"></i>Formaci&oacute;n Acad&eacute;mica</a>
+						</div>
+						<div class="jm-informacion--perfil__contenido">
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="profesion" placeholder="Escribir profesión">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="colegio" placeholder="Escribir colegio">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="universidad" placeholder="Escribir universidad">
+								</div>
+							</div>
+							<div class="jm-informacion__input">
+								<div class="jm-input jm-input--small">
+									<input type="text" class="form-control" id="grado" placeholder="Escribir grado académico">
+								</div>
+							</div>
+						</div>
+						<div class="jm-informacion--perfil__title">
+							<a><i class="mdi mdi-description"></i>Ficha M&eacute;dica</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jm-bitacora">
+				<ul class="nav nav-tabs jm-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#bitacora" aria-controls="bitacora" role="tab" data-toggle="tab">Bit&aacute;cora</a></li>
+				    <li role="presentation"><a href="#logros" aria-controls="logros" role="tab" data-toggle="tab">Logros</a></li>
+				</ul>
+				<div class="tab-content">
+				    <div role="tabpanel" class="tab-pane fade in active" id="bitacora">
+			    		<div class="jm-shared">
+			    			<div class="jm-shared--first">
+			    				<div class="jm-shared__foto">
+				    				<img src="public/img/empty/empty-perfil.png" alt="L">
+				    			</div>
+				    			<div class="jm-shared__contenido">
+				    				<div class="jm-textarea">
+				    					<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="¿Qué quieres compartir?"></textarea>
+				    				</div>
+				    			</div>
+				    			<div class="jm-shared__actions">
+				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+										<i class="mdi mdi-send"></i>
+									</button>
+				    			</div>
+			    			</div>
+			    			<div class="jm-shared--second">
+			    				<div class="jm-shared__buttons">
+									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-language"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>P&uacute;blico</h2>
+													<p>P&uacute;blico en general</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>Red</h2>
+													<p>Solo mis contactos de Staminer</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>Solo yo</h2>
+													<p>&Uacute;nicamente para mi</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="jm-shared__buttons">
+									
+								</div>
+			    			</div>
+			    		</div>
+			    		<div class="jm-publicaciones">
+			    			<div class="jm-publication">
+			    				<div class="jm-publication__title">
+			    					<div class="jm-publication__foto">
+			    						<img src="public/img/empty/empty-perfil.png">
+			    					</div>
+			    					<div class="jm-publication__name">
+			    						<h2>Luis Antonio Mendoza</h2>
+			    						<p>Deporte Profesional Profesional</p>
+			    					</div>
+			    					<div class="jm-publication__time">
+			    						<button id="menu-editar" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+										</button>
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar">
+											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
+											<li class="mdl-menu__item" onclick="DeletePublicacion()">Eliminar Publicaci&oacute;n</li>
+										</ul>
+			    					</div>
+			    				</div>
+			    				<div class="jm-publication__contenido">
+			    					<div class="jm-empty__publicacion">
+			    						<img src="public/img/empty/empty-publicacion.png">
+			    						<p>¡Bienvenido a Staminer!</p>
+			    						<h2>Se uni&oacute;el 04 de Octubre del 2018</h2>
+			    					</div>
+			    				</div>
+			    				<div class="jm-publication__actions">
+			    					
+			    				</div>
+			    			</div>
+			    		</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane fade" id="logros">
+				    	<div class="jm-shared">
+			    			<div class="jm-shared--first">
+			    				<div class="jm-shared__foto">
+				    				<img src="public/img/empty/empty-perfil.png" alt="L">
+				    			</div>
+				    			<div class="jm-shared__contenido">
+				    				<div class="jm-textarea">
+				    					<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="¿Qué quieres compartir?"></textarea>
+				    				</div>
+				    			</div>
+				    			<div class="jm-shared__actions">
+				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+										<i class="mdi mdi-send"></i>
+									</button>
+				    			</div>
+			    			</div>
+			    			<div class="jm-shared--second">
+								
+			    			</div>
+			    		</div>
+				    </div>
+				</div>
+			</div>
+			<div class="jm-galeria">
+				<div class="jm-galery">
+					<div class="jm-galery__title" onclick="goToGaleria()">
+						<i class="mdi mdi-image"></i>
+						<h2>Galer&iacute;a CV</h2>
+					</div>
+					<div class="jm-galery__contenido">
+						<div class="jm-empty__image">
+							<img src="public/img/empty/empty-imagen.png">
+							<p>Estas fotos y videos son parte de la imagen como deportista.</p>
+						</div>
+					</div>
+				</div>
+				<div class="jm-galery" onclick="goToSponsors()">
+					<div class="jm-galery__title">
+						<i class="mdi mdi-volume_up"></i>
+						<h2>Sponsors</h2>
+					</div>
+					<div class="jm-galery__contenido">
+						<div class="jm-empty__image">
+							<img src="public/img/empty/empty-imagen.png">
+							<p>Sube aqu&iacute; fotos y videos de las marcas que te patrocinan.</p>
+						</div>
+					</div>
+				</div>
+				<div class="jm-galery" onclick="goToRed()">
+					<div class="jm-galery__title">
+						<i class="mdi mdi-people"></i>
+						<h2>Red</h2>
+					</div>
+					<div class="jm-galery__contenido scroll">
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Luchadora de Artes Marciales Mixtas</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Titulo deportivo profesional</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Titulo deportivo profesional</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Nombre deportista</h2>
+								<p>Titulo deportivo profesional</p>
+							</div>
+						</div>
+						<div class="jm-red">
+							<div class="jm-red__left">
+								<img src="public/img/logo/red-staminer.png">
+							</div>
+							<div class="jm-red__right">
+								<h2>Staminer</h2>
+								<p>Red deportiva profesional</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jm-footer__galeria">
+					<div class="jm-footer__galeria--links">
+						<a href="">Manifiesto</a>
+						<a href="">Cont&aacute;ctanos</a>
+						<a href="">Centro de ayuda</a>
+						<a href="">T&eacute;rminos y condiciones</a>
+						<a href="">Pol&iacute;ticas de Staminer</a>
+						<div class="jm-select">
+							<select class="selectpicker" name="idioma" id="idioma">
+								<option value="Español">Español</option>
+								<option value="Inglés">Inglés</option>
+							</select>
+						</div>
+					</div>
+					<strong>STAMINER &copy; 2017</strong>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="modal fade" id="modalEditarEncabezado" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-680" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Editar encabezado</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<div class="jm-modal__perfil">
+							<div class="jm-modal--foto">
+								<div class="jm-foto--perfil">
+									<p>Foto de perfil</p>
+									<div class="jm-foto--cropper">
+										<img src="public/img/empty/empty-perfil-circle.png" alt="L">
+										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="abrirSelectFoto(this)">
+											<i class="mdi mdi-camera_alt"></i>
+										</button>
+									</div>
+									<span>Peso m&aacute;x. recomendado 12Mb</span>
+								</div>
+								<div class="jm-foto--fondo">
+									<p>Foto de cabecera</p>
+									<img src="public/img/empty/empty-fondo.png" alt="L">
+									<span>Tama&ntilde;o recomendado 1400x400px</span>
+								</div>
+							</div>
+							<div class="jm-configuracion--contenido">
+								<div class="jm-input jm-input--medium">
+									<label>Nombre</label>
+									<input type="text" class="form-control" id="nombre" placeholder="Luis Antonio Mendoza">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Titular</label>
+									<input type="text" class="form-control" id="titular" placeholder="Ej: Nadador profesional, piloto formula 1, etc">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Deporte</label>
+									<input type="text" class="form-control" id="deporte" placeholder="Nombre del deporte">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Correo electr&oacute;nico</label>
+									<input type="text" class="form-control" id="correo" placeholder="correo@gmail.com">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Contrase&ntilde;a</label>
+									<div class="jm-password">
+										<input type="text" class="form-control" id="contraseña" placeholder="Contraseña actual">
+										<input type="text" class="form-control" id="contraseña" placeholder="Nueva contraseña">
+										<input type="text" class="form-control" id="contraseña" placeholder="Confirmar contraseña">
+									</div>
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Logro destacado</label>
+									<input type="text" class="form-control" id="correo" placeholder="Campeón nacional deporte profesional 2018">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Verificaci&oacute;n</label>
+									<input type="text" class="form-control" id="correo" placeholder="Verificar cuenta oficial">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalDeletePublicacion" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Eliminar publicaci&oacute;n</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<p>¿Est&aacute;s seguro que quieres eliminar esta publicaci&oacute;n?</p>
+					</div>
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Cacelar</button>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRecortarFoto" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-sm jm-modal--default max-width-680" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Recorte su foto</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<div class="img-container">
+							<img id="fotoRecortar" class="img-responsive">
+						</div>	
+					</div>
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-dismiss="modal">Cacelar</button>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="subirImagenRecortada()">Guardar</button>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<input type="file" id="elegirFotoPerfil" name="elegirFotoPerfil" style="display: none" accept="image/*">
+	<script src="public/js/jquery-3.2.1.min.js"></script>
+	<script src="public/js/jquery-1.11.2.min.js"></script>
+    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+    <script src="public/plugins/mdl/material.min.js"></script>
+	<script src="public/plugins/cropper/cropper.js"></script>
+	<script src="public/plugins/canvasResize/binaryajax.js"></script>
+	<script src="public/plugins/canvasResize/exif.js"></script>
+	<script src="public/plugins/canvasResize/canvasResize.js"></script>
+	<!-- <script src="public/js/index.js"></script> -->
+	<script src="public/js/Utils.js"></script>
+	<script src="public/js/jsperfil.js"></script>
+</body>
+</html>

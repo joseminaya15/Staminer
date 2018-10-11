@@ -69,7 +69,6 @@ function recortarImagen($image, fotoOriginal) {
           }
         }
       }
-      //alert('$(image).height(): '+$imageOrig.height()+'  $(image).width(): '+$imageOrig.width());
       if ( (/iP(hone|od|ad)/).test(window.navigator.platform) && (fotoOriginal.height() > 1000 || fotoOriginal.width() > 1000)) {
     	  alert('achicar!!');
       }

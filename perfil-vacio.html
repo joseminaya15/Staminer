@@ -507,7 +507,7 @@
 		</div>
 	</section>
 	<div class="modal fade" id="modalEditarEncabezado" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-		<div class="modal-dialog modal-md jm-modal--default" role="document">
+		<div class="modal-dialog modal-md jm-modal--default max-width-680" role="document">
 			<div class="modal-content">
 				<div class="mdl-card">
 					<div class="mdl-card__title">
@@ -518,7 +518,12 @@
 							<div class="jm-modal--foto">
 								<div class="jm-foto--perfil">
 									<p>Foto de perfil</p>
-									<img src="public/img/empty/empty-perfil-circle.png" alt="L">
+									<div class="jm-foto--cropper">
+										<img src="public/img/empty/empty-perfil-circle.png" alt="L">
+										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+											<i class="mdi mdi-camera_alt"></i>
+										</button>
+									</div>
 									<span>Peso m&aacute;x. recomendado 12Mb</span>
 								</div>
 								<div class="jm-foto--fondo">

@@ -35,11 +35,24 @@ function goToRed(){
 function DeletePublicacion(){
 	$('#modalDeletePublicacion').modal('show');
 }
+function abrirSelectFoto(elem){
+	if(clickFoto == 0) {
+		clickFoto = 1
+		if($(elem).is("button")){
+			elem = $(elem).parent().find("img");
+		}
+		ses_persona = $(elem).attr("data-personal");
+		ses_foto_colaborador = $(elem);
+		$("#elegirFotoPerfil").val('');
+		$("#elegirFotoPerfil").trigger('click');
+		setTimeout("clickFoto = 0;", 2000);
+	}
+}
 $("#elegirFotoPerfil").change(function(e){
 	cambiarFotoPerfil();
 });
 function cambiarFotoPerfil() {
-	var inputFileImage = document.getElementById("elegirFotoPersona");
+	var inputFileImage = document.getElementById("elegirFotoPerfil");
 	var file = inputFileImage.files[0];
 	
 	extImagen = $.trim(file.name.split('.').pop());
@@ -70,23 +83,11 @@ function cambiarFotoPerfil() {
 			$("#fotoRecortar").attr("src", data);
 			imagenRecortada = data;
 			initCropper('fotoRecortar');
-			modal("modalEditarFoto");
+			modal("modalRecortarFoto");
 		}
 	});
+	modal("modalRecortarFoto");
 }
 function subirImagenRecortada(){
 	modal('modalRecortarFoto');
-}
-function abrirSelectFoto(elem){
-	if(clickFoto == 0) {
-		clickFoto = 1
-		if($(elem).is("button")){
-			elem = $(elem).parent().find("img");
-		}
-		ses_persona = $(elem).attr("data-personal");
-		ses_foto_colaborador = $(elem);
-		$("#elegirFotoPerfil").val('');
-		$("#elegirFotoPerfil").trigger('click');
-		setTimeout("clickFoto = 0;", 2000);
-	}
 }

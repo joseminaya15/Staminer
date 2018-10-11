@@ -507,14 +507,61 @@
 		</div>
 	</section>
 	<div class="modal fade" id="modalEditarEncabezado" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-		<div class="modal-dialog modal-md" role="document">
+		<div class="modal-dialog modal-md jm-modal--default" role="document">
 			<div class="modal-content">
 				<div class="mdl-card">
 					<div class="mdl-card__title">
 						<h2>Editar encabezado</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
-
+						<div class="jm-modal__perfil">
+							<div class="jm-modal--foto">
+								<div class="jm-foto--perfil">
+									<p>Foto de perfil</p>
+									<img src="public/img/empty/empty-perfil-circle.png" alt="L">
+									<span>Peso m&aacute;x. recomendado 12Mb</span>
+								</div>
+								<div class="jm-foto--fondo">
+									<p>Foto de cabecera</p>
+									<img src="public/img/empty/empty-fondo.png" alt="L">
+									<span>Tama&ntilde;o recomendado 1400x400px</span>
+								</div>
+							</div>
+							<div class="jm-configuracion--contenido">
+								<div class="jm-input jm-input--medium">
+									<label>Nombre</label>
+									<input type="text" class="form-control" id="nombre" placeholder="Luis Antonio Mendoza">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Titular</label>
+									<input type="text" class="form-control" id="titular" placeholder="Ej: Nadador profesional, piloto formula 1, etc">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Deporte</label>
+									<input type="text" class="form-control" id="deporte" placeholder="Nombre del deporte">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Correo electr&oacute;nico</label>
+									<input type="text" class="form-control" id="correo" placeholder="correo@gmail.com">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Contrase&ntilde;a</label>
+									<div class="jm-password">
+										<input type="text" class="form-control" id="contraseña" placeholder="Contraseña actual">
+										<input type="text" class="form-control" id="contraseña" placeholder="Nueva contraseña">
+										<input type="text" class="form-control" id="contraseña" placeholder="Confirmar contraseña">
+									</div>
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Logro destacado</label>
+									<input type="text" class="form-control" id="correo" placeholder="Campeón nacional deporte profesional 2018">
+								</div>
+								<div class="jm-input jm-input--medium">
+									<label>Verificaci&oacute;n</label>
+									<input type="text" class="form-control" id="correo" placeholder="Verificar cuenta oficial">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">

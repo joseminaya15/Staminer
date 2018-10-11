@@ -757,6 +757,17 @@ label
 		.jm-actions__right
 			width 100%
 			text-align right
+.jm-modal__perfil
+	background-color #F5F5F5
+	border-bottom 1px solid #E8E9EB
+	padding 15px
+	.jm-modal--foto
+		display grid
+		grid-template-columns 200px 1fr
+		grid-column-gap 20px
+		.jm-foto--perfil
+			img 
+				max-width 185px
 .jm-redes
 	flexCenter()
 	.jm-redes__left
@@ -818,6 +829,10 @@ label
 					padding 16px
 				.mdl-card__menu
 					z-index 10
+	.jm-modal--default
+		.mdl-card__title
+			background-color $color
+			color #FFFFFF
 /*MATERIAL*/
 .mdl-card
 .mdl-card__supporting-text

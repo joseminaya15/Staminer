@@ -20,7 +20,7 @@ $('.jm-line').keydown(function(){
 	// }
 });
 function goToEditCabecera(){
-	$('#modalEncabezado').modal('show');
+	$('#modalEditarEncabezado').modal('show');
 }
 function goToGaleria(){
 	window.location.href = "galeria-sponsors.html";

@@ -1,3 +1,4 @@
+var extImagen = null;
 var clickFoto = 0;
 function editInformation(){
 	$('.jm-button--first').addClass('jm-opacity--done');

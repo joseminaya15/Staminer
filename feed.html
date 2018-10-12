@@ -216,13 +216,13 @@
 									<a id="shared" onclick="">12 compartidos</a>
 								</div>
 			    				<div class="jm-publication__actions">
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="like-0" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-thumb_up"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="chat-0" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-message"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="shared-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
 										<i class="mdi mdi-screen_share"></i>
 									</button>
 			    				</div>
@@ -291,13 +291,13 @@
 									<a id="shared" onclick="">12 compartidos</a>
 								</div>
 								<div class="jm-publication__actions">
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="like-1" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-thumb_up"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="chat-1" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-message"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="shared-1" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
 										<i class="mdi mdi-screen_share"></i>
 									</button>
 								</div>
@@ -337,13 +337,13 @@
 									<a id="shared" onclick="">12 compartidos</a>
 								</div>
 								<div class="jm-publication__actions">
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="like-2" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-thumb_up"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="chat-2" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-message"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="shared-2" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
 										<i class="mdi mdi-screen_share"></i>
 									</button>
 								</div>
@@ -571,13 +571,13 @@
 									<a id="shared" onclick="">12 compartidos</a>
 								</div>
 								<div class="jm-publication__actions">
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="like-3" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-thumb_up"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="chat-3" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-message"></i>
 									</button>
-									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+									<button id="shared-3" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
 										<i class="mdi mdi-screen_share"></i>
 									</button>
 								</div>
@@ -602,13 +602,13 @@
 				    			</div>
 			    			</div>
 			    			<div class="jm-shared--second">
-								<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+								<button id="like-4" class="mdl-button mdl-js-button mdl-button--icon">
 									<i class="mdi mdi-thumb_up"></i>
 								</button>
-								<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+								<button id="message-4" class="mdl-button mdl-js-button mdl-button--icon">
 									<i class="mdi mdi-message"></i>
 								</button>
-								<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+								<button id="shared-4" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
 									<i class="mdi mdi-screen_share"></i>
 								</button>
 			    			</div>
@@ -813,28 +813,60 @@
 		</div>
 	</div>
 	<div class="modal fade" id="modalBlockUser" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-			<div class="modal-dialog modal-md jm-modal--default max-width-440" role="document">
-				<div class="modal-content">
-					<div class="mdl-card">
-						<div class="mdl-card__title">
-							<h2>Bloquear Usuario</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							<p>¿Est&aacute;s seguro que quieres bloquear a esta persona</p>
-						</div>
-						<div class="mdl-card__actions">
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-dismiss="modal">Cancelar</button>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-								<i class="mdi mdi-close"></i>
-							</button>
-						</div>
+		<div class="modal-dialog modal-md jm-modal--default max-width-440" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Bloquear Usuario</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<p>¿Est&aacute;s seguro que quieres bloquear a esta persona</p>
+					</div>
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-dismiss="modal">Cancelar</button>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="modal fade" id="modalShared" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-540 jm-modal--publicacion" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Compartir publicaci&oacute;n</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<div class="jm-shared__publications">
+							<div class="jm-textarea">
+								<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
+							</div>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								<i class="mdi mdi-send"></i>
+							</button>
+						</div>
+						<div class="jm-publicaciones">
+							<div class="jm-publication"></div>
+						</div>
+					</div>
+					<div class="mdl-card__redes">
+
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" id="modalRecortarFoto" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
 		<div class="modal-dialog modal-sm jm-modal--default max-width-680" role="document">
 			<div class="modal-content">

@@ -39,6 +39,9 @@ function goToRed(){
 function DeletePublicacion(){
 	$('#modalDeletePublicacion').modal('show');
 }
+function DeleteComentario(){
+	$('#modalDeleteComentario').modal('show');
+}
 function abrirSelectFoto(elem){
 	if(clickFoto == 0) {
 		clickFoto = 1

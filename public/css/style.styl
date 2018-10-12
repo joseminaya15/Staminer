@@ -620,11 +620,15 @@ label
 			margin 5px 0
 			line-height 16px
 	.jm-galery__contenido
-		height 275px
+		height 220px
 		&.scroll
 			overflow-y scroll
 		&::-webkit-scrollbar
 			width 5px
+		&.sugerido
+			height 310px
+			.jm-red
+				height 62px
 		.jm-empty__image
 			flexCenter()
 			height 100%
@@ -671,9 +675,11 @@ label
 				width 100%
 				max-width 175px
 				text-overflow ellipsis
-				white-space nowrap
 				overflow hidden
-				
+				-webkit-box-orient vertical
+				display -webkit-box
+				-webkit-line-clamp 2
+				max-height 28px
 .jm-footer__galeria
 	.jm-footer__galeria--links
 		flexCenter()

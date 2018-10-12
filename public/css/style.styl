@@ -917,6 +917,9 @@ label
 	padding-left 5px
 	padding-right 5px
 .modal
+	.modal-content
+		border none 
+		border-radius 0
 	.jm-modal
 		width 375px
 		.mdl-card
@@ -943,31 +946,53 @@ label
 				.mdl-card__menu
 					z-index 10
 	.jm-modal--default
-		.mdl-card__title
-			background-color $color
-			color #FFFFFF
-			padding 10px 16px
-			h2
-				font-size 12px
-				line-height 14px
-				margin 3px 0
-		.mdl-card__menu
-			top 4px
-			right 10px
-			.mdl-button
-				flexCenter()
-				justify-content center
-				background-color transparent
-				i 
-					color #FFFFFF
-					font-size 16px
+		.mdl-card
+			border-radius 0
+			.mdl-card__title
+				background-color $color
+				color #FFFFFF
+				padding 10px 16px
+				h2
+					font-size 12px
+					line-height 14px
+					margin 3px 0
+			.mdl-card__supporting-text
+				background-color #F9F9F9
+				font-family $light
+			.mdl-card__actions
+				background-color #F2F2F2
+				text-align right
+				padding 10px 16px
+				.mdl-button
+					height 26px
+					font-size 12px
+					line-height 14px
+					font-family $light
+					margin 0 5px
+					&:first-child
+						background-color #FFFFFF !important
+						color #818181 !important
+			.mdl-card__menu
+				top 4px
+				right 10px
+				.mdl-button
+					flexCenter()
+					justify-content center
+					background-color transparent
+					i 
+						color #FFFFFF
+						font-size 16px
 .modal-dialog
 	&.max-width-680
 		width 680px
+	&.max-width-440
+		width 440px
 /*MATERIAL*/
 .mdl-card
 .mdl-card__supporting-text
 	width 100%
+.mdl-card
+	min-height 100%
 .mdl-card__title
 	display block
 /*SCROLL*/

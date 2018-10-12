@@ -732,8 +732,18 @@ label
 						width 100%
 						padding 10px 0 10px 20px
 		.jm-publication__actions
+			flexCenter()
 			height 50px
 			border-top 1px solid #e8e9eb
+			padding 0 20px
+			.mdl-button
+				margin 0 5px
+				&:hover
+					i 
+						color $color
+				i 
+					transition(color)
+					color #808080
 		.jm-comentario__writting
 			border-top 1px solid #e8e9eb
 			padding 12px 20px

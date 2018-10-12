@@ -47,7 +47,6 @@ function openModalShared(id){
 	var buttonId = $('#'+id);
 	var htmlShared = buttonId.parents('.jm-publication').html();
 	modalShared.find('.mdl-card__supporting-text').find('.jm-publication').html(htmlShared);
-	console.log(htmlShared);
 	modal('modalShared');
 }
 function abrirSelectFoto(elem){

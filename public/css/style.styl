@@ -734,6 +734,69 @@ label
 		.jm-publication__actions
 			height 50px
 			border-top 1px solid #e8e9eb
+.jm-publication__comentario
+	border-top 1px solid #e8e9eb
+	.jm-comentario__principal
+		.jm-comentario__persona
+			flexCenter()
+			padding 0 10px
+			.jm-persona__imagen
+				width 100%
+				max-width 60px
+				text-align center
+				padding 0 10px
+				img 
+					width 32px
+					border-radius 50%
+			.jm-persona__texto
+				width 100%
+				padding 0 5px
+				h2
+					font-size 14px
+					line-height 16px
+					margin 3px 0
+				p
+					font-size 12px
+					line-height 14px
+					font-family $light
+					color #818181
+			.jm-persona__actions
+				width 100%
+				max-width 100px
+				text-align right
+				span 
+					display block
+		.jm-comentario__contenido
+			padding 10px 20px 10px 75px
+			p
+				font-size 12px
+				line-height 14px
+				font-family $light
+		.jm-comentario__actions
+			padding 10px 20px 10px 75px
+			flexCenter()
+			.jm-comentario__left
+				width 100%
+				.mdl-button
+					font-size 11px
+					line-height 13px
+					text-transform none
+					height 26px
+					border-radius 10px
+					color #818181
+					.mdl-ripple
+						background-color rgba(0, 100, 220, .5)
+			.jm-comentario__right
+				width 100%
+				text-align right
+				a
+					font-size 12px
+					line-height 14px
+					color $color
+					font-family $light
+					margin 0 5px
+.jm-comentario__respuesta
+	padding-left 50px
 .jm-galery
 	background-color #F5F5F5
 	margin-bottom 15px

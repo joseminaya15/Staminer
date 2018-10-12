@@ -67,188 +67,11 @@
 	<section class="jm-container m-t-50 m-b-50">
 		<div class="jm-perfil--contenido">
 			<div class="jm-informacion">
-				<div class="jm-informacion--perfil">
-					<div class="jm-informacion--perfil__title">
-						<a><i class="mdi mdi-description"></i>Ficha t&eacute;cnica</a>
-						<div class="jm-edit">
-							<button class="mdl-button mdl-js-button mdl-button--icon jm-button--first" onclick="editInformation()">
-								<i class="mdi mdi-edit"></i>
-							</button>
-							<button class="mdl-button mdl-js-button mdl-button--icon jm-button--second" onclick="saveInformation()">
-								<i class="mdi mdi-done"></i>
-							</button>
-						</div>
-					</div>
-					<div class="jm-informacion--perfil__contenido">
-						<div class="jm-input__group">
-							<div class="jm-icon">
-								<i class="mdi mdi-location_on"></i>
-							</div>
-							<div class="jm-input jm-input--small">
-								<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Edad</p>
-							</div>
-							<div class="jm-input__right">
-								<a href=""></a>
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="ubicacion" placeholder="Ubicación">
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Sexo</p>
-							</div>
-							<div class="jm-input__right">
-								<div class="jm-select">
-									<select class="selectpicker" name="sexo" id="sexo" title="Seleccionar">
-										<option value="Maculino">Maculino</option>
-										<option value="Femenino">Femenino</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Estatura</p>
-							</div>
-							<div class="jm-input__right">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="estatura" placeholder="Centimetros">
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Ancho</p>
-							</div>
-							<div class="jm-input__right">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="ancho" placeholder="Centimetros">
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Peso</p>
-							</div>
-							<div class="jm-input__right">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="peso" placeholder="Kilogramos">
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Nacionalidad</p>
-							</div>
-							<div class="jm-input__right">
-								<div class="jm-select">
-									<select class="selectpicker" name="nacionalidad" id="nacionalidad" title="Seleccionar">
-										<option value="Peruana">Peruana</option>
-										<option value="Chilena">Chilena</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion__input">
-							<div class="jm-input__left">
-								<p>Lateralidad</p>
-							</div>
-							<div class="jm-input__right">
-								<div class="jm-select">
-									<select class="selectpicker" name="lateralidad" id="lateralidad" title="Seleccionar">
-										<option value="Diestro">Diestro</option>
-										<option value="Zurdo">Zurdo</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="informacion-oculta">
-						<div class="jm-informacion--perfil__title">
-							<a><i class="mdi mdi-description"></i>Asociaci&oacute;n</a>
-						</div>
-						<div class="jm-informacion--perfil__contenido">
-							<div class="jm-informacion__input">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="federacion" placeholder="Escribir Federación">
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input__left">
-									<p>Equipo/Club</p>
-								</div>
-								<div class="jm-input__right">
-									<div class="jm-input jm-input--small">
-										<input type="text" class="form-control" id="club" placeholder="Escribir">
-									</div>
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input__left">
-									<p>Equipo/Club</p>
-								</div>
-								<div class="jm-input__right">
-									<div class="jm-input jm-input--small">
-										<input type="text" class="form-control" id="club" placeholder="Escribir">
-									</div>
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input__left">
-									<p>Posici&oacute;n</p>
-								</div>
-								<div class="jm-input__right">
-									<div class="jm-input jm-input--small">
-										<input type="text" class="form-control" id="posicion" placeholder="Escribir">
-									</div>
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input__right">
-									<div class="jm-select">
-										<select class="selectpicker" name="participacion" id="participacion" title="Participaciones destacadas">
-											<option value="Diestro">Diestro</option>
-											<option value="Zurdo">Zurdo</option>
-										</select>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion--perfil__title">
-							<a><i class="mdi mdi-description"></i>Formaci&oacute;n Acad&eacute;mica</a>
-						</div>
-						<div class="jm-informacion--perfil__contenido">
-							<div class="jm-informacion__input">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="profesion" placeholder="Escribir profesión">
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="colegio" placeholder="Escribir colegio">
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="universidad" placeholder="Escribir universidad">
-								</div>
-							</div>
-							<div class="jm-informacion__input">
-								<div class="jm-input jm-input--small">
-									<input type="text" class="form-control" id="grado" placeholder="Escribir grado académico">
-								</div>
-							</div>
-						</div>
-						<div class="jm-informacion--perfil__title">
-							<a><i class="mdi mdi-description"></i>Ficha M&eacute;dica</a>
-						</div>
-					</div>
+				<div class="jm-datos--perfil">
+
+				</div>
+				<div class="jm-datos--perfil">
+
 				</div>
 			</div>
 			<div class="jm-bitacora">
@@ -378,30 +201,6 @@
 				</div>
 			</div>
 			<div class="jm-galeria">
-				<div class="jm-galery">
-					<div class="jm-galery__title" onclick="goToGaleria()">
-						<i class="mdi mdi-image"></i>
-						<h2>Galer&iacute;a CV</h2>
-					</div>
-					<div class="jm-galery__contenido">
-						<div class="jm-empty__image">
-							<img src="public/img/empty/empty-imagen.png">
-							<p>Estas fotos y videos son parte de la imagen como deportista.</p>
-						</div>
-					</div>
-				</div>
-				<div class="jm-galery" onclick="goToSponsors()">
-					<div class="jm-galery__title">
-						<i class="mdi mdi-volume_up"></i>
-						<h2>Sponsors</h2>
-					</div>
-					<div class="jm-galery__contenido">
-						<div class="jm-empty__image">
-							<img src="public/img/empty/empty-imagen.png">
-							<p>Sube aqu&iacute; fotos y videos de las marcas que te patrocinan.</p>
-						</div>
-					</div>
-				</div>
 				<div class="jm-galery" onclick="goToRed()">
 					<div class="jm-galery__title">
 						<i class="mdi mdi-people"></i>
@@ -452,6 +251,18 @@
 								<h2>Staminer</h2>
 								<p>Red deportiva profesional</p>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jm-galery" onclick="goToSponsors()">
+					<div class="jm-galery__title">
+						<i class="mdi mdi-volume_up"></i>
+						<h2>Sponsors</h2>
+					</div>
+					<div class="jm-galery__contenido">
+						<div class="jm-empty__image">
+							<img src="public/img/empty/empty-imagen.png">
+							<p>Sube aqu&iacute; fotos y videos de las marcas que te patrocinan.</p>
 						</div>
 					</div>
 				</div>

@@ -112,6 +112,12 @@ label
 			position relative
 			.mdl-button--icon
 				margin 0 5px
+			.jm-perfil--configuracion
+				img 
+					flexCenter()
+					margin auto
+					width 24px
+					border-radius 50%
 .jm-principal
 	height 100vh
 	flexCenter()
@@ -608,9 +614,10 @@ label
 		background-color #F5F5F5
 		height 40px
 .jm-publicaciones
-	background-color #F5F5F5
 	margin-top 20px
 	.jm-publication
+		margin-bottom 15px
+		background-color #F5F5F5
 		.jm-publication__title
 			flexCenter()
 			height 60px
@@ -640,7 +647,16 @@ label
 				max-width 100px
 				text-align right
 		.jm-publication__contenido
-			height 160px
+			&.empty
+				height 160px
+			.jm-full__publication
+				.jm-full__texto
+					padding 20px
+					p
+						font-size 14px
+						line-height 16px
+						font-family $light
+						color #383A3F
 			.jm-empty__publicacion
 				flexCenter()
 				height 100%

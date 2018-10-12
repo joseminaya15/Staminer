@@ -49,6 +49,9 @@ function openModalShared(id){
 	modalShared.find('.mdl-card__supporting-text').find('.jm-publication').html(htmlShared);
 	modal('modalShared');
 }
+function openDocumentoAdjunto(){
+	$("#elegirDocumento").trigger('click');
+}
 function abrirSelectFoto(elem){
 	if(clickFoto == 0) {
 		clickFoto = 1

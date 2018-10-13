@@ -307,7 +307,7 @@
 				    			</div>
 			    			</div>
 			    			<div class="jm-shared--second">
-			    				<div class="jm-shared__buttons">
+								<div class="jm-shared__buttons">
 									<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="mdi mdi-language"></i>
 									</button>
@@ -348,9 +348,11 @@
 									</ul>
 								</div>
 								<div class="jm-shared__buttons">
-									
+									<button class="mdl-button mdl-js-button mdl-button--icon" onclick="openDocumentoAdjunto()">
+										<i class="mdi mdi-attach_file"></i>
+									</button>
 								</div>
-			    			</div>
+							</div>
 			    		</div>
 			    		<div class="jm-publicaciones">
 			    			<div class="jm-publication">
@@ -413,12 +415,20 @@
 									</div>
 								</div>
 								<div class="jm-publication__seguidores">
-									<a id="like" onclick="">29 me gusta</a>
+									<a id="like" onclick="openModalLikeThis(this.id)">29 me gusta</a>
 									<a id="coment" onclick="">8 comentarios</a>
-									<a id="shared" onclick="">12 compartidos</a>
+									<a id="shared" onclick="openModalSharedThis(this.id)">12 compartidos</a>
 								</div>
 								<div class="jm-publication__actions">
-									
+									<button id="like-1" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-thumb_up"></i>
+									</button>
+									<button id="chat-1" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-message"></i>
+									</button>
+									<button id="shared-1" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
+										<i class="mdi mdi-screen_share"></i>
+									</button>
 								</div>
 							</div>
 							<div class="jm-publication">
@@ -480,12 +490,20 @@
 									</div>
 								</div>
 								<div class="jm-publication__seguidores">
-									<a id="like" onclick="">29 me gusta</a>
+									<a id="like" onclick="openModalLikeThis(this.id)">29 me gusta</a>
 									<a id="coment" onclick="">8 comentarios</a>
-									<a id="shared" onclick="">12 compartidos</a>
+									<a id="shared" onclick="openModalSharedThis(this.id)">12 compartidos</a>
 								</div>
 								<div class="jm-publication__actions">
-									
+									<button id="like-2" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-thumb_up"></i>
+									</button>
+									<button id="chat-2" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-message"></i>
+									</button>
+									<button id="shared-2" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
+										<i class="mdi mdi-screen_share"></i>
+									</button>
 								</div>
 							</div>
 							<div class="jm-publication">
@@ -518,12 +536,20 @@
 									</div>
 								</div>
 								<div class="jm-publication__seguidores">
-									<a id="like" onclick="">29 me gusta</a>
+									<a id="like" onclick="openModalLikeThis(this.id)">29 me gusta</a>
 									<a id="coment" onclick="">8 comentarios</a>
-									<a id="shared" onclick="">12 compartidos</a>
+									<a id="shared" onclick="openModalSharedThis(this.id)">12 compartidos</a>
 								</div>
 								<div class="jm-publication__actions">
-									
+									<button id="like-3" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-thumb_up"></i>
+									</button>
+									<button id="chat-3" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-message"></i>
+									</button>
+									<button id="shared-3" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
+										<i class="mdi mdi-screen_share"></i>
+									</button>
 								</div>
 							</div>
 							<div class="jm-publication">
@@ -577,12 +603,20 @@
 									</div>
 								</div>
 								<div class="jm-publication__seguidores">
-									<a id="like" onclick="">29 me gusta</a>
+									<a id="like" onclick="openModalLikeThis(this.id)">29 me gusta</a>
 									<a id="coment" onclick="">8 comentarios</a>
-									<a id="shared" onclick="">12 compartidos</a>
+									<a id="shared" onclick="openModalSharedThis(this.id)">12 compartidos</a>
 								</div>
-								<div class="jm-publication__actions">
-									
+								<div class="jm-shared--second">
+									<button id="like-4" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-thumb_up"></i>
+									</button>
+									<button id="message-4" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-message"></i>
+									</button>
+									<button id="shared-4" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
+										<i class="mdi mdi-screen_share"></i>
+									</button>
 								</div>
 							</div>
 			    		</div>
@@ -605,8 +639,52 @@
 				    			</div>
 			    			</div>
 			    			<div class="jm-shared--second">
-								
-			    			</div>
+								<div class="jm-shared__buttons">
+									<button id="public-2" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-language"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="public-2">
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>P&uacute;blico</h2>
+													<p>P&uacute;blico en general</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>Red</h2>
+													<p>Solo mis contactos de Staminer</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+										<li class="mdl-menu__item">
+											<div class="jm-menu">
+												<div class="jm-menu__left">
+													<h2>Solo yo</h2>
+													<p>&Uacute;nicamente para mi</p>
+												</div>
+												<div class="jm-menu__right">
+
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="jm-shared__buttons">
+									<button class="mdl-button mdl-js-button mdl-button--icon" onclick="openDocumentoAdjunto()">
+										<i class="mdi mdi-attach_file"></i>
+									</button>
+								</div>
+							</div>
 			    		</div>
 				    </div>
 				</div>
@@ -792,6 +870,648 @@
 					<div class="mdl-card__actions">
 						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Cancelar</button>
 						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalDeleteComentario" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-440" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Eliminar comentario</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<p>¿Est&aacute;s seguro que quieres eliminar este comentario?</p>
+					</div>
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-dismiss="modal">Cancelar</button>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalBlockUser" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-440" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Bloquear Usuario</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<p>¿Est&aacute;s seguro que quieres bloquear a esta persona</p>
+					</div>
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" data-dismiss="modal">Cancelar</button>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Eliminar</button>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalShared" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-540 jm-modal--publicacion" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Compartir publicaci&oacute;n</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<div class="jm-shared__publications">
+							<div class="jm-textarea">
+								<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Añadir un comentario..."></textarea>
+							</div>
+							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+								<i class="mdi mdi-send"></i>
+							</button>
+						</div>
+						<div class="jm-publicaciones">
+							<div class="jm-publication"></div>
+						</div>
+					</div>
+					<div class="mdl-card__redes">
+						<div class="jm-redes__left">
+							<p>Tambi&eacute;n en:</p>
+						</div>
+						<div class="jm-redes__right">
+							<div class="jm-radio">
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+									<span class="mdl-radio__label"><i class="fa fa-facebook"></i></span>
+									<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
+								</label>
+							</div>
+							<div class="jm-radio">
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+									<span class="mdl-radio__label"><i class="fa fa-instagram"></i></span>
+									<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1">
+								</label>
+							</div>
+							<div class="jm-radio">
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+									<span class="mdl-radio__label"><i class="fa fa-twitter"></i></span>
+									<input type="radio" id="option-3" class="mdl-radio__button" name="options" value="1">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalLikeThis" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-540 jm-modal--like" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>A qui&eacute;nes les gust&oacute; esto</h2>
+					</div>
+					<div class="mdl-card__supporting-text p-t-0 p-b-0">
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-0" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-0">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-1" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-1">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-2" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-2">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-3" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-3">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-4" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-4">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-5" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-5">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-6" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-6">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-7" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-7">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-8" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-8">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-9" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-9">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-10" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-10">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+							<i class="mdi mdi-close"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalSharedThis" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-md jm-modal--default max-width-540 jm-modal--like" role="document">
+			<div class="modal-content">
+				<div class="mdl-card">
+					<div class="mdl-card__title">
+						<h2>Qui&eacute;nes compartieron esto</h2>
+					</div>
+					<div class="mdl-card__supporting-text p-t-0 p-b-0">
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-0" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-0">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-1" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-1">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-2" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-2">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-3" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-3">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-4" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-4">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-5" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-5">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-6" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-6">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-7" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-7">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-8" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-8">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-9" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-9">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="jm-like">
+							<div class="jm-like__left">
+								<div class="jm-like__persona">
+									<img src="public/img/empty/empty-perfil.png" alt="L">
+								</div>
+								<div class="jm-like__texto">
+									<h2>Denetrios Jhonson</h2>
+									<p>Deportista deporte profesional</p>
+								</div>
+							</div>
+							<div class="jm-like__right">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seguir</button>
+								<div class="jm-menu__like">
+									<button id="liked-10" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="mdi mdi-more_vert"></i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-10">
+										<li class="mdl-menu__item">Conectar</li>
+										<li class="mdl-menu__item">Bloquear Usuario</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">

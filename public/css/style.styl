@@ -1055,6 +1055,33 @@ label
 		justify-content flex-end
 		width 100%
 		max-width 60px
+.jm-like
+	flexCenter()
+	border-bottom 1px solid #E8E9EB
+	height 65px
+	.jm-like__left
+		flexCenter()
+		width 100%
+		.jm-like__persona
+			img 
+				width 40px
+				border-radius 50%
+		.jm-like__texto
+			h2
+				font-size 14px
+				line-height 16px
+				margin 3px 0
+			p
+				font-size 12px
+				line-height 14px
+				font--family $light
+	.jm-like__right
+		flexCenter()
+		justify-content flex-end
+		width 100%
+		max-width 140px
+		.jm-menu__like
+			position relative
 .jm-title
 	background-color $color
 	color #FFFFFF
@@ -1140,6 +1167,11 @@ label
 					i 
 						color #FFFFFF
 						font-size 16px
+		&.jm-modal--like
+			.mdl-card
+				.mdl-card__supporting-text
+					height 390px
+					overflow-y scroll
 	.jm-modal--publicacion
 		.mdl-card
 			.mdl-card__supporting-text

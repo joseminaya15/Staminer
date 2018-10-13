@@ -49,6 +49,14 @@ function openModalShared(id){
 	modalShared.find('.mdl-card__supporting-text').find('.jm-publication').html(htmlShared);
 	modal('modalShared');
 }
+function openModalLikeThis(id){
+	var modalLike = $('#modalLikeThis');
+	modal('modalLikeThis');
+}
+function openModalSharedThis(id){
+	var modalShared= $('#modalSharedThis');
+	modal('modalSharedThis');
+}
 function openDocumentoAdjunto(){
 	$("#elegirDocumento").trigger('click');
 }

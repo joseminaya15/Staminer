@@ -60,6 +60,11 @@ function openModalSharedThis(id){
 function openDocumentoAdjunto(){
 	$("#elegirDocumento").trigger('click');
 }
+function goToDoLike(id){
+	var buttonId    = $('#'+id);
+	var publication = buttonId.parents('.jm-publication');
+	buttonId.toggleClass('button-liked');
+}
 function goToDoComentario(id){
 	var buttonId    = $('#'+id);
 	var publication = buttonId.parents('.jm-publication');

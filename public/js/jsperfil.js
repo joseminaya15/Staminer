@@ -63,7 +63,16 @@ function openDocumentoAdjunto(){
 function goToDoLike(id){
 	var buttonId    = $('#'+id);
 	var publication = buttonId.parents('.jm-publication');
+	var numberLikes = publication.find('.jm-publication__seguidores a span');
+	var TextLikes   = publication.find('.jm-publication__seguidores a span').text();
 	buttonId.toggleClass('button-liked');
+	if (numberLikes.text() === TextLikes) {
+        numberLikes.text(TextLikes+1);
+		console.log("true");
+    } else {
+        numberLikes.text(TextLikes);
+		console.log("false");
+	}
 }
 function goToDoComentario(id){
 	var buttonId    = $('#'+id);

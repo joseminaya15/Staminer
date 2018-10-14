@@ -44,8 +44,8 @@ function DeleteComentario(){
 }
 function openModalShared(id){
 	var modalShared = $('#modalShared');
-	var buttonId = $('#'+id);
-	var htmlShared = buttonId.parents('.jm-publication').html();
+	var buttonId    = $('#'+id);
+	var htmlShared  = buttonId.parents('.jm-publication').html();
 	modalShared.find('.mdl-card__supporting-text').find('.jm-publication').html(htmlShared);
 	modal('modalShared');
 }
@@ -59,6 +59,12 @@ function openModalSharedThis(id){
 }
 function openDocumentoAdjunto(){
 	$("#elegirDocumento").trigger('click');
+}
+function goToDoComentario(id){
+	var buttonId    = $('#'+id);
+	var publication = buttonId.parents('.jm-publication');
+	publication.find('.jm-comentario__writting').fadeIn();
+	publication.find('.jm-comentario__writting').css('display','flex');
 }
 function abrirSelectFoto(elem){
 	if(clickFoto == 0) {

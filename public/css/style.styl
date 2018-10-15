@@ -224,20 +224,42 @@ label
 			.item
 				height calc(100vh - 46px)
 	.owl-nav
+		flexCenter()
 		position absolute
 		right 60px
 		bottom 50px
-		[class*=owl-]
+		.owl-prev
+		.owl-next
+			transition(all)
+			opacity .7
 			border-radius 50%
 			background-color transparent
 			border 1px solid #FFFFFF
-			transition(all)
 			&:hover
 				background-color $color
 				border-color $color
+				opacity 1
 			i
 				color #FFFFFF
-			
+		.owl-prev
+			order 1
+		.owl-number
+			order 2
+			border-radius 0
+			border none
+			background-color transparent
+			#numberItem
+				font-size 22px
+				line-height 24px
+				font-family $light
+				margin-left 10px
+			#numberLength
+				font-size 15px
+				line-height 17px
+				font-family $light
+				margin-right 10px
+		.owl-next
+			order 3	
 .jm-fondo--session
 	absolute()
 	background-size cover !important

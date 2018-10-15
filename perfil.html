@@ -1055,7 +1055,12 @@
 								</div>
 								<div class="jm-foto--fondo">
 									<p>Foto de cabecera</p>
-									<img src="public/img/empty/empty-fondo.png" alt="L">
+									<div class="jm-foto--cropper fondo" data-deportista= "deportista1" data-idx="1">
+										<img src="public/img/empty/empty-fondo.png" alt="L" onclick="abrirSelectFoto($(this))">
+										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="abrirSelectFoto($(this))">
+											<i class="mdi mdi-camera_alt"></i>
+										</button>
+									</div>
 									<span>Tama&ntilde;o recomendado 1400x400px</span>
 								</div>
 							</div>

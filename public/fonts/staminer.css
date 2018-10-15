@@ -24,36 +24,108 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.st-adjuntar:before {
+.st-asociacion:before {
   content: "\e900";
 }
-.st-buscar:before {
+.st-comentario:before {
   content: "\e901";
 }
-.st-compartir:before {
+.st-ficha_medica:before {
   content: "\e902";
 }
-.st-configurar:before {
+.st-formacion_academica:before {
   content: "\e903";
 }
-.st-editar:before {
+.st-more_informacion:before {
   content: "\e904";
 }
-.st-enviar:before {
+.st-add_email:before {
   content: "\e905";
 }
-.st-grupo:before {
+.st-add_imagen:before {
   content: "\e906";
 }
-.st-lenguaje:before {
+.st-add_video:before {
   content: "\e907";
 }
-.st-mensaje:before {
+.st-adjuntar:before {
   content: "\e908";
 }
-.st-notificacion:before {
+.st-arrow_right:before {
   content: "\e909";
 }
-.st-persona:before {
+.st-arrow_left:before {
   content: "\e90a";
+}
+.st-buscar:before {
+  content: "\e90b";
+}
+.st-cerrar:before {
+  content: "\e90c";
+}
+.st-champion:before {
+  content: "\e90d";
+}
+.st-close_modal:before {
+  content: "\e90e";
+}
+.st-compartir:before {
+  content: "\e90f";
+}
+.st-configuracion:before {
+  content: "\e910";
+}
+.st-editar:before {
+  content: "\e911";
+}
+.st-email:before {
+  content: "\e912";
+}
+.st-oenviar:before {
+  content: "\e913";
+}
+.st-imagen:before {
+  content: "\e914";
+}
+.st-like:before {
+  content: "\e915";
+}
+.st-listo:before {
+  content: "\e916";
+}
+.st-menu:before {
+  content: "\e917";
+}
+.st-mostrar:before {
+  content: "\e918";
+}
+.st-notas:before {
+  content: "\e919";
+}
+.st-notificaciones:before {
+  content: "\e91a";
+}
+.st-pause:before {
+  content: "\e91b";
+}
+.st-person:before {
+  content: "\e91c";
+}
+.st-play:before {
+  content: "\e91d";
+}
+.st-publico:before {
+  content: "\e91e";
+}
+.st-red:before {
+  content: "\e91f";
+}
+.st-sponsors:before {
+  content: "\e920";
+}
+.st-ubicacion:before {
+  content: "\e921";
+}
+.st-video:before {
+  content: "\e922";
 }

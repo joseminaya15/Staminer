@@ -24,7 +24,7 @@ $('#principal .owl-carousel').owlCarousel({
 	autoplay : true,
 	mouseDrag: false,
 	autoplayTimeout : 5000,
-	navText: ['<i class="mdi mdi-arrow_back"></i>','<i class="mdi mdi-arrow_forward"></i>'],
+	navText: ['<i class="st st-arrow_left"></i>','<i class="st st-arrow_right"></i>'],
   	navElement: 'span',
 });
 function callback(event) {

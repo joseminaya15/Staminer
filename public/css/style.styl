@@ -51,6 +51,8 @@ body
 	overflow-y scroll
 	font-family $regular
 	color #000000
+	&.over-hidden
+		overflow hidden
 img
 	width 100%
 p
@@ -64,13 +66,14 @@ h2
 label
 	font-weight 100
 .jm-header
+	flexCenter()
 	height 46px
 	background-color #F5F5F5
 	position fixed
 	top 0
 	z-index 10
 	width 100%
-	flexCenter()
+	padding 0 15px
 	.jm-container
 		flexCenter()
 		.jm-login
@@ -156,13 +159,14 @@ label
 	&.max-width
 		width 100%
 .jm-footer
+	flexCenter()
 	position relative
 	background-color #F5F5F5
 	color #818181
 	font-size: 11px
 	font-family $light
 	height 46px
-	flexCenter()
+	padding 0 15px
 	.jm-container
 		flexCenter()
 		.jm-footer__left

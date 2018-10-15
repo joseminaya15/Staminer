@@ -18,8 +18,7 @@
 		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/mdl/material.min.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/cropper/cropper.css">
-		<link type="text/css" rel="stylesheet" href="public/fonts/material-icons.css">
-		<link type="text/css" rel="stylesheet" href="public/fonts/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="public/fonts/staminer.css">
 		<link type="text/css" rel="stylesheet" href="public/fonts/roboto.css">
 		<link type="text/css" rel="stylesheet" href="public/css/m-p.min.css">
 		<link type="text/css" rel="stylesheet" href="public/css/style.css">
@@ -34,18 +33,18 @@
 			<div class="jm-search">
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Buscar..." aria-describedby="basic-addon2">
-					<i class="mdi mdi-search"></i>
+					<i class="st st-search"></i>
 				</div>
 			</div>
 			<div class="jm-header--menu">
 				<button class="mdl-button mdl-js-button mdl-button--icon">
-					<i class="mdi mdi-mail"></i>
+					<i class="st st-mail"></i>
 				</button>
 				<button class="mdl-button mdl-js-button mdl-button--icon">
-					<i class="mdi mdi-notifications"></i>
+					<i class="st st-notifications"></i>
 				</button>
 				<button class="mdl-button mdl-js-button mdl-button--icon">
-					<i class="mdi mdi-settings"></i>
+					<i class="st st-settings"></i>
 				</button>
 				<div class="jm-perfil--configuracion">
 					<button id="configuracion-perfil" class="mdl-button mdl-js-button mdl-button--icon">
@@ -105,9 +104,9 @@
 						<h2>Accesos directos</h2>
 					</div>
 					<div class="jm-accesos__contenido">
-						<a onclick=""><i class="mdi mdi-image"></i>Galeria CV</a>
-						<a onclick=""><i class="mdi mdi-volume_up"></i>Sponsors</a>
-						<a onclick=""><i class="mdi mdi-people"></i>Red</a>
+						<a onclick=""><i class="st st-image"></i>Galeria CV</a>
+						<a onclick=""><i class="st st-volume_up"></i>Sponsors</a>
+						<a onclick=""><i class="st st-people"></i>Red</a>
 					</div>
 				</div>
 			</div>
@@ -130,14 +129,14 @@
 				    			</div>
 				    			<div class="jm-shared__actions">
 				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-										<i class="mdi mdi-send"></i>
+										<i class="st st-send"></i>
 									</button>
 				    			</div>
 			    			</div>
 			    			<div class="jm-shared--second">
 			    				<div class="jm-shared__buttons">
 									<button id="publico-1" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-language"></i>
+										<i class="st st-language"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="publico-1">
 										<li class="mdl-menu__item">
@@ -183,7 +182,7 @@
 								</div>
 								<div class="jm-shared__buttons">
 									<button class="mdl-button mdl-js-button mdl-button--icon" onclick="openDocumentoAdjunto()">
-										<i class="mdi mdi-attach_file"></i>
+										<i class="st st-attach_file"></i>
 									</button>
 								</div>
 			    			</div>
@@ -200,7 +199,7 @@
 			    					</div>
 			    					<div class="jm-publication__time">
 			    						<button id="menu-editar-1" class="mdl-button mdl-js-button mdl-button--icon">
-											<i class="mdi mdi-more_vert"></i>
+											<i class="st st-more_vert"></i>
 										</button>
 										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar-1">
 											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
@@ -225,13 +224,13 @@
 								</div>
 			    				<div class="jm-publication__actions">
 									<button id="like-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoLike(this.id)">
-										<i class="mdi mdi-thumb_up"></i>
+										<i class="st st-thumb_up"></i>
 									</button>
 									<button id="comentary-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoComentario(this.id)">
-										<i class="mdi mdi-message"></i>
+										<i class="st st-message"></i>
 									</button>
 									<button id="shared-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
-										<i class="mdi mdi-screen_share"></i>
+										<i class="st st-screen_share"></i>
 									</button>
 								</div>
 								<div class="jm-publication__comentario">
@@ -244,7 +243,7 @@
 												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
 											</div>
 											<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-												<i class="mdi mdi-send"></i>
+												<i class="st st-send"></i>
 											</button>
 										</div>
 									</div>
@@ -261,7 +260,7 @@
 									</div>
 									<div class="jm-publication__time">
 										<button id="menu-editar-2" class="mdl-button mdl-js-button mdl-button--icon">
-											<i class="mdi mdi-more_vert"></i>
+											<i class="st st-more_vert"></i>
 										</button>
 										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar-2">
 											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
@@ -301,7 +300,7 @@
 														<p>Nombre del Pa&iacute;s y lugar del evento</p>
 													</div>
 													<div class="jm-skills__right">
-														<a href=""><i class="mdi mdi-done"></i>www.paginacertificado.com</a>
+														<a href=""><i class="st st-done"></i>www.paginacertificado.com</a>
 													</div>
 												</div>
 											</div>
@@ -315,13 +314,13 @@
 								</div>
 								<div class="jm-publication__actions">
 									<button id="like-1" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoLike(this.id)">
-										<i class="mdi mdi-thumb_up"></i>
+										<i class="st st-thumb_up"></i>
 									</button>
 									<button id="comentary-1" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoComentario(this.id)">
-										<i class="mdi mdi-message"></i>
+										<i class="st st-message"></i>
 									</button>
 									<button id="shared-1" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
-										<i class="mdi mdi-screen_share"></i>
+										<i class="st st-screen_share"></i>
 									</button>
 								</div>
 								<div class="jm-publication__comentario">
@@ -334,7 +333,7 @@
 												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
 											</div>
 											<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-												<i class="mdi mdi-send"></i>
+												<i class="st st-send"></i>
 											</button>
 										</div>
 									</div>
@@ -351,7 +350,7 @@
 									</div>
 									<div class="jm-publication__time">
 										<button id="menu-editar-3" class="mdl-button mdl-js-button mdl-button--icon">
-											<i class="mdi mdi-more_vert"></i>
+											<i class="st st-more_vert"></i>
 										</button>
 										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar-3">
 											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
@@ -376,13 +375,13 @@
 								</div>
 								<div class="jm-publication__actions">
 									<button id="like-2" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoLike(this.id)">
-										<i class="mdi mdi-thumb_up"></i>
+										<i class="st st-thumb_up"></i>
 									</button>
 									<button id="comentary-2" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoComentario(this.id)">
-										<i class="mdi mdi-message"></i>
+										<i class="st st-message"></i>
 									</button>
 									<button id="shared-2" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
-										<i class="mdi mdi-screen_share"></i>
+										<i class="st st-screen_share"></i>
 									</button>
 								</div>
 								<div class="jm-publication__comentario">
@@ -398,7 +397,7 @@
 											<div class="jm-persona__actions">
 												<div class="jm-menu__comentario">
 													<button id="menu-comentario-1" class="mdl-button mdl-js-button mdl-button--icon">
-														<i class="mdi mdi-more_vert"></i>
+														<i class="st st-more_vert"></i>
 													</button>
 													<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-comentario-1">
 														<li class="mdl-menu__item" onclick="EditComentario()">Editar Comentario</li>
@@ -437,7 +436,7 @@
 											<div class="jm-persona__actions">
 												<div class="jm-menu__comentario">
 													<button id="menu-comentario-2" class="mdl-button mdl-js-button mdl-button--icon">
-														<i class="mdi mdi-more_vert"></i>
+														<i class="st st-more_vert"></i>
 													</button>
 													<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-comentario-2">
 														<li class="mdl-menu__item" onclick="EditComentario()">Editar Comentario</li>
@@ -475,7 +474,7 @@
 												<div class="jm-persona__actions">
 													<div class="jm-menu__comentario">
 														<button id="menu-comentario-3" class="mdl-button mdl-js-button mdl-button--icon">
-															<i class="mdi mdi-more_vert"></i>
+															<i class="st st-more_vert"></i>
 														</button>
 														<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-comentario-3">
 															<li class="mdl-menu__item" onclick="EditComentario()">Editar Comentario</li>
@@ -512,7 +511,7 @@
 												<div class="jm-persona__actions">
 													<div class="jm-menu__comentario">
 														<button id="menu-comentario-4" class="mdl-button mdl-js-button mdl-button--icon">
-															<i class="mdi mdi-more_vert"></i>
+															<i class="st st-more_vert"></i>
 														</button>
 														<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-comentario-4">
 															<li class="mdl-menu__item" onclick="EditComentario()">Editar Comentario</li>
@@ -547,7 +546,7 @@
 												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
 											</div>
 											<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-												<i class="mdi mdi-send"></i>
+												<i class="st st-send"></i>
 											</button>
 										</div>
 									</div>
@@ -564,7 +563,7 @@
 									</div>
 									<div class="jm-publication__time">
 										<button id="menu-editar-4" class="mdl-button mdl-js-button mdl-button--icon">
-											<i class="mdi mdi-more_vert"></i>
+											<i class="st st-more_vert"></i>
 										</button>
 										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar-4">
 											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
@@ -596,7 +595,7 @@
 														<p>Nombre del Pa&iacute;s y lugar del evento</p>
 													</div>
 													<div class="jm-skills__right">
-														<a href=""><i class="mdi mdi-done"></i>www.paginacertificado.com</a>
+														<a href=""><i class="st st-done"></i>www.paginacertificado.com</a>
 													</div>
 												</div>
 											</div>
@@ -610,13 +609,13 @@
 								</div>
 								<div class="jm-publication__actions">
 									<button id="like-3" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoLike(this.id)">
-										<i class="mdi mdi-thumb_up"></i>
+										<i class="st st-thumb_up"></i>
 									</button>
 									<button id="comentary-3" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoComentario(this.id)">
-										<i class="mdi mdi-message"></i>
+										<i class="st st-message"></i>
 									</button>
 									<button id="shared-3" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
-										<i class="mdi mdi-screen_share"></i>
+										<i class="st st-screen_share"></i>
 									</button>
 								</div>
 								<div class="jm-publication__comentario">
@@ -629,7 +628,7 @@
 												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
 											</div>
 											<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-												<i class="mdi mdi-send"></i>
+												<i class="st st-send"></i>
 											</button>
 										</div>
 									</div>
@@ -650,14 +649,14 @@
 				    			</div>
 				    			<div class="jm-shared__actions">
 				    				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-										<i class="mdi mdi-send"></i>
+										<i class="st st-send"></i>
 									</button>
 				    			</div>
 			    			</div>
 			    			<div class="jm-shared--second">
 								<div class="jm-shared__buttons">
 									<button id="publico-2" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-language"></i>
+										<i class="st st-language"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="publico-2">
 										<li class="mdl-menu__item">
@@ -703,7 +702,7 @@
 								</div>
 								<div class="jm-shared__buttons">
 									<button class="mdl-button mdl-js-button mdl-button--icon" onclick="openDocumentoAdjunto()">
-										<i class="mdi mdi-attach_file"></i>
+										<i class="st st-attach_file"></i>
 									</button>
 								</div>
 							</div>
@@ -805,7 +804,7 @@
 									<div class="jm-foto--cropper">
 										<img src="public/img/empty/empty-perfil-circle.png" alt="L">
 										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="abrirSelectFoto(this)">
-											<i class="mdi mdi-camera_alt"></i>
+											<i class="st st-camera_alt"></i>
 										</button>
 									</div>
 									<span>Peso m&aacute;x. recomendado 12Mb</span>
@@ -854,7 +853,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -877,7 +876,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -900,7 +899,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -923,7 +922,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -943,7 +942,7 @@
 								<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Añadir un comentario..."></textarea>
 							</div>
 							<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-								<i class="mdi mdi-send"></i>
+								<i class="st st-send"></i>
 							</button>
 						</div>
 						<div class="jm-publicaciones">
@@ -977,7 +976,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -1006,7 +1005,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-0" class="mdl-button mdl-js-button mdl-button--icon">
-								  		<i class="mdi mdi-more_vert"></i>
+								  		<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-0">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1029,7 +1028,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-1" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-1">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1052,7 +1051,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-2" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-2">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1075,7 +1074,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-3" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-3">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1098,7 +1097,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-4" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-4">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1121,7 +1120,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-5" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-5">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1144,7 +1143,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-6" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-6">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1167,7 +1166,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-7" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-7">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1190,7 +1189,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-8" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-8">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1213,7 +1212,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-9" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-9">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1236,7 +1235,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-10" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-10">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1248,7 +1247,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -1277,7 +1276,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-0" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-0">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1300,7 +1299,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-1" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-1">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1323,7 +1322,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-2" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-2">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1346,7 +1345,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-3" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-3">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1369,7 +1368,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-4" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-4">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1392,7 +1391,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-5" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-5">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1415,7 +1414,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-6" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-6">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1438,7 +1437,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-7" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-7">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1461,7 +1460,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-8" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-8">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1484,7 +1483,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-9" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-9">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1507,7 +1506,7 @@
 								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">Seguir</button>
 								<div class="jm-menu__like">
 									<button id="liked-10" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="mdi mdi-more_vert"></i>
+										<i class="st st-more_vert"></i>
 									</button>
 									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="liked-10">
 										<li class="mdl-menu__item">Conectar</li>
@@ -1519,7 +1518,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>
@@ -1544,7 +1543,7 @@
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
-							<i class="mdi mdi-close"></i>
+							<i class="st st-close"></i>
 						</button>
 					</div>
 				</div>

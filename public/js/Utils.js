@@ -7,8 +7,8 @@ function initCropper(idImg) {
 		log : function() {
 		}
 	};
-	var $body = $('body');
-	$body.tooltip();
+	// var $body = $('body');
+	// $body.tooltip();
 	var $image = $('#' + idImg);
 	var $dataX = $('#dataX');
 	var $dataY = $('#dataY');
@@ -18,7 +18,7 @@ function initCropper(idImg) {
 	var $dataScaleX = $('#dataScaleX');
 	var $dataScaleY = $('#dataScaleY');
 	var options = {
-		aspectRatio : 9 / 9,
+		aspectRatio : 8 / 8,
 		preview : '.img-preview',
 		crop : function(e) {
 			$dataX.val(Math.round(e.x));

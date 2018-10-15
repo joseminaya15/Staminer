@@ -134,7 +134,7 @@ function subirImagenRecortada(){
 	formData.append('foto', imagenRecortada);
 	formData.append('ext', extImagen);
 	$(ses_foto_colaborador).attr("src", imagenRecortada);
-	$('#elegirFotoPerfil').replaceWith('<input type="file" id="elegirFotoPersona" name="elegirFotoPersona" style="display: none" accept="image/*">');
+	$('#elegirFotoPerfil').replaceWith('<input type="file" id="elegirFotoPerfil" name="elegirFotoPerfil" style="display: none" accept="image/*">');
 	$("#elegirFotoPerfil").change(function(e){
 		cambiarFotoPerfil();
 	});

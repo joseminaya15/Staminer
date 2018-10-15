@@ -1045,9 +1045,9 @@
 							<div class="jm-modal--foto">
 								<div class="jm-foto--perfil">
 									<p>Foto de perfil</p>
-									<div class="jm-foto--cropper">
-										<img src="public/img/empty/empty-perfil-circle.png" alt="L">
-										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="abrirSelectFoto(this)">
+									<div class="jm-foto--cropper" data-deportista= "deportista1" data-idx="1">
+										<img src="public/img/empty/empty-perfil-circle.png" alt="L" onclick="abrirSelectFoto($(this))">
+										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="abrirSelectFoto($(this))">
 											<i class="mdi mdi-camera_alt"></i>
 										</button>
 									</div>

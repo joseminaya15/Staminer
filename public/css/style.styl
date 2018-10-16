@@ -88,9 +88,13 @@ label
 		.jm-search
 			width 100%
 			.input-group
+				flexCenter()
 				max-width 490px
 				margin auto
 				width 100%
+				background-color #FFFFFF
+				border-radius 5px
+				padding 0 8px
 				.form-control
 					height 28px
 					border-radius 4px
@@ -99,12 +103,14 @@ label
 					border none
 					box-shadow none
 					outline none
+					width 100%
+					padding 6px 5px
 				i
-					position absolute
-					right 6px
-					top 3px
-					z-index 2
-					font-size 20px
+					width 100%
+					max-width 20px
+					text-align center
+					font-size 16px
+					cursor pointer
 		.jm-login
 			.jm-button
 				height 28px
@@ -242,6 +248,10 @@ label
 			transition(all)
 			background-color transparent
 			opacity .7
+			border-radius 0
+			padding 0
+			margin 0
+			font-size 23px
 			&:hover
 				opacity 1
 			i

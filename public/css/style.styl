@@ -1411,9 +1411,15 @@ label
 	.mdl-menu
 		width 100%
 		.mdl-menu__item
+			transition(background-color)
 			width 100%
 			font-family $light
 			font-size 12px
+			line-height 32px
+			height 32px
+			&:hover
+				background-color #ebf3ff
+				color $color
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 6px

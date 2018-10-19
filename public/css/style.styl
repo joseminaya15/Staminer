@@ -466,10 +466,15 @@ label
 		width 50%
 		text-align center
 		&>a
+			transition(background-color)
 			border none !important
 			color $color
 			font-size 13px
 			padding 6px 15px
+			margin 0
+			&:hover
+				background-color #ebf3ff
+				color $color
 	&>li.active
 		&>a
 			background-color $color

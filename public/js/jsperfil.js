@@ -79,6 +79,10 @@ function goToDoComentario(id){
 	publication.find('.jm-comentario__writting').fadeIn();
 	publication.find('.jm-comentario__writting').css('display','flex');
 }
+function sendComentario(){
+	msj('error', 'Escribe un comentario');
+	return;
+}
 function abrirSelectFoto(elem){
 	if(clickFoto == 0) {
 		clickFoto = 1

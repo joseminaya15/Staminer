@@ -4,6 +4,7 @@
 .toast-message {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+	font-size: 12px;
 }
 .toast-message a, .toast-message label {
 	color: #ffffff;
@@ -94,8 +95,8 @@ button.toast-close-button {
 	transition: all .218s ease-in-out;
 }
 #toast-container .toast{
-	background-color: #FFFFFF !important;
-	color: #000000;
+	background-color: #ebf3ff !important;
+	color: #0064DC;
 	min-width: 300px;
     border-radius: 3px;
 	padding: 15px 20px;

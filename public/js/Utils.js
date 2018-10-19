@@ -77,3 +77,44 @@ function recortarImagen($image, fotoOriginal) {
       return result.toDataURL("image/png"); 
     }
 }
+function msj(tipo, msj, cabecera){
+		if (tipo == 'error'){
+				toastr.error(msj, cabecera, {
+						closeButton: true,
+						positionClass: "toast-bottom-right",
+						showDuration: 250,
+						hideDuration: 250,
+						timeOut: 5000,
+						showEasing: "swing",
+						hideEasing: "swing",
+						showMethod: "fadeIn",
+						hideMethod: "fadeOut"
+				});
+		} else if (tipo == 'warning'){
+				toastr.warning(msj, cabecera, {
+						closeButton: true,
+						positionClass: "toast-bottom-right",
+						showDuration: 250,
+						hideDuration: 250,
+						timeOut: 5000,
+						showEasing: "swing",
+						hideEasing: "swing",
+						showMethod: "fadeIn",
+						hideMethod: "fadeOut"
+				});
+		} else if (tipo == 'success'){
+				toastr.warning(msj, cabecera, {
+						closeButton: true,
+						positionClass: "toast-bottom-right",
+						showDuration: 250,
+						hideDuration: 250,
+						timeOut: 5000,
+						showEasing: "swing",
+						hideEasing: "swing",
+						showMethod: "fadeIn",
+						hideMethod: "fadeOut"
+				});
+		} else{
+			toastr.success(msj, cabecera, {timeOut: 4000});
+		}
+}

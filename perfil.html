@@ -17,6 +17,7 @@
 		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/mdl/material.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/toaster/toastr.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/cropper/cropper.css">
 		<link type="text/css" rel="stylesheet" href="public/fonts/staminer.css">
 		<link type="text/css" rel="stylesheet" href="public/fonts/roboto.css">
@@ -406,7 +407,7 @@
 											<div class="jm-textarea">
 												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
 											</div>
-											<button class="mdl-button mdl-js-button mdl-button--icon">
+											<button class="mdl-button mdl-js-button mdl-button--icon" onclick="sendComentario()">
 												<i class="st st-enviar"></i>
 											</button>
 										</div>
@@ -1807,6 +1808,7 @@
     <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
     <script src="public/plugins/mdl/material.min.js"></script>
+    <script src="public/plugins/toaster/toastr.min.js"></script>
 	<script src="public/plugins/cropper/cropper.js"></script>
 	<script src="public/plugins/canvasResize/binaryajax.js"></script>
 	<script src="public/plugins/canvasResize/exif.js"></script>

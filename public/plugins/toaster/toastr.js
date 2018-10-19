@@ -181,7 +181,7 @@
                     titleClass: 'toast-title',
                     messageClass: 'toast-message',
                     target: 'body',
-                    closeHtml: '<button class="mdl-button mdl-js-button mdl-button--icon close-toastr" type="button"><i class="mdi mdi-close"></i></button>',
+                    closeHtml: '<button class="mdl-button mdl-js-button mdl-button--icon close-toastr" type="button"><i class="st st-cerrar"></i></button>',
                     newestOnTop: true,
                     preventDuplicates: false,
                     progressBar: false

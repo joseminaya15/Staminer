@@ -36,3 +36,12 @@ function goToSolicitud(){
 	$('#solicitud1').addClass('jm-opacity-block');
 	$('#solicitud2').removeClass('jm-opacity');
 }
+function inputSearch(){
+	var searchInput = $('#inputSearch').val();
+	if($.trim(searchInput).length>=1){
+		$('.jm-search').find('i').addClass('active');
+	}
+	else if($.trim(searchInput).length==0){
+		$('.jm-search').find('i').removeClass('active');
+	}
+}

@@ -1,4 +1,5 @@
 $color       = #0064dc;
+$default     = #383A3F;
 $light       = 'RobotoLight'
 $lightItalic = 'RobotoLightItalic'
 $regular     = 'RobotoRegular'
@@ -656,7 +657,8 @@ label
 			color #818181
 			cursor pointer
 			i 
-				margin-right 10px
+				width 45px
+				display inline-block
 				color #818181
 .jm-galeria--fotos
 	display grid
@@ -838,11 +840,11 @@ label
 						i 
 							color #00E96F
 							margin-right 10px
-					border-top 1px solid #e8e9eb
+					border-top 0.5px solid #e8e9eb
 					.jm-skills__left
 						width 100%
 						padding 10px 0
-						border-right 1px solid #e8e9eb
+						border-right 0.5px solid #e8e9eb
 					.jm-skills__right
 						width 100%
 						padding 10px 0 10px 20px
@@ -942,8 +944,7 @@ label
 					height 26px
 					border-radius 10px
 					color #818181
-					.mdl-ripple
-						background-color rgba(0, 100, 220, .5)
+					background-color transparent
 			.jm-comentario__right
 				width 100%
 				text-align right
@@ -969,6 +970,7 @@ label
 			font-size 14px
 			margin 5px 0
 			line-height 16px
+			color $default
 	.jm-galery__contenido
 		height 220px
 		&.scroll
@@ -1017,6 +1019,7 @@ label
 				font-size 14px
 				line-height 16px
 				margin 3px 0
+				color $default
 			p
 				font-family $light
 				font-size 12px

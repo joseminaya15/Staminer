@@ -24,6 +24,9 @@ $('.jm-line').keydown(function(){
 	// 	console.log("entra");
 	// }
 });
+function goToPerfil(){
+	window.location.href = "perfil.html";
+}
 function goToEditCabecera(){
 	$('#modalEditarEncabezado').modal('show');
 }

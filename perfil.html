@@ -29,7 +29,7 @@
 	<header class="jm-header">
 		<div class="jm-container">
 			<div class="jm-staminer">
-				<a href=""><img src="public/img/logo/logo-staminer.png" alt="Staminer logo"></a>
+				<a href="feed.html"><img src="public/img/logo/logo-staminer.png" alt="Staminer logo"></a>
 			</div>
 			<div class="jm-search">
 				<div class="input-group">
@@ -361,59 +361,6 @@
 							</div>
 			    		</div>
 			    		<div class="jm-publicaciones">
-			    			<div class="jm-publication">
-			    				<div class="jm-publication__title">
-			    					<div class="jm-publication__foto">
-			    						<img src="public/img/empty/empty-perfil.png">
-			    					</div>
-			    					<div class="jm-publication__name">
-			    						<h2>Luis Antonio Mendoza</h2>
-			    						<p>Deporte Profesional Profesional</p>
-			    					</div>
-			    					<div class="jm-publication__time">
-			    						<button id="menu-editar" class="mdl-button mdl-js-button mdl-button--icon">
-											<i class="st st-more_vert"></i>
-										</button>
-										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar">
-											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
-											<li class="mdl-menu__item" onclick="DeletePublicacion()">Eliminar Publicaci&oacute;n</li>
-										</ul>
-			    					</div>
-			    				</div>
-			    				<div class="jm-publication__contenido empty">
-			    					<div class="jm-empty__publicacion">
-			    						<img src="public/img/empty/empty-publicacion.png">
-			    						<p>¡Bienvenido a Staminer!</p>
-			    						<h2>Se uni&oacute; el 04 de Octubre del 2018</h2>
-			    					</div>
-			    				</div>
-			    				<div class="jm-publication__actions">
-									<button id="like-0" class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="st st-like"></i>
-									</button>
-									<button id="comentary-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoComentario(this.id)">
-										<i class="st st-comentario"></i>
-									</button>
-									<button id="shared-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
-										<i class="st st-compartir"></i>
-									</button>
-								</div>
-								<div class="jm-publication__comentario">
-									<div class="jm-comentario__writting">
-										<div class="jm-writting__imagen">
-											<img src="public/img/empty/empty-perfil.png">
-										</div>
-										<div class="jm-writting__texto">
-											<div class="jm-textarea">
-												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
-											</div>
-											<button class="mdl-button mdl-js-button mdl-button--icon" onclick="sendComentario()">
-												<i class="st st-enviar"></i>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
 							<div class="jm-publication">
 								<div class="jm-publication__title">
 									<div class="jm-publication__foto">
@@ -639,8 +586,8 @@
 										</div>
 										<div class="jm-comentario__actions">
 											<div class="jm-comentario__left">
-												<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Me gusta</button>
-												<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Responder</button>
+												<button class="mdl-button mdl-js-button">Me gusta</button>
+												<button class="mdl-button mdl-js-button">Responder</button>
 											</div>
 											<div class="jm-comentario__right">
 												<a onclick="">2 Me gusta</a>
@@ -678,8 +625,8 @@
 										</div>
 										<div class="jm-comentario__actions">
 											<div class="jm-comentario__left">
-												<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Me gusta</button>
-												<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Responder</button>
+												<button class="mdl-button mdl-js-button">Me gusta</button>
+												<button class="mdl-button mdl-js-button">Responder</button>
 											</div>
 											<div class="jm-comentario__right">
 												<a onclick="">2 Me gusta</a>
@@ -716,8 +663,8 @@
 											</div>
 											<div class="jm-comentario__actions">
 												<div class="jm-comentario__left">
-													<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Me gusta</button>
-													<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Responder</button>
+													<button class="mdl-button mdl-js-button">Me gusta</button>
+													<button class="mdl-button mdl-js-button">Responder</button>
 												</div>
 												<div class="jm-comentario__right">
 													<a onclick="">2 Me gusta</a>
@@ -860,6 +807,59 @@
 									</div>
 								</div>
 							</div>
+							<div class="jm-publication">
+								<div class="jm-publication__title">
+									<div class="jm-publication__foto">
+										<img src="public/img/empty/empty-perfil.png">
+									</div>
+									<div class="jm-publication__name">
+										<h2>Luis Antonio Mendoza</h2>
+										<p>Deporte Profesional Profesional</p>
+									</div>
+									<div class="jm-publication__time">
+										<button id="menu-editar" class="mdl-button mdl-js-button mdl-button--icon">
+											<i class="st st-more_vert"></i>
+										</button>
+										<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-editar">
+											<li class="mdl-menu__item" onclick="EditPublicacion()">Editar Publicaci&oacute;n</li>
+											<li class="mdl-menu__item" onclick="DeletePublicacion()">Eliminar Publicaci&oacute;n</li>
+										</ul>
+									</div>
+								</div>
+								<div class="jm-publication__contenido empty">
+									<div class="jm-empty__publicacion">
+										<img src="public/img/empty/empty-publicacion.png">
+										<p>¡Bienvenido a Staminer!</p>
+										<h2>Se uni&oacute; el 04 de Octubre del 2018</h2>
+									</div>
+								</div>
+								<div class="jm-publication__actions">
+									<button id="like-0" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="st st-like"></i>
+									</button>
+									<button id="comentary-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="goToDoComentario(this.id)">
+										<i class="st st-comentario"></i>
+									</button>
+									<button id="shared-0" class="mdl-button mdl-js-button mdl-button--icon" onclick="openModalShared(this.id)">
+										<i class="st st-compartir"></i>
+									</button>
+								</div>
+								<div class="jm-publication__comentario">
+									<div class="jm-comentario__writting">
+										<div class="jm-writting__imagen">
+											<img src="public/img/empty/empty-perfil.png">
+										</div>
+										<div class="jm-writting__texto">
+											<div class="jm-textarea">
+												<textarea rows="1" class="form-control jm-line" id="compartir" placeholder="Escribir comentario..."></textarea>
+											</div>
+											<button class="mdl-button mdl-js-button mdl-button--icon" onclick="sendComentario()">
+												<i class="st st-enviar"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
 			    		</div>
 				    </div>
 				    <div role="tabpanel" class="tab-pane fade" id="logros">
@@ -940,7 +940,7 @@
 				<div class="jm-galery">
 					<div class="jm-galery__title" onclick="goToGaleria()">
 						<i class="st st-imagen"></i>
-						<h2>Galer&iacute;a CV</h2>
+						<h2>Galer&iacute;a</h2>
 					</div>
 					<div class="jm-galery__contenido">
 						<div class="jm-empty__image">
@@ -1166,7 +1166,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="modalShared" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal fade" id="modalShared" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-md jm-modal--default max-width-540 jm-modal--publicacion" role="document">
 			<div class="modal-content">
 				<div class="mdl-card">

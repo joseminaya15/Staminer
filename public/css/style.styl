@@ -159,6 +159,7 @@ label
 		align-items center
 		justify-content center
 		.jm-contenido
+			margin 0
 			img
 				max-width 180px
 				margin-top 75px
@@ -217,7 +218,10 @@ label
 	&:BEFORE
 		absolute()
 		content ''
-		background-color #000000
+		background -webkit-linear-gradient(to top,#000000 50%, #FFFFFF)
+		background -moz-linear-gradient(to top,#000000 50%, #FFFFFF)
+		background -o-linear-gradient(to top,#000000 50%, #FFFFFF)
+		background linear-gradient(to top,#000000 50%, #FFFFFF)
 		z-index 0
 		height 100vh
 		opacity .3

@@ -299,12 +299,12 @@ label
 	&.registro
 		background url(../img/fondo/fondo_registro.jpg) no-repeat center center
 .jm-select
+	margin 8px 0
 	&.jm-default
 		.bootstrap-select
 			.dropdown-toggle
 				background-color #F5F5F5 !important
 				border-color #F5F5F5
-				margin 8px 0
 	.bootstrap-select
 		width 100% !important
 		.dropdown-toggle
@@ -314,8 +314,9 @@ label
 			font-size 12px
 			border-radius 2px
 		.dropdown-menu
-			max-height 150px !important
+			max-height 140px !important
 			box-shadow none
+			padding 0
 			&>li
 				&>a
 					transition(all)
@@ -704,6 +705,7 @@ label
 			.jm-line
 				background-color transparent
 				font-size 14px
+				font-family $light
 		.jm-shared__actions
 			width 100%
 			max-width 60px
@@ -976,7 +978,7 @@ label
 	margin-bottom 15px
 	.jm-galery__title
 		flexCenter()
-		height 40px
+		height 42px
 		border-bottom 1px solid #e8e9eb
 		padding 0 20px
 		color #818181
@@ -992,6 +994,8 @@ label
 		height 220px
 		&.scroll
 			overflow-y scroll
+		&.red
+			height 275px
 		&::-webkit-scrollbar
 			width 5px
 		&.sugerido
@@ -1063,6 +1067,7 @@ label
 			width 100%
 			max-width 80px
 			margin 5px 0
+			font-family $light
 		.jm-select
 			width 100%
 			max-width 80px
@@ -1261,9 +1266,9 @@ label
 		border-radius 0
 		box-shadow none
 	.jm-modal
-		width 375px
+		width 370px
 		.mdl-card
-			max-width 375px
+			max-width 370px
 			display block
 			height 475px
 			.jm-padding

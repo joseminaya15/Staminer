@@ -68,7 +68,7 @@
 									</label>
 								</div>
 								<div class="jm-forget__right">
-									<a href="">¿Olvidaste tu contrase&ntilde;a?</a>
+									<a href="" data-toggle="modal" data-target="#ModalForgetPassword">¿Olvidaste tu contrase&ntilde;a?</a>
 								</div>
 							</div>
 						</div>
@@ -104,7 +104,6 @@
 			</div>
 		</footer>
 		<!-- Modals -->
-
 		<div class="modal fade" id="ModalSolicitud" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog modal-md jm-modal" role="document">
                 <div class="modal-content">
@@ -146,6 +145,33 @@
 	                        	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button">P&aacute;gina principal</button>
 	                        </div>
                     	</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="modal fade" id="ModalForgetPassword" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-md jm-modal" role="document">
+                <div class="modal-content">
+                    <div class="mdl-card">
+						<div class="jm-padding">
+							<div class="mdl-card__title">
+								<h2>Restablecer contrase&ntilde;a</h2>
+								<p>Te ayudaremos a recuperar tu contrase&ntilde;a. Escribe el correo asociado a tu cuenta y te enviaremos una clave nueva.</p>
+							</div>
+							<div class="mdl-card__supporting-text p-t-0 p-b-0">
+								<div class="input-group jm-input">
+									<input type="text" class="form-control" placeholder="Correo electrónico">
+								</div>
+							</div>
+							<div class="mdl-card__actions p-t-0 m-t-10">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="goToSolicitud()">Enviar solicitud</button>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
+									<i class="st st-close_modal"></i>
+								</button>
+							</div>
+						</div>
                     </div>
                 </div>
             </div>

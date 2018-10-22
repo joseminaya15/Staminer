@@ -79,6 +79,12 @@ function goToDoComentario(id){
 	publication.find('.jm-comentario__writting').fadeIn();
 	publication.find('.jm-comentario__writting').css('display','flex');
 }
+function goToDoResponder(id){
+	var buttonId    = $('#'+id);
+	var publication = buttonId.parents('.jm-respuesta');
+	publication.find('.jm-comentario--respuesta').fadeIn();
+	publication.find('.jm-comentario--respuesta').css('display','flex');
+}
 function sendComentario(){
 	msj('error', 'Escribe un comentario');
 	return;

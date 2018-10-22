@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Staminer';
-  src:  url('Staminer-Icons/staminer.eot?hx7nge');
-  src:  url('Staminer-Icons/staminer.eot?hx7nge#iefix') format('embedded-opentype'),
-    url('Staminer-Icons/staminer.ttf?hx7nge') format('truetype'),
-    url('Staminer-Icons/staminer.woff?hx7nge') format('woff'),
-    url('Staminer-Icons/staminer.svg?hx7nge#staminer') format('svg');
+  src:  url('Staminer-Icons/Staminer.eot?6z4spj');
+  src:  url('Staminer-Icons/Staminer.eot?6z4spj#iefix') format('embedded-opentype'),
+    url('Staminer-Icons/Staminer.ttf?6z4spj') format('truetype'),
+    url('Staminer-Icons/Staminer.woff?6z4spj') format('woff'),
+    url('Staminer-Icons/Staminer.svg?6z4spj#Staminer') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.st-check:before {
+  content: "\e923";
+}
+.st-menu_desplegable:before {
+  content: "\e924";
+}
 .st-asociacion:before {
   content: "\e900";
 }
@@ -52,7 +58,7 @@
 .st-adjuntar:before {
   content: "\e908";
 }
-.st-arrow_right:before {
+.st-arro_right:before {
   content: "\e909";
 }
 .st-arrow_left:before {
@@ -132,4 +138,7 @@
 }
 .st-email{
   font-size: 16px;
+}
+.st-menu_desplegable{
+  font-size: 4px;
 }

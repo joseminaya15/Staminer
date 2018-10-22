@@ -96,6 +96,7 @@ label
 				background-color #FFFFFF
 				border-radius 2px
 				padding 0 8px
+				height 28px
 				.form-control
 					height 28px
 					border-radius 4px
@@ -123,14 +124,16 @@ label
 		.jm-header--menu
 			flexCenter()
 			position relative
+			img 
+				flexCenter()
+				margin auto
+				width 24px
+				border-radius 50%
 			.mdl-button--icon
 				margin 0 10px
+				background-color transparent
 			.jm-perfil--configuracion
-				img 
-					flexCenter()
-					margin auto
-					width 24px
-					border-radius 50%
+				position relative
 .jm-principal
 	height 100vh
 	flexCenter()
@@ -170,8 +173,14 @@ label
 	box-shadow none
 	border-radius 2px
 	font-family $light
+	height 28px
+	line-height 28px
+	font-size 12px
 	&.max-width
 		width 100%
+	&.jm-transparent
+		background-color transparent !important
+		border 1px solid #FFFFFF
 .jm-footer
 	flexCenter()
 	position relative
@@ -502,27 +511,28 @@ label
 	position relative
 	.jm-perfil__editar
 		position absolute
-		top 5px
-		left 5px
+		top 10px
+		left 15px
 		button 
 			i
 				color #FFFFFF
 				font-size 24px
 	.jm-perfil__shared
 		position absolute
-		top 5px
-		right 5px
+		top 10px
+		right 15px
 		button 
 			i
 				color #FFFFFF
 				font-size 24px
 	.jm-perfil__logros
 		position absolute
-		bottom 5px
-		left 5px
+		bottom 10px
+		left 15px
 		a 
 			color #FFFFFF
 			font-size 14px
+			font-family $light
 			line-height 16px
 			i
 				color #FFFFFF
@@ -530,9 +540,37 @@ label
 	.jm-perfil__seguidores
 		flexCenter()
 		position absolute
-		bottom 5px
-		right 5px
+		bottom 10px
+		right 15px
 		color #FFFFFF
+		.jm-seguidores
+			padding 0 10px
+			p
+				font-size 13px
+				line-height 15px
+				font-family $light
+	.jm-perfil__foto
+		position absolute 
+		left 0
+		right 0
+		top 40px
+		z-index 5
+		text-align center
+		color #FFFFFF
+		img 
+			max-width 120px
+			margin-bottom 15px
+			cursor pointer
+		h2
+			font-size 22px
+			line-height 26px
+			margin 5px 0
+		p
+			font-size 14px
+			line-height 16px
+		span
+			font-size 12px
+			font-family $light
 .jm-perfil--contenido
 	margin-top 15px
 	display grid
@@ -549,7 +587,7 @@ label
 				position relative
 				a
 					font-size 14px
-					color #000000
+					color #383a3f
 					i
 						margin-right 10px
 				.jm-edit
@@ -582,6 +620,10 @@ label
 					border-bottom 1px solid #e8e9eb
 					.jm-input__left
 						width 100%
+						p
+							font-size 12px
+							font-family $light
+							color #34373D
 					.jm-input__right
 						width 100%
 					.jm-select
@@ -724,32 +766,48 @@ label
 		padding 0 20px
 		.mdl-button
 			margin-right 10px
-		.jm-menu
-			.jm-radio
-				color #818181
-				.mdl-radio
-					padding-right 35px
-					padding-left 0
-					margin 0 15px
-					height 100% 
-					.mdl-radio__label
-						h2
-							font-size 12px
-							line-height 14px
-							margin 3px 0
-							color #000000
-						p
-							font-size 10px
-							line-height 12px
-					.mdl-radio__outer-circle
-						right 0
-						left inherit
-					.mdl-radio__inner-circle
-						right 4px
-						left inherit
-					.mdl-radio__ripple-container
-						right -13px
-						left inherit
+		.mdl-menu__container
+			.mdl-menu
+				padding 0
+				.jm-menu--title
+					background-color #F5F5F5
+					padding 8px 20px
+					p
+						font-family $light
+						color #383A3F
+						font-size 12px
+				.mdl-menu__item
+					flexCenter()
+					height 48px
+					padding 0 5px
+				.jm-menu
+					width 100%
+					.mdl-radio
+						color #818181
+						padding-right 35px
+						padding-left 0
+						margin 0 15px
+						height 100% 
+						width 100%
+						max-width 220px
+						.mdl-radio__label
+							h2
+								font-size 12px
+								line-height 14px
+								margin 3px 0
+								color #000000
+							p
+								font-size 10px
+								line-height 12px
+						.mdl-radio__outer-circle
+							right 0
+							left inherit
+						.mdl-radio__inner-circle
+							right 5px
+							left inherit
+						.mdl-radio__ripple-container
+							right -13px
+							left inherit
 .jm-publicaciones
 	margin-top 20px
 	.jm-publication
@@ -856,10 +914,21 @@ label
 						color #00E96F
 						border 1px solid #00E96F
 						font-size 12px
-						padding 5px 15px
-						i 
-							color #00E96F
+						padding 4px 15px
+						display block
+						border-radius 2px
+						button
 							margin-right 10px
+							background-color #00CE83
+							width 26px
+							min-width 26px
+							height 26px
+							i 
+								flexCenter()
+								line-height 28px
+								justify-content center
+								color #FFFFFF
+								font-size 8px
 					border-top 0.5px solid #e8e9eb
 					.jm-skills__left
 						width 100%
@@ -1258,6 +1327,19 @@ label
 	i
 		font-size 13px
 		line-height 0
+.jm-button--badge
+	overflow inherit
+	.jm-badge
+		position absolute
+		top 0
+		right 0
+		background-color #FF3342
+		color #FFFFFF
+		font-size 14px
+		font-family $light
+		width 100%
+		max-width 14px
+		border-radius 3px
 [class*=col-]
 	padding-left 5px
 	padding-right 5px
@@ -1320,17 +1402,17 @@ label
 					line-height 14px
 					margin 3px 0
 			.mdl-card__supporting-text
-				background-color #F9F9F9
+				background-color #F5F5F5
 				font-family $light
 			.mdl-card__actions
 				background-color #F5F5F5
 				text-align right
-				padding 10px 16px
+				padding 6px 16px
 				border-top 1px solid #E2E4E5
 				&.text-left
 					text-align left
 				.mdl-button
-					height 26px
+					height 28px
 					font-size 12px
 					line-height 14px
 					font-family $light

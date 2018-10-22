@@ -118,3 +118,12 @@ function msj(tipo, msj, cabecera){
 			toastr.success(msj, cabecera, {timeOut: 4000});
 		}
 }
+function inputSearch(){
+	var searchInput = $('#inputSearch').val();
+	if($.trim(searchInput).length>=1){
+		$('.jm-search').find('i').addClass('active');
+	}
+	else if($.trim(searchInput).length==0){
+		$('.jm-search').find('i').removeClass('active');
+	}
+}

@@ -818,7 +818,7 @@ label
 			height 60px
 			position relative
 			border-bottom 1px solid #e8e9eb
-			padding 0 10px
+			padding 0 20px
 			.jm-publication__foto
 				width 100%
 				max-width 60px
@@ -1327,6 +1327,8 @@ label
 	i
 		font-size 13px
 		line-height 0
+		&.active
+			color $color
 .jm-button--badge
 	overflow inherit
 	.jm-badge
@@ -1340,6 +1342,23 @@ label
 		width 100%
 		max-width 14px
 		border-radius 3px
+.jm-menu__publication
+	.mdl-button
+		height 24px
+		min-width 24px
+		width 24px
+		background-color transparent
+		i 
+			line-height 20px
+.jm-privacidad
+	flexCenter()
+	justify-content flex-end
+	color #818181
+	font-size 12px
+	line-height 14px
+	i	
+		margin-right 10px
+		font-size 14px
 [class*=col-]
 	padding-left 5px
 	padding-right 5px

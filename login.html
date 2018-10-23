@@ -17,6 +17,7 @@
 		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/bootstrap-select/css/bootstrap-select.min.css">
 		<link type="text/css" rel="stylesheet" href="public/plugins/mdl/material.min.css">
+		<link type="text/css" rel="stylesheet" href="public/plugins/toaster/toastr.css">
 		<link type="text/css" rel="stylesheet" href="public/fonts/staminer.css">
 		<link type="text/css" rel="stylesheet" href="public/fonts/roboto.css">
 		<link type="text/css" rel="stylesheet" href="public/css/style.css">
@@ -160,11 +161,11 @@
 							</div>
 							<div class="mdl-card__supporting-text p-t-0 p-b-0">
 								<div class="input-group jm-input">
-									<input type="text" class="form-control" placeholder="Correo electrónico">
+									<input id="correo_password" type="text" class="form-control" placeholder="Correo electrónico">
 								</div>
 							</div>
 							<div class="mdl-card__actions p-t-0 m-t-10">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="goToSolicitud()">Enviar solicitud</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect jm-button" onclick="sendPassword()">Enviar</button>
 							</div>
 							<div class="mdl-card__menu">
 								<button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal">
@@ -183,8 +184,10 @@
 	    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
 	    <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
         <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js"></script>
+		<script src="public/plugins/toaster/toastr.min.js"></script>
 	    <script src="public/plugins/mdl/material.min.js"></script>
 	    <script src="public/plugins/owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
+		<script src="public/js/Utils.js"></script>
     	<script src="public/js/index.js"></script>
     	<script src="public/js/jslogin.js"></script>
 	</body>
